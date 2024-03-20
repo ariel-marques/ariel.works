@@ -1,0 +1,100 @@
+        body {
+            font-family: 'Cormorant Garamond', serif;
+        }
+
+        .container-fluid img {
+            width: 100%; /* Assegura que as imagens ocupem 100% da largura do container */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+        ::selection {
+            background-color: #efefef; /* Defina a cor de fundo da seleção */
+            color: #00c3ff; /* Defina a cor do texto selecionado */
+        }
+        
+        /* Estilo para o menu fixo à esquerda */
+        .navbar.fixed-left {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            z-index: 1;
+            /* Alterado para um valor positivo para garantir que o menu fique acima de outros elementos */
+            font-size: 12px;
+            /* Altera o tamanho da fonte do menu */
+        }
+
+        .navbar-nav .nav-item .nav-link {
+            padding: 1px 9px;
+            /* Altera o espaçamento entre os itens do menu */
+        }
+
+        .navbar-custom {
+            margin-left: 250px;
+            /* Ajuste a margem esquerda conforme desejado */
+        }
+
+        /* Estilo para o texto "CONTATO:" */
+        .navbar-nav .nav-item:first-child .nav-link {
+            font-size: 8px;
+            /* Altera o tamanho da fonte do texto "CONTATO:" */
+        }
+
+        /* Estilo para a galeria de fotos */
+        .gallery {
+            position: relative;
+            z-index: 999;
+            /* Garante que a galeria fique na frente do menu */
+            background-color: white;
+        }
+
+        /* Estilo para o texto itálico */
+        em {
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+        }
+
+        .menu {
+            position: initial;
+            display: block;
+            width: calc(100% - 60px);
+            font-size: 1rem;
+            margin-left: 30px;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            line-height: 3rem;
+            height: auto;
+
+        }
+
+        .menu a {
+            font-size: 4rem;
+            margin: 0px 0;
+            text-transform: none;
+            line-height: 1.2;
+            display: block;
+            padding-top: 5px;
+            color: #000;
+            border-bottom: #000 solid 1px !important;
+            text-decoration: none;
+        }
+
+        .menu-block {
+            margin-bottom: 9rem;
+        }
+        .contato {
+            margin-left: 2.0rem !important;
+        }
+
+        .graphic_square  {
+            margin: 0em .5em 1.2em 0em ;
+            width:3em;
+            height: 1px;
+            background-color: #000;
+            display: inline-block;
+            }
