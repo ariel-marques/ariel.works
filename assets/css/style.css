@@ -100,3 +100,7 @@
             background-color: #000;
             display: inline-block;
             }
+        .txt-animado{
+            color: #212529;
+            text-transform: capitalize;
+        }
