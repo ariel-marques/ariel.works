@@ -1,6 +1,6 @@
         body {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.1rem;
+            font-size: 1.4rem;
 
         }
 
@@ -21,7 +21,7 @@
             transform: translateY(-50%);
             z-index: 1;
             /* Alterado para um valor positivo para garantir que o menu fique acima de outros elementos */
-            font-size: 12px;
+            font-size: 1.1rem;
             /* Altera o tamanho da fonte do menu */
         }
 
@@ -37,7 +37,7 @@
 
         /* Estilo para o texto "CONTATO:" */
         .navbar-nav .nav-item:first-child .nav-link {
-            font-size: 8px;
+            font-size: 0.6rem;
             /* Altera o tamanho da fonte do texto "CONTATO:" */
         }
 
