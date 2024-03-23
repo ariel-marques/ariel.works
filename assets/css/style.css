@@ -67,7 +67,7 @@
 
         @media screen and (min-width: 768px) {
             h1 {
-                font-size: 5.4rem;
+                font-size: 3.5rem;
             }
         }
 
@@ -79,7 +79,7 @@
 
         @media screen and (min-width: 768px) {
             h2 {
-                font-size: 4.1rem;
+                font-size: 3.0rem;
             }
         }
         .menu {
