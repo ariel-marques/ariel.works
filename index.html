@@ -129,7 +129,7 @@
                     <p>Estudar a área de humanas me fez despertar um grande interesse por entender como as pessoas interagem com o mundo digital. Essa transição me permitiu
                         combinar minha criatividade com habilidades técnicas para criar experiências digitais impactantes. Com quase 10 anos de experiência nesta área, tenho
                         me mantido atualizado sobre as tendências em design e as novas formas pelas quais os usuários interagem com ambientes digitais, buscando
-                        constantemente maneiras de inovar e aprimorar minha prática UX/UI designer. <a href="unip/unip.html" onclick="loadPage('pagina1')" style="color: inherit"><strong>Confira projetos que participei.</strong></a></p>
+                        constantemente maneiras de inovar e aprimorar minha prática UX/UI designer. <a href="unip/unip" style="color: inherit"><strong>Confira projetos que participei.</strong></a></p>
                     <h1 class="mt-5 pb-5"><em>— Obrigado.</em></h1>
                 </div>
             </div>
@@ -156,28 +156,5 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script src="assets/js/typed.js" type="text/javascript"></script>
-        <script>
-        function loadPage(pageName) {
-            fetch(pageName + '.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('conteudo').innerHTML = html;
-                // Atualiza a URL na barra de endereços do navegador
-                history.pushState({}, '', pageName);
-            })
-            .catch(error => console.error('Erro ao carregar a página:', error));
-        }
-
-        // Carrega a página inicial ao carregar a página pela primeira vez
-        window.onload = function() {
-            loadPage('pagina1');
-        };
-
-        // Manipula o evento de popstate para carregar páginas quando o usuário navega pelo histórico do navegador
-        window.onpopstate = function(event) {
-            var pageName = location.pathname.split('/').pop();
-            loadPage(pageName);
-        };
-    </script>
     </body>
 </html>
