@@ -9,6 +9,7 @@ async function iniciarTyped(elementSelector, svgUrl) {
 
   const typed = new Typed(elementSelector, {
     strings: strings,
+    showCursor: false,
     typeSpeed: 80,
     backSpeed: 130,
     loop: true,
