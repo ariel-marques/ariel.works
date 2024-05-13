@@ -17,7 +17,7 @@
             left: 0;
             transform: translateY(-50%);
             z-index: 1;
-            font-size: 1.1rem;
+            font-size: 0.7rem;
         }
 
         .navbar-nav .nav-item .nav-link {
@@ -28,7 +28,7 @@
             margin-left: 250px;
         }
         .navbar-nav .nav-item:first-child .nav-link {
-            font-size: 0.6rem;
+            font-size: 0.4rem;
         }
         .gallery {
             position: relative;
