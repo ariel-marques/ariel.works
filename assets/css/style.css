@@ -1,55 +1,40 @@
         body {
             font-family: 'Cormorant Garamond', serif;
-            font-size: 1.4rem;
-
+            font-size: 1rem;
         }
 
         .container-fluid img {
-            width: 100%; /* Assegura que as imagens ocupem 100% da largura do container */
-            height: auto; /* Mantém a proporção da imagem */
+            width: 100%;
+            height: auto;
         }
         ::selection {
-            background-color: #efefef; /* Defina a cor de fundo da seleção */
-            color: #00c3ff; /* Defina a cor do texto selecionado */
+            background-color: #efefef;
+            color: #00c3ff;
         }
-        
-        /* Estilo para o menu fixo à esquerda */
         .navbar.fixed-left {
             position: fixed;
             top: 50%;
             left: 0;
             transform: translateY(-50%);
             z-index: 1;
-            /* Alterado para um valor positivo para garantir que o menu fique acima de outros elementos */
             font-size: 1.1rem;
-            /* Altera o tamanho da fonte do menu */
         }
 
         .navbar-nav .nav-item .nav-link {
             padding: 1px 9px;
-            /* Altera o espaçamento entre os itens do menu */
         }
 
         .navbar-custom {
             margin-left: 250px;
-            /* Ajuste a margem esquerda conforme desejado */
         }
-
-        /* Estilo para o texto "CONTATO:" */
         .navbar-nav .nav-item:first-child .nav-link {
             font-size: 0.6rem;
-            /* Altera o tamanho da fonte do texto "CONTATO:" */
         }
-
-        /* Estilo para a galeria de fotos */
         .gallery {
             position: relative;
             z-index: 999;
-            /* Garante que a galeria fique na frente do menu */
             background-color: white;
         }
-
-        /* Estilo para o texto itálico */
         em {
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
@@ -61,13 +46,13 @@
         }
         @media screen and (max-width: 767px) {
             h1 {
-                font-size: 3.2rem;
+                font-size: 3.25rem;
             }
         }
 
         @media screen and (min-width: 768px) {
             h1 {
-                font-size: 3.5rem;
+                font-size: 3.06rem;
             }
         }
 
