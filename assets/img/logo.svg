@@ -1,4 +1,8 @@
-<svg class="ps-1 pb-1" width="30" viewBox="0 0 402 402" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="100%" height="100%" fill="fff"/>
-  <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Camada_1" width="30px" height="31.55px" viewBox="0 0 60 63.1" style="enable-background:new 0 0 60 63.1;" xml:space="preserve">
+  <style type="text/css">
+    .st0{fill:#FFFFFF;}
+    .st1{fill:none;stroke:#1D1D1B;stroke-width:2.0833;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+  </style>
+  <rect x="0" y="0" width="100%" height="100%" class="st0"/>
+  <path class="st1" d="M8.9,52.6V10.4L30,52.6l21.1-42.2v42.2l0,0L30,10.4L8.9,52.6z"/>
 </svg>
