@@ -115,22 +115,13 @@
             background-color: #000;
             display: inline-block;
             }
-            .svg-container {
-                opacity: 0;
-                transition: opacity 2s ease-in-out;
-                display: inline-block; /* Certifique-se de que o contêiner do SVG é inline */
-            }
-            
-            .svg-container.fade-in {
-                opacity: 1;
-            }
-            
-            .txt-animado {
-                color: #212529;
-                text-transform: capitalize;
-            }
-            
-            .txt-animado-mobile {
-                color: #212529;
-                text-transform: capitalize;
-            }
+        .txt-animado{
+            color: #212529;
+            text-transform: capitalize;
+        }
+        .txt-animado-mobile{
+            color: #212529;
+            text-transform: capitalize;
+            margin-bottom: 30px;
+        }
+        
