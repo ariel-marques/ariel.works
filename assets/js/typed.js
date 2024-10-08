@@ -16,7 +16,7 @@ async function iniciarTyped(elementSelector, svgUrl, fadeIn = false) {
     backSpeed: 130,
     backDelay: 1000,
     startDelay: 500,
-    loop: false,
+    loop: true,
     showCursor: true,
     onComplete: function() {
       setTimeout(() => {
