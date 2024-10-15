@@ -135,3 +135,70 @@
                 color: #212529;
                 text-transform: capitalize;
               }
+/* Sobrescrevendo o comportamento do hover do btn-outline-secondary */
+.btn-outline-secondary:hover {
+  background-color: transparent !important; /* Sem preenchimento no hover */
+  color: inherit; /* Mantém a cor original do texto */
+}
+
+/* Estilo personalizado para a troca de texto por SVG */
+.btn-hover {
+  position: relative;
+  overflow: hidden;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilo do texto */
+.btn-hover span {
+  transition: transform 0.4s ease; /* Apenas a transição de transformação */
+  opacity: 1; /* Mantém a opacidade original do texto */
+}
+
+/* Posição inicial do SVG */
+.btn-hover svg {
+  position: absolute;
+  left: 46px; /* Inicialmente fora da visão à esquerda */
+  opacity: 0; /* Inicia invisível */
+  transition: transform 0.3s ease; /* Transição de transformação */
+  width: 60px;
+  height: 60px;
+}
+
+/* Animação de bounce usando keyframes */
+.btn-hover:hover svg {
+  opacity: 1; /* Torna o SVG visível ao passar o mouse */
+  animation: easeOutBounce 0.4s forwards; /* Aplicando a animação de bounce */
+}
+
+/* Definindo os keyframes para o efeito easeOutBounce */
+@keyframes easeOutBounce {
+  0% {
+    transform: translateX(-30px);
+  }
+  60% {
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(5px);
+  }
+  90% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(0px); /* Finaliza o movimento */
+  }
+}
+
+/* Animação do texto ao passar o mouse */
+.btn-hover:hover span {
+  transform: translateX(500px); /* Move o texto para a esquerda */
+  opacity: 1; /* Torna o texto invisível ao passar o mouse */
+}
+
+/* Restaura a posição original do texto quando não está em hover */
+.btn-hover span {
+  transform: translateX(0); /* Posição original do texto */
+  opacity: 1; /* Torna o texto visível quando não está em hover */
+}
