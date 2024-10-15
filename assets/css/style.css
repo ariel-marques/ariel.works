@@ -155,50 +155,75 @@
   transition: transform 0.4s ease; /* Apenas a transição de transformação */
   opacity: 1; /* Mantém a opacidade original do texto */
 }
-
 /* Posição inicial do SVG */
 .btn-hover svg {
   position: absolute;
   left: 46px; /* Inicialmente fora da visão à esquerda */
-  opacity: 0; /* Inicia invisível */
-  transition: transform 0.3s ease; /* Transição de transformação */
-  width: 60px;
-  height: 60px;
+          opacity: 0; /* Torna o SVG invisível por padrão */
+          transform: translateX(-8px);
+          transition: opacity 0.1s linear; /* Transição suave para a opacidade */
+          width: 60px;
+          height: 60px;
 }
 
-/* Animação de bounce usando keyframes */
-.btn-hover:hover svg {
-  opacity: 1; /* Torna o SVG visível ao passar o mouse */
-  animation: easeOutBounce 0.4s forwards; /* Aplicando a animação de bounce */
+
+      /* Animação de hover */
+      .btn-hover:hover svg {
+          opacity: 1; /* Torna o SVG visível ao passar o mouse */
+          animation: easeInBounce 0.4s forwards; /* Animação ao entrar */
+      }
+
+      /* Animação de saída */
+      .btn-hover.fade-out svg {
+          animation: easeOutBounce 1s forwards; /* Animação ao sair */
+      }
+      
+/* Definindo os keyframes para o efeito easeInBounce */
+@keyframes easeInBounce {
+    0% {
+        transform: translateX(-30px);
+    }
+    60% {
+        transform: translateX(10px);
+    }
+    80% {
+        transform: translateX(5px);
+    }
+    90% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0px); /* Finaliza o movimento */
+    }
 }
 
 /* Definindo os keyframes para o efeito easeOutBounce */
 @keyframes easeOutBounce {
-  0% {
-    transform: translateX(-30px);
-  }
-  60% {
-    transform: translateX(10px);
-  }
-  80% {
-    transform: translateX(5px);
-  }
-  90% {
-    transform: translateX(2px);
-  }
-  100% {
-    transform: translateX(0px); /* Finaliza o movimento */
-  }
+    0% {
+        transform: translateX(0px); /* Começa na posição normal */
+    }
+    60% {
+        transform: translateX(-10px); /* Leve movimento para a esquerda */
+    }
+    80% {
+        transform: translateX(5px); /* Leve movimento para a direita */
+    }
+    100% {
+        transform: translateX(30px); /* Finaliza fora da tela */
+        opacity: 0; /* Torna invisível no final */
+    }
 }
 
 /* Animação do texto ao passar o mouse */
 .btn-hover:hover span {
   transform: translateX(500px); /* Move o texto para a esquerda */
   opacity: 1; /* Torna o texto invisível ao passar o mouse */
+    
 }
 
 /* Restaura a posição original do texto quando não está em hover */
 .btn-hover span {
   transform: translateX(0); /* Posição original do texto */
   opacity: 1; /* Torna o texto visível quando não está em hover */
+    
 }
