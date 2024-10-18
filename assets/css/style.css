@@ -227,3 +227,17 @@
   opacity: 1; /* Torna o texto visível quando não está em hover */
     
 }
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.lang-content {
+    display: none; /* Esconde todas as seções por padrão */
+}
+
+.lang-content.active {
+    display: block; /* Mostra a seção ativa */
+}
