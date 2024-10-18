@@ -227,17 +227,13 @@
   opacity: 1; /* Torna o texto visível quando não está em hover */
     
 }
-
-nav ul {
-    list-style: none;
+.language-switcher {
     display: flex;
-    gap: 10px;
+    justify-content: flex-end;
+    margin: 20px 0;
 }
 
-.lang-content {
-    display: none; /* Esconde todas as seções por padrão */
-}
-
-.lang-content.active {
-    display: block; /* Mostra a seção ativa */
+.language-switcher button {
+    display: flex;
+    align-items: center;
 }
