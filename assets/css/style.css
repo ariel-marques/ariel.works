@@ -283,3 +283,40 @@ h1 {
   background: transparent;
   cursor: pointer;
 }
+
+.project-card {
+  transition: transform 0.8s;
+  border: 2px solid #D9D9D9;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  max-height: 180px;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 0.8em;
+}
+
+.project-card .card-body {
+  text-align: center;
+}
+
+.project-card a {
+  text-decoration: none;
+  display: block;
+  color: #212529;
+}
+
+.project-card .card-title {
+  font-weight: bold;
+  margin-bottom: 0.0rem;
+}
+
+.project-card .card-footer {
+  background-color: white;
+  border: white;
+  text-align: center;
+}
