@@ -12,7 +12,9 @@ body {
   background-color: #efefef;
   color: #00c3ff;
 }
-
+.navbar {
+  --bs-navbar-toggler-border-color:none;
+}
 .navbar.fixed-left {
   position: fixed;
   top: 50%;
@@ -319,4 +321,8 @@ h1 {
   background-color: white;
   border: white;
   text-align: center;
+}
+.decoration-none {
+  text-decoration: none;
+  color: inherit
 }
