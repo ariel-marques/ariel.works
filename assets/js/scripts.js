@@ -1,20 +1,24 @@
 function toggleLanguage() {
+    const checkbox = document.getElementById("language-toggle-checkbox");
+    const slider = document.getElementById("language-slider");
+
+    // Remove a classe, se existir, para reiniciar a transição
+    slider.classList.remove("black-and-white");
+
+    // Adiciona a classe para fixar em preto e branco após 0.8s
+    setTimeout(() => {
+        slider.classList.add("black-and-white");
+    }, 1000); // 0.8s em milissegundos
+
+    // Exibe conteúdo de acordo com a seleção
     const contentPT = document.getElementById("content-pt");
     const contentEN = document.getElementById("content-en");
-    const flagPT = document.getElementById("flag-pt");
-    const flagEN = document.getElementById("flag-en");
 
-    if (contentPT.style.display === "none") {
-        // Exibe conteúdo em português e bandeira brasileira
-        contentPT.style.display = "block";
-        contentEN.style.display = "none";
-        // flagPT.style.display = "block";
-        // flagEN.style.display = "block";
-    } else {
-        // Exibe conteúdo em inglês e bandeira dos EUA
+    if (checkbox.checked) {
         contentPT.style.display = "none";
         contentEN.style.display = "block";
-        // flagPT.style.display = "block";
-        // flagEN.style.display = "none";
+    } else {
+        contentPT.style.display = "block";
+        contentEN.style.display = "none";
     }
 }
