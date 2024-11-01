@@ -329,7 +329,6 @@ h1 {
   border: none;
 }
 
-/* toggle language */
 /* The switch - the box around the slider */
 .switch {
   position: relative;
@@ -370,12 +369,12 @@ h1 {
   left: 2px;
   bottom: 2px;
   background-color: #ffffff;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: .2s;
+  transition: .2s;
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #919191;
 }
 
 input:not(:checked) + .slider {
