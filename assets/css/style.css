@@ -117,6 +117,71 @@ h1 {
   text-decoration: none;
 }
 
+.menu-home {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  text-align: start;
+}
+
+.menu-home a {
+  font-size: 4rem; /* Tamanho grande da fonte */
+  color: white;
+  text-transform: none;
+  line-height: 1.2;
+  padding-top: 5px;
+  border-bottom: #fff solid 1px;
+  text-decoration: none;
+}
+.btn-close {
+  font-size: 1.5rem;
+  color: white !important;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.contact-links {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Overlay for fullscreen menu */
+.fullscreen-menu-overlay {
+  position: fixed;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: bottom 0.4s ease, opacity 0.4s ease;
+  z-index: 1050; /* Higher than navbar */
+}
+
+/* Show overlay when active */
+.fullscreen-menu-overlay.active {
+  bottom: 0;
+  opacity: 1;
+}
+
+/* Style the menu content */
+.menu-content a {
+  font-size: 4rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content .btn-close {
+  font-size: 1.5rem;
+}
+
+
 .menu-block {
   margin-bottom: 9rem;
 }

@@ -22,3 +22,7 @@ function toggleLanguage() {
         contentEN.style.display = "none";
     }
 }
+function toggleFullscreenMenu() {
+    const menu = document.getElementById("fullscreenMenu");
+    menu.classList.toggle("active");
+  }
