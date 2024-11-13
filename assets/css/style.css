@@ -133,6 +133,7 @@ h1 {
   border-bottom: #fff solid 1px;
   text-decoration: none;
 }
+
 .btn-close {
   font-size: 1.5rem;
   color: white !important;
@@ -140,6 +141,7 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
 .contact-links {
   margin-top: 2rem;
   color: white;
