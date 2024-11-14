@@ -23,6 +23,9 @@ function toggleLanguage() {
     }
 }
 function toggleFullscreenMenu() {
-    const menu = document.getElementById("fullscreenMenu");
-    menu.classList.toggle("active");
-  }
+    const menu = document.getElementById('fullscreenMenu');
+    const toggleButton = document.querySelector('.menu-toggle');
+
+    menu.classList.toggle('active');
+    toggleButton.classList.toggle('active');
+}
