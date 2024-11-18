@@ -30,42 +30,43 @@
 
 <body>
   
-  <div class="d-flex justify-content-end pt-2 ps-2">
+  <div class="col-12 d-flex justify-content-end pt-2 ps-2">
     <label class="switch">
         <input type="checkbox" id="language-toggle-checkbox" onclick="toggleLanguage()">
         <span class="slider round" id="language-slider"></span>
     </label>
 </div>
-<header class="row ms-2 d-lg-none">
-  <nav class="navbar navbar-expand-lg">
-    <div class="container-fluid">
-      <!-- Logo ou ícone -->
-      <a class="navbar-brand" href="https://ariel.works" title="Home">
-        <svg class="ps-1" width="25" viewBox="0 0 402 402" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
-      </a>
-
-      <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse p-1" id="navbarNavDropdown">
-        <ul class="navbar-nav ms-auto text-end">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="https://ariel.works" style="font-size: 0.9rem;">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://ariel.works/projetos" style="font-size: 0.9rem;">PROJETOS</a>
-            </li>
-          </ul>
-      </div>
-    </div>
-  </nav>
-</header>
   <div class="container">
 
+    <header class="row ms-2 d-lg-none">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <!-- Logo ou ícone -->
+          <a class="navbar-brand" href="https://ariel.works" title="Home">
+            <svg class="ps-1" width="25" viewBox="0 0 402 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </a>
+    
+          <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse p-1" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto text-end">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ariel.works" style="font-size: 0.9rem;">HOME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ariel.works/projetos" style="font-size: 0.9rem;">PROJETOS</a>
+                </li>
+              </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
     <!-- PORTUGUES-->
     <div id="content-pt" class="container-fluid content">
 
@@ -505,17 +506,6 @@
       </section>
     </div>
 
-  </div>
-  <div class="row pt-5 d-block d-sm-none">
-    <div class="col-12">
-      <p class="contato mx-4 mb-0">CONTATO</p>
-    </div>
-    <div class="col-12 mt-0 menu">
-      <p><a href="mailto:ariel.marques77@gmail.com">E-mail</a></p>
-    </div>
-    <div class="col-12 mt-0 menu">
-      <p><a href="https://www.linkedin.com/in/arielmarques/">LinkedIn</a></p>
-    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
