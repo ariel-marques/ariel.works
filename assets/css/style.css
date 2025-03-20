@@ -15,9 +15,9 @@ body {
 
 .navbar.fixed-left {
   position: fixed;
-  top: 50%;
+  top: 320px;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-70px);
   z-index: 1;
   font-size: 0.9rem;
 }
@@ -624,3 +624,42 @@ input:checked + .slider:before {
   stroke-dashoffset: -64px;
 }
 */
+
+.top-title {
+  font-size: 120px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 105px;
+}
+
+.sidebar-left {
+  position: absolute;
+  left: -43px; /* Alinha na esquerda */
+  top: 90px;
+  transform: translateY(-50%) rotate(-90deg); /* Centraliza verticalmente e rotaciona */
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  white-space: nowrap; /* Garante que o texto não quebre */
+}
+@media screen and (max-width: 767px) {
+  .sidebar-left{
+  position: absolute;
+  left: -50px; /* Alinha na esquerda */
+  top: 90px;
+  transform: translateY(-50%) rotate(-90deg); /* Centraliza verticalmente e rotaciona */
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  white-space: nowrap; /* Garante que o texto não quebre */
+}
+}
+.name {
+  font-size: 19px;
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap; /* Impede quebra de linha */
+  right: 40px; /* Ajuste para dentro da tela */
+}
+
+.margin-title {
+  margin-top: 10%;
+}
