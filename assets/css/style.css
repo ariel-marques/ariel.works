@@ -12,14 +12,12 @@ body {
   background-color: #efefef;
   color: #00c3ff;
 }
-.navbar {
-  --bs-navbar-toggler-border-color:none;
-}
+
 .navbar.fixed-left {
   position: fixed;
-  top: 50%;
+  top: 320px;
   left: 0;
-  transform: translateY(-50%);
+  transform: translateY(-70px);
   z-index: 1;
   font-size: 0.9rem;
 }
@@ -118,6 +116,71 @@ h1 {
   border-bottom: #000 solid 1px !important;
   text-decoration: none;
 }
+
+.menu-home {
+  font-size: 4rem;
+  text-transform: uppercase;
+  line-height: 3rem;
+  text-align: start;
+}
+
+.menu-home a {
+  font-size: 4rem; /* Tamanho grande da fonte */
+  color: white;
+  text-transform: none;
+  line-height: 1.2;
+  padding-top: 5px;
+  border-bottom: #fff solid 2px;
+  text-decoration: none;
+}
+
+.btn-close {
+  font-size: 1.5rem;
+  color: white !important;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.contact-links {
+  color: white;
+  text-align: center;
+}
+
+/* Overlay for fullscreen menu */
+.fullscreen-menu-overlay {
+  position: fixed;
+  bottom: -100%; /* Escondido abaixo da tela inicialmente */
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: bottom 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  z-index: 1050; /* Sobre o navbar */
+}
+
+/* Show overlay when active */
+.fullscreen-menu-overlay.active {
+  bottom: 0;
+  opacity: 1;
+}
+
+/* Style the menu content */
+.menu-content a {
+  font-size: 4rem;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+.menu-content .btn-close {
+  font-size: 1.5rem;
+}
+
 
 .menu-block {
   margin-bottom: 9rem;
@@ -322,7 +385,281 @@ h1 {
   border: white;
   text-align: center;
 }
-.decoration-none {
+.decoration-none a {
   text-decoration: none;
   color: inherit
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-size: cover;
+  background-position: center;
+  filter: none;
+  transition: filter 0.8s ease-out; /* Transição suave */
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #ffffff;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider {
+  background-color: #919191;
+}
+
+input:not(:checked) + .slider {
+  background-image: url('../img/bandeira-pt.png');
+}
+
+input:checked + .slider {
+  background-image: url('../img/bandeira-en.png');
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(16px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.slider.black-and-white {
+  filter: grayscale(100%); /* Aplica escala de cinza total */
+}
+
+/* svg menu 
+
+
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+.line {
+  fill:none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke:#000;
+  stroke-width:5.5;
+  stroke-linecap:round;
+}
+.ham1 .top {
+  stroke-dasharray: 40 139;
+}
+.ham1 .bottom {
+  stroke-dasharray: 40 180;
+}
+.ham1.active .top {
+  stroke-dashoffset: -98px;
+}
+.ham1.active .bottom {
+  stroke-dashoffset: -138px;
+}
+.ham2 .top {
+  stroke-dasharray: 40 121;
+}
+.ham2 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham2.active .top {
+  stroke-dashoffset: -102px;
+}
+.ham2.active .bottom {
+  stroke-dashoffset: -102px;
+}
+.ham3 .top {
+  stroke-dasharray: 40 130;
+}
+.ham3 .middle {
+  stroke-dasharray: 40 140;
+}
+.ham3 .bottom {
+  stroke-dasharray: 40 205;
+}
+.ham3.active .top {
+  stroke-dasharray: 75 130;
+  stroke-dashoffset: -63px;
+}
+.ham3.active .middle {
+  stroke-dashoffset: -102px;
+}
+.ham3.active .bottom {
+  stroke-dasharray: 110 205;
+  stroke-dashoffset: -86px;
+}
+.ham4 .top {
+  stroke-dasharray: 40 121;
+}
+.ham4 .bottom {
+  stroke-dasharray: 40 121;
+}
+.ham4.active .top {
+  stroke-dashoffset: -68px;
+}
+.ham4.active .bottom {
+  stroke-dashoffset: -68px;
+}
+.ham5 .top {
+  stroke-dasharray: 40 82;
+}
+.ham5 .bottom {
+  stroke-dasharray: 40 82;
+}
+.ham5.active .top {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+.ham5.active .bottom {
+  stroke-dasharray: 14 82;
+  stroke-dashoffset: -72px;
+}
+.ham6 .top {
+  stroke-dasharray: 40 172;
+}
+.ham6 .middle {
+  stroke-dasharray: 40 111;
+}
+.ham6 .bottom {
+  stroke-dasharray: 40 172;
+}
+.ham6.active .top {
+  stroke-dashoffset: -132px;
+}
+.ham6.active .middle {
+  stroke-dashoffset: -71px;
+}
+.ham6.active .bottom {
+  stroke-dashoffset: -132px;
+}
+.ham7 .top {
+  stroke-dasharray: 40 82;
+}
+.ham7 .middle {
+  stroke-dasharray: 40 111;
+}
+.ham7 .bottom {
+  stroke-dasharray: 40 161;
+}
+.ham7.active .top {
+  stroke-dasharray: 17 82;
+  stroke-dashoffset: -62px;
+}
+.ham7.active .middle {
+  stroke-dashoffset: 23px;
+}
+.ham7.active .bottom {
+  stroke-dashoffset: -83px;
+}
+.ham8 .top {
+  stroke-dasharray: 40 160;
+}
+.ham8 .middle {
+  stroke-dasharray: 40 142;
+  transform-origin: 50%;
+  transition: transform 400ms;
+}
+.ham8 .bottom {
+  stroke-dasharray: 40 85;
+  transform-origin: 50%;
+  transition: transform 400ms, stroke-dashoffset 400ms;
+}
+.ham8.active .top {
+  stroke-dashoffset: -64px;
+}
+.ham8.active .middle {
+  stroke-dashoffset: -20px;
+  transform: rotate(90deg);
+}
+.ham8.active .bottom {
+  stroke-dashoffset: -64px;
+}
+*/
+
+.top-title {
+  font-size: 120px;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 105px;
+}
+
+.sidebar-left {
+  position: absolute;
+  left: -43px; /* Alinha na esquerda */
+  top: 90px;
+  transform: translateY(-50%) rotate(-90deg); /* Centraliza verticalmente e rotaciona */
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  white-space: nowrap; /* Garante que o texto não quebre */
+}
+@media screen and (max-width: 767px) {
+  .sidebar-left{
+  position: absolute;
+  left: -50px; /* Alinha na esquerda */
+  top: 90px;
+  transform: translateY(-50%) rotate(-90deg); /* Centraliza verticalmente e rotaciona */
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  white-space: nowrap; /* Garante que o texto não quebre */
+}
+}
+.name {
+  font-size: 19px;
+  font-family: Helvetica, Arial, sans-serif;
+  white-space: nowrap; /* Impede quebra de linha */
+  right: 40px; /* Ajuste para dentro da tela */
+}
+
+.margin-title {
+  margin-top: 10%;
 }
