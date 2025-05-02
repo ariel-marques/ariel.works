@@ -31,7 +31,14 @@
       padding: 5rem 1rem;
       text-align: center;
     }
-
+    .badge-price {
+      border-color: #007aff;
+      border: 1px solid;
+      color: #007aff;
+      font-size: 0.75rem;
+      padding: 0.3rem 0.6rem;
+      border-radius: 0.25rem;
+    }
     .badge-pro {
       background-color: #007aff;
       color: white;
@@ -44,7 +51,6 @@
       max-width: 100%;
       border-radius: 1rem;
     }
-
     footer {
       padding: 2rem 0;
       background-color: #eee;
@@ -61,8 +67,10 @@
       <p class="lead">A smarter clipboard manager. Lightweight, fast and native for macOS.</p>
       <div class="d-flex justify-content-center flex-column align-items-center gap-2 mt-4">
         <div class="d-flex gap-3">
-          <a href="#" class="btn btn-primary px-4">Download Free</a>
-          <a href="#" class="btn btn-outline-primary px-4">Upgrade to Pro</a>
+          <a href="#" class="btn btn-primary px-4 d-flex justify-content-center align-items-center">Download Free</a>
+          <a href="#" class="btn btn-outline-primary px-4">
+            Upgrade to Pro<br><small class="text-muted">$14.99 · Lifetime access</small>
+          </a>
         </div>
         <small class="text-muted mt-1">One-time purchase · $14.99 USD · Up to 3 Macs</small>
         <small class="text-muted">Requires macOS 13 Ventura or later · Apple Silicon & Intel compatible</small>
