@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /airclipboard/
+
+Sitemap: https://airclipboard.app/sitemap.xml
