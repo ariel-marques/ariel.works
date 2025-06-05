@@ -59,25 +59,28 @@ h1, h2, h3, h4, h5 {
   margin: 0 0 10px 0;
 }
 
-h1 {
-  font-size: 4.8rem; /* 48px */
+h1 { font-size: 4.8rem; }
+h2 { font-size: 4rem; }
+h3 { font-size: 3.2rem; }
+h4 { font-size: 2.4rem; }
+h5 { font-size: 1.8rem; }
+
+@media (max-width: 991px) { /* Tablets */
+  h1 { font-size: 3.2rem; }
+  h2 { font-size: 2.6rem; }
+  h3 { font-size: 2rem; }
+  h4 { font-size: 1.6rem; }
+  h5 { font-size: 1.2rem; }
 }
 
-h2 {
-  font-size: 4rem; /* 40px */
+@media (max-width: 600px) { /* Celular */
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+  h4 { font-size: 1.1rem; }
+  h5 { font-size: 1rem; }
 }
 
-h3 {
-  font-size: 3.2rem; /* 32px */
-}
-
-h4 {
-  font-size: 2.4rem; /* 24px */
-}
-
-h5 {
-  font-size: 1.8rem; /* 18px */
-}
 
 
 .menu {
