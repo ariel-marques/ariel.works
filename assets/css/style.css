@@ -35,11 +35,12 @@ body {
   font-size: 0.6rem;
 }
 
+/*
 .nav-link:hover {
   font-size: 50px;
   line-height: 1.2;
   animation: easeInBounce 0.9s forwards;
-}
+}*/
 
 .gallery {
   position: relative;
