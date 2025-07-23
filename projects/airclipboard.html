@@ -27,43 +27,51 @@
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
   <style>
     .timeline {
-  position: relative;
-}
-.timeline:before {
-  content: '';
-  position: absolute;
-  top: 0; left: 90%;
-  width: 2px;
-  height: 100%;
-  background: #eee;
-  z-index: 0;
-  transform: translateX(-50%);
-  display: none;
-}
-@media (min-width: 992px) {
-  .timeline:before { display: block; }
-  .timeline-item {
-    position: relative;
-    min-height: 150px;
-  }
-  .timeline-item:not(:last-child)::after {
-    content: '';
-    position: absolute;
-    left: 90%;
-    top: 80px;
-    width: 20px;
-    height: 2px;
-    background: #eee;
-    z-index: 1;
-    transform: translateX(-50%);
-  }
-}
-.timeline-img {
-  background: #fff;
-  border: 2px solid #eee;
-  padding: 8px;
-  border-radius: 12px;
-}
+      position: relative;
+    }
+
+    .timeline:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 90%;
+      width: 2px;
+      height: 100%;
+      background: #eee;
+      z-index: 0;
+      transform: translateX(-50%);
+      display: none;
+    }
+
+    @media (min-width: 992px) {
+      .timeline:before {
+        display: block;
+      }
+
+      .timeline-item {
+        position: relative;
+        min-height: 150px;
+      }
+
+      .timeline-item:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 90%;
+        top: 80px;
+        width: 20px;
+        height: 2px;
+        background: #eee;
+        z-index: 1;
+        transform: translateX(-50%);
+      }
+    }
+
+    .timeline-img {
+      background: #fff;
+      border: 2px solid #eee;
+      padding: 8px;
+      border-radius: 12px;
+    }
   </style>
 </head>
 
@@ -206,7 +214,7 @@
             <!-- Timeline da pesquisa -->
             <div class="row">
               <div class="col-md-6">
-                <h5 class="fw-bold mb-2">Fontes de pesquisa</h5>
+                <h4 class="fw-bold mb-2">Fontes de pesquisa</h4>
                 <ul class="list-group list-group-flush mb-4">
                   <li class="list-group-item px-0 border-0">
                     <strong>Win+V do Windows:</strong> referência de histórico rápido e acessível.
@@ -252,7 +260,7 @@
               </div>
               <!-- TIMELINE + PRINCÍPIOS UX -->
               <div class="col-md-7">
-                <h5 class="fw-bold mb-2">Do rascunho ao fluxo ideal</h5>
+                <h4 class="fw-bold mb-2">Do rascunho ao fluxo ideal</h4>
                 <ul class="timeline list-unstyled">
                   <li class="mb-3">
                     <span class="fw-bold">Wireframes digitais:</span> Organização da estrutura da HUD e das interações básicas.
@@ -358,7 +366,7 @@
           <h2 class="mb-5 text-center">Linha do Tempo Visual</h2>
           <div class="row justify-content-center">
             <div class="col-lg-10">
-      
+
               <!-- Etapa 1 -->
               <div class=" d-flex flex-column flex-md-row align-items-center mb-5">
                 <div class="timeline-img flex-shrink-0 mb-3 mb-md-0 me-md-4">
@@ -372,7 +380,7 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Etapa 2 -->
               <div class=" d-flex flex-column flex-md-row-reverse align-items-center mb-5">
                 <div class="timeline-img flex-shrink-0 mb-3 mb-md-0 ms-md-4">
@@ -386,7 +394,7 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Etapa 3 -->
               <div class=" d-flex flex-column flex-md-row align-items-center mb-5">
                 <div class="timeline-img flex-shrink-0 mb-3 mb-md-0 me-md-4">
@@ -401,17 +409,17 @@
                   </div>
                 </div>
               </div>
-      
+
               <!-- Adicione mais etapas se quiser -->
-              
+
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="pt-5 pb-5">
         <div class="container">
-          <h2 class="mb-5 text-center">Prototipação e Testes</h2>
+          <h2 class="mb-5">Prototipação e Testes</h2>
           <div class="row justify-content-center align-items-center">
             <!-- Protótipo interativo ou print -->
             <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -431,21 +439,21 @@
               </div>
             </div>
             <div class="text-center">
-            <a href="https://www.figma.com/proto/hgbWGkfSG9EZjXlawbIZlX/AirClipboard-app?page-id=0%3A1&node-id=14-1635&viewport=237%2C353%2C0.49&t=XBbtdKcKWoYn7gnQ-1&scaling=scale-down&content-scaling=fixed" class="btn btn-outline-secondary btn-hover" target="_blank">
-              <span>Confira o protótico</span>
-              <svg width="100" viewBox="0 0 121 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 16.6751C21.4518 16.6751 19.967 17.2361 18.8723 18.2347C17.7776 19.2333 17.1626 20.5877 17.1626 22C17.1626 23.4123 17.7776 24.7667 18.8723 25.7653C19.967 26.7639 21.4518 27.3249 23 27.3249C24.5482 27.3249 26.033 26.7639 27.1277 25.7653C28.2224 24.7667 28.8374 23.4123 28.8374 22C28.8374 20.5877 28.2224 19.2333 27.1277 18.2347C26.033 17.2361 24.5482 16.6751 23 16.6751ZM17.0082 16.5343C18.5973 15.0847 20.7526 14.2703 23 14.2703C25.2474 14.2703 27.4027 15.0847 28.9918 16.5343C30.5809 17.9839 31.4737 19.9499 31.4737 22C31.4737 24.0501 30.5809 26.0161 28.9918 27.4657C27.4027 28.9154 25.2474 29.7297 23 29.7297C20.7526 29.7297 18.5973 28.9154 17.0082 27.4657C15.4191 26.0161 14.5263 24.0501 14.5263 22C14.5263 19.9499 15.4191 17.9839 17.0082 16.5343Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47368 29.9411C6.9255 29.9411 5.44073 30.5453 4.346 31.6207C3.25127 32.6962 2.63626 34.1548 2.63626 35.6757C2.63626 37.1966 3.25127 38.6552 4.346 39.7306C5.44073 40.806 6.9255 41.4102 8.47368 41.4102C10.0219 41.4102 11.5066 40.806 12.6014 39.7306C13.6961 38.6552 14.3111 37.1966 14.3111 35.6757V29.9411H8.47368ZM2.48188 29.7895C4.07101 28.2284 6.22632 27.3514 8.47368 27.3514H16.9474V35.6757C16.9474 37.8834 16.0546 40.0008 14.4655 41.5619C12.8764 43.123 10.721 44 8.47368 44C6.22632 44 4.07101 43.123 2.48188 41.5619C0.892761 40.0008 0 37.8834 0 35.6757C0 33.4679 0.892761 31.3506 2.48188 29.7895Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5263 0H23C25.2474 0 27.4027 0.877025 28.9918 2.43814C30.5809 3.99925 31.4737 6.11658 31.4737 8.32432C31.4737 10.5321 30.5809 12.6494 28.9918 14.2105C27.4027 15.7716 25.2474 16.6486 23 16.6486H14.5263V0ZM17.1626 2.58979V14.0589H23C24.5482 14.0589 26.033 13.4547 27.1277 12.3793C28.2224 11.3038 28.8374 9.84522 28.8374 8.32432C28.8374 6.80343 28.2224 5.34483 27.1277 4.2694C26.033 3.19396 24.5482 2.58979 23 2.58979H17.1626Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 2.43814C4.07101 0.877025 6.22632 0 8.47368 0H16.9474V16.6486H8.47368C6.22632 16.6486 4.07101 15.7716 2.48188 14.2105C0.892761 12.6494 0 10.5321 0 8.32432C0 6.11658 0.892761 3.99925 2.48188 2.43814ZM8.47368 2.58979C6.9255 2.58979 5.44073 3.19396 4.346 4.2694C3.25127 5.34483 2.63626 6.80343 2.63626 8.32432C2.63626 9.84522 3.25127 11.3038 4.346 12.3793C5.44073 13.4547 6.9255 14.0589 8.47368 14.0589H14.3111V2.58979H8.47368Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 16.5343C4.07101 15.0847 6.22632 14.2703 8.47368 14.2703H16.9474V29.7297H8.47368C6.22632 29.7297 4.07101 28.9154 2.48188 27.4657C0.892761 26.0161 0 24.0501 0 22C0 19.9499 0.892761 17.9839 2.48188 16.5343ZM8.47368 16.6751C6.9255 16.6751 5.44073 17.2361 4.346 18.2347C3.25127 19.2333 2.63626 20.5877 2.63626 22C2.63626 23.4123 3.25127 24.7667 4.346 25.7653C5.44073 26.7639 6.9255 27.3249 8.47368 27.3249H14.3111V16.6751H8.47368Z" fill="black"></path>
-                <path d="M42 10V30.2886L44.6361 30.2987V20.6374H50.9729V18.0812H44.626V12.5461H52.8892V10H42ZM57.6139 14.1262C58.071 14.1262 58.5094 13.9459 58.8327 13.6251C59.1559 13.3042 59.3375 12.8691 59.3375 12.4153C59.3375 11.9616 59.1559 11.5264 58.8327 11.2056C58.5094 10.8847 58.071 10.7045 57.6139 10.7045C57.1568 10.7045 56.7184 10.8847 56.3951 11.2056C56.0719 11.5264 55.8903 11.9616 55.8903 12.4153C55.8903 12.8691 56.0719 13.3042 56.3951 13.6251C56.7184 13.9459 57.1568 14.1262 57.6139 14.1262ZM56.2857 16.6723V30.2987H58.9218V16.6723H56.2857Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M68.6653 16.2798C65.1775 16.2798 62.7442 19.2084 62.7442 22.6904C62.7442 26.1725 65.1775 29.1011 68.6653 29.1011C70.2672 29.1011 71.5853 28.4973 72.5485 27.4909V29.3024C72.5552 29.8436 72.4537 30.3808 72.25 30.883C72.0462 31.3851 71.7443 31.8421 71.3615 32.2277C70.9787 32.6132 70.5227 32.9196 70.0199 33.1292C69.5171 33.3388 68.9774 33.4474 68.4321 33.4487C67.5906 33.4487 66.7592 33.1266 66.1001 32.6637L64.7821 34.928C65.8013 35.5819 66.9794 35.9507 68.1921 35.9954C69.4048 36.0401 70.6072 35.7591 71.6724 35.1819C72.7377 34.6048 73.6262 33.7531 74.2444 32.7165C74.8625 31.6799 75.1874 30.4969 75.1846 29.2923V16.6824H72.5485V17.9001C71.5853 16.8937 70.2672 16.2899 68.6653 16.2899V16.2798ZM65.3701 22.6904C65.3701 20.5267 67.0329 18.826 68.9593 18.826C70.8857 18.826 72.5383 20.5368 72.5383 22.6904C72.5383 24.8542 70.8756 26.5449 68.9593 26.5449C67.0329 26.5449 65.3701 24.8542 65.3701 22.6904Z" fill="black"></path>
-                <path d="M84.6543 18.826C83.9004 18.8392 83.182 19.1464 82.6545 19.6813C82.1271 20.2162 81.8329 20.9356 81.8357 21.6841V30.2987H79.1996V16.6723H81.8357V17.9202C82.2301 17.4014 82.7424 16.9823 83.3309 16.6973C83.9194 16.4122 84.5674 16.2692 85.2221 16.2798C87.0674 16.2798 88.4868 17.1856 89.2979 18.5744C89.7504 17.8781 90.3698 17.3041 91.1005 16.9037C91.8312 16.5033 92.6506 16.2889 93.4853 16.2798C96.4762 16.2798 98.3519 18.675 98.3519 21.6438V30.2987H95.7361V21.674C95.7389 20.9256 95.4447 20.2061 94.9173 19.6712C94.3898 19.1364 93.6714 18.8291 92.9175 18.8159C92.1636 18.8291 91.4452 19.1364 90.9177 19.6712C90.3903 20.2061 90.0961 20.9256 90.0989 21.674V30.2886H87.4628V21.674C87.4656 20.9273 87.1728 20.2093 86.6475 19.6747C86.1223 19.1401 85.4065 18.8317 84.6543 18.8159V18.826Z" fill="black"></path>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M112.374 18.2221C111.775 17.6026 111.056 17.1107 110.259 16.7768C109.462 16.4428 108.605 16.2737 107.741 16.2798C103.827 16.2798 101.049 19.5606 101.049 23.4855C101.049 27.4104 103.827 30.6912 107.741 30.6912C108.605 30.6955 109.462 30.5256 110.258 30.1918C111.054 29.8579 111.774 29.367 112.374 28.7489V30.2987H115V16.6723H112.364V18.2221H112.374ZM103.675 23.4855C103.675 20.889 105.682 18.826 108.024 18.826C110.356 18.826 112.374 20.889 112.374 23.4855C112.374 26.0819 110.367 28.135 108.024 28.135C105.693 28.135 103.675 26.0819 103.675 23.4855Z" fill="black"></path>
-              </svg>
-            </a>
-          </div>
+              <a href="https://www.figma.com/proto/hgbWGkfSG9EZjXlawbIZlX/AirClipboard-app?page-id=0%3A1&node-id=14-1635&viewport=237%2C353%2C0.49&t=XBbtdKcKWoYn7gnQ-1&scaling=scale-down&content-scaling=fixed" class="btn btn-outline-secondary btn-hover" target="_blank">
+                <span>Confira o protótico</span>
+                <svg width="100" viewBox="0 0 121 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M23 16.6751C21.4518 16.6751 19.967 17.2361 18.8723 18.2347C17.7776 19.2333 17.1626 20.5877 17.1626 22C17.1626 23.4123 17.7776 24.7667 18.8723 25.7653C19.967 26.7639 21.4518 27.3249 23 27.3249C24.5482 27.3249 26.033 26.7639 27.1277 25.7653C28.2224 24.7667 28.8374 23.4123 28.8374 22C28.8374 20.5877 28.2224 19.2333 27.1277 18.2347C26.033 17.2361 24.5482 16.6751 23 16.6751ZM17.0082 16.5343C18.5973 15.0847 20.7526 14.2703 23 14.2703C25.2474 14.2703 27.4027 15.0847 28.9918 16.5343C30.5809 17.9839 31.4737 19.9499 31.4737 22C31.4737 24.0501 30.5809 26.0161 28.9918 27.4657C27.4027 28.9154 25.2474 29.7297 23 29.7297C20.7526 29.7297 18.5973 28.9154 17.0082 27.4657C15.4191 26.0161 14.5263 24.0501 14.5263 22C14.5263 19.9499 15.4191 17.9839 17.0082 16.5343Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47368 29.9411C6.9255 29.9411 5.44073 30.5453 4.346 31.6207C3.25127 32.6962 2.63626 34.1548 2.63626 35.6757C2.63626 37.1966 3.25127 38.6552 4.346 39.7306C5.44073 40.806 6.9255 41.4102 8.47368 41.4102C10.0219 41.4102 11.5066 40.806 12.6014 39.7306C13.6961 38.6552 14.3111 37.1966 14.3111 35.6757V29.9411H8.47368ZM2.48188 29.7895C4.07101 28.2284 6.22632 27.3514 8.47368 27.3514H16.9474V35.6757C16.9474 37.8834 16.0546 40.0008 14.4655 41.5619C12.8764 43.123 10.721 44 8.47368 44C6.22632 44 4.07101 43.123 2.48188 41.5619C0.892761 40.0008 0 37.8834 0 35.6757C0 33.4679 0.892761 31.3506 2.48188 29.7895Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5263 0H23C25.2474 0 27.4027 0.877025 28.9918 2.43814C30.5809 3.99925 31.4737 6.11658 31.4737 8.32432C31.4737 10.5321 30.5809 12.6494 28.9918 14.2105C27.4027 15.7716 25.2474 16.6486 23 16.6486H14.5263V0ZM17.1626 2.58979V14.0589H23C24.5482 14.0589 26.033 13.4547 27.1277 12.3793C28.2224 11.3038 28.8374 9.84522 28.8374 8.32432C28.8374 6.80343 28.2224 5.34483 27.1277 4.2694C26.033 3.19396 24.5482 2.58979 23 2.58979H17.1626Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 2.43814C4.07101 0.877025 6.22632 0 8.47368 0H16.9474V16.6486H8.47368C6.22632 16.6486 4.07101 15.7716 2.48188 14.2105C0.892761 12.6494 0 10.5321 0 8.32432C0 6.11658 0.892761 3.99925 2.48188 2.43814ZM8.47368 2.58979C6.9255 2.58979 5.44073 3.19396 4.346 4.2694C3.25127 5.34483 2.63626 6.80343 2.63626 8.32432C2.63626 9.84522 3.25127 11.3038 4.346 12.3793C5.44073 13.4547 6.9255 14.0589 8.47368 14.0589H14.3111V2.58979H8.47368Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 16.5343C4.07101 15.0847 6.22632 14.2703 8.47368 14.2703H16.9474V29.7297H8.47368C6.22632 29.7297 4.07101 28.9154 2.48188 27.4657C0.892761 26.0161 0 24.0501 0 22C0 19.9499 0.892761 17.9839 2.48188 16.5343ZM8.47368 16.6751C6.9255 16.6751 5.44073 17.2361 4.346 18.2347C3.25127 19.2333 2.63626 20.5877 2.63626 22C2.63626 23.4123 3.25127 24.7667 4.346 25.7653C5.44073 26.7639 6.9255 27.3249 8.47368 27.3249H14.3111V16.6751H8.47368Z" fill="black"></path>
+                  <path d="M42 10V30.2886L44.6361 30.2987V20.6374H50.9729V18.0812H44.626V12.5461H52.8892V10H42ZM57.6139 14.1262C58.071 14.1262 58.5094 13.9459 58.8327 13.6251C59.1559 13.3042 59.3375 12.8691 59.3375 12.4153C59.3375 11.9616 59.1559 11.5264 58.8327 11.2056C58.5094 10.8847 58.071 10.7045 57.6139 10.7045C57.1568 10.7045 56.7184 10.8847 56.3951 11.2056C56.0719 11.5264 55.8903 11.9616 55.8903 12.4153C55.8903 12.8691 56.0719 13.3042 56.3951 13.6251C56.7184 13.9459 57.1568 14.1262 57.6139 14.1262ZM56.2857 16.6723V30.2987H58.9218V16.6723H56.2857Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M68.6653 16.2798C65.1775 16.2798 62.7442 19.2084 62.7442 22.6904C62.7442 26.1725 65.1775 29.1011 68.6653 29.1011C70.2672 29.1011 71.5853 28.4973 72.5485 27.4909V29.3024C72.5552 29.8436 72.4537 30.3808 72.25 30.883C72.0462 31.3851 71.7443 31.8421 71.3615 32.2277C70.9787 32.6132 70.5227 32.9196 70.0199 33.1292C69.5171 33.3388 68.9774 33.4474 68.4321 33.4487C67.5906 33.4487 66.7592 33.1266 66.1001 32.6637L64.7821 34.928C65.8013 35.5819 66.9794 35.9507 68.1921 35.9954C69.4048 36.0401 70.6072 35.7591 71.6724 35.1819C72.7377 34.6048 73.6262 33.7531 74.2444 32.7165C74.8625 31.6799 75.1874 30.4969 75.1846 29.2923V16.6824H72.5485V17.9001C71.5853 16.8937 70.2672 16.2899 68.6653 16.2899V16.2798ZM65.3701 22.6904C65.3701 20.5267 67.0329 18.826 68.9593 18.826C70.8857 18.826 72.5383 20.5368 72.5383 22.6904C72.5383 24.8542 70.8756 26.5449 68.9593 26.5449C67.0329 26.5449 65.3701 24.8542 65.3701 22.6904Z" fill="black"></path>
+                  <path d="M84.6543 18.826C83.9004 18.8392 83.182 19.1464 82.6545 19.6813C82.1271 20.2162 81.8329 20.9356 81.8357 21.6841V30.2987H79.1996V16.6723H81.8357V17.9202C82.2301 17.4014 82.7424 16.9823 83.3309 16.6973C83.9194 16.4122 84.5674 16.2692 85.2221 16.2798C87.0674 16.2798 88.4868 17.1856 89.2979 18.5744C89.7504 17.8781 90.3698 17.3041 91.1005 16.9037C91.8312 16.5033 92.6506 16.2889 93.4853 16.2798C96.4762 16.2798 98.3519 18.675 98.3519 21.6438V30.2987H95.7361V21.674C95.7389 20.9256 95.4447 20.2061 94.9173 19.6712C94.3898 19.1364 93.6714 18.8291 92.9175 18.8159C92.1636 18.8291 91.4452 19.1364 90.9177 19.6712C90.3903 20.2061 90.0961 20.9256 90.0989 21.674V30.2886H87.4628V21.674C87.4656 20.9273 87.1728 20.2093 86.6475 19.6747C86.1223 19.1401 85.4065 18.8317 84.6543 18.8159V18.826Z" fill="black"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M112.374 18.2221C111.775 17.6026 111.056 17.1107 110.259 16.7768C109.462 16.4428 108.605 16.2737 107.741 16.2798C103.827 16.2798 101.049 19.5606 101.049 23.4855C101.049 27.4104 103.827 30.6912 107.741 30.6912C108.605 30.6955 109.462 30.5256 110.258 30.1918C111.054 29.8579 111.774 29.367 112.374 28.7489V30.2987H115V16.6723H112.364V18.2221H112.374ZM103.675 23.4855C103.675 20.889 105.682 18.826 108.024 18.826C110.356 18.826 112.374 20.889 112.374 23.4855C112.374 26.0819 110.367 28.135 108.024 28.135C105.693 28.135 103.675 26.0819 103.675 23.4855Z" fill="black"></path>
+                </svg>
+              </a>
+            </div>
           </div>
           <!-- Bloco de lição aprendida/testemunho -->
           <!--div class="row justify-content-center mt-4">
@@ -457,7 +465,7 @@
           </div-->
         </div>
       </section>
-      
+
       <section class="pt-5">
         <div class="container">
           <h2 class="mb-4 text-center">Do Design ao Código:<br>
@@ -467,7 +475,7 @@
             Meu objetivo foi garantir que cada detalhe do design se traduzisse em um app fluido, seguro e com experiência consistente ao sistema.
           </p>
           <h3 class="text-center pb-3">Arquitetura principal</h3>
-          <div class="d-flex flex-wrap justify-content-center align-items-start gap-4 mb-4">
+          <div class="d-flex flex-wrap justify-content-center align-items-start gap-5 mb-4">
             <div class="text-center mb-3">
               <div class="fw-bold">AirClipboardApp.swift</div>
               <div class="text-muted small">Ponto de entrada<br>e controle das scenes</div>
@@ -493,6 +501,170 @@
         </div>
       </section>
 
+      <section class="pt-5">
+        <div class="container">
+          <h3 class="mb-4">Desafios e Soluções no Código</h3>
+          <div class="mb-5">
+            <h4 class="fw-bold">Estrutura inicial do AirClipboard no macOS</h4>
+            <p>O <strong>AirClipboardApp.swift</strong> define o ponto de entrada do app com <code>@main</code> usando SwiftUI moderno.<br>
+              Integra <code>@NSApplicationDelegateAdaptor</code> para acessar recursos avançados do macOS e gerenciar o ciclo de vida da aplicação via <strong>AppDelegate</strong>.</p>
+            <p>Também define o <code>MenuBarExtra</code>, o responsável pelo ícone e menu na barra de menus do sistema, permitindo que o usuário acesse as funções do AirClipboard rapidamente, sem sair do fluxo de trabalho.</p>
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/AirClipboardApp.png" class="img-fluid" alt="AirClipboardApp.swift code">
+            </div>
+            <p><strong>Destaque:</strong>
+              Toda a lógica de internacionalização (idioma), preferências, e ciclo de vida é conectada aqui, integrando UI moderna com APIs legadas do macOS para o melhor dos dois mundos.</p>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="fw-bold">Lógica central de copiar e colar no macOS</h4>
+            <p>O <strong>PasteManager.swift</strong> centraliza toda a lógica de copiar e colar do AirClipboard.<br>
+              Recebe qualquer item do histórico (texto, imagem, arquivo ou grupo) e manipula a área de transferência do macOS usando <code>NSPasteboard</code>, aplicando o tipo correto para cada situação.</p>
+            <img src="assets/img/PasteManager.png" class="img-fluid" alt="PasteManager.swift code">
+            <p>No caso de imagens, implementa uma etapa extra: gera um arquivo temporário <code>.png</code> para garantir compatibilidade ao colar no Finder, um diferencial em relação à maioria dos apps do tipo.</p>
+            <p><strong>Destaque:</strong>
+              Essa centralização facilita manutenção, futuras expansões e garante que a experiência de copiar/colar funcione em qualquer contexto do sistema.</p>
+          </div>
+
+          <!-- Hotkey - Registro no AppDelegate -->
+          <div class="mb-5">
+            <h4 class="fw-bold">Atalho global no ciclo de vida do app</h4>
+            <p>Em <strong>AppDelegate.swift</strong>, o registro do atalho global é feito durante a inicialização da aplicação, dentro do método <code>applicationDidFinishLaunching</code>.</p>
+            <p>Esse padrão garante que o handler do atalho já está disponível antes de qualquer interação do usuário, permitindo acionar a interface do AirClipboard a partir de qualquer contexto do sistema, imediatamente após o app ser aberto.</p>
+            <div class="col-12 text-center">
+              <img src="assets/img/AppDelegate.png" class="img-fluid mb-3" alt="Trecho de AppDelegate.swift">
+            </div>
+            <p>O ciclo de vida é controlado por <code>AppDelegate</code> com integração ao <code>HotkeyManager</code>, favorecendo modularização e separação de responsabilidades na arquitetura do app.</p>
+          </div>
+
+
+          <!-- HotkeyManager - updateShortcut -->
+          <div class="mb-5">
+            <h4 class="fw-bold">Personalização do atalho global</h4>
+            <p>O <strong>HotkeyManager.swift</strong> gerencia o registro dinâmico do atalho global. Permite que o usuário configure o atalho usando símbolos padrão do macOS (ex: ⌃⌘V), que são convertidos para <code>Key</code> e <code>Modifiers</code> compatíveis com a biblioteca <strong>HotKey</strong>.</p>
+
+            <div class="col-12 text-center">
+              <img src="assets/img/HotkeyManager.png" class="img-fluid mb-3" alt="Trecho de HotkeyManager.swift">
+            </div>
+            <div>
+              <p>O handler (<code>keyDownHandler</code>) está vinculado diretamente à ação de mostrar/ocultar a janela principal do app, garantindo resposta imediata e uma experiência consistente com a proposta de produtividade do AirClipboard.</p>
+            </div>
+            <h4 class="fs-4 fw-bold">Parser de atalhos do macOS</h4>
+            <p>Este método interpreta strings de atalho no formato padrão do macOS (ex: <code>⌃⌘V</code>), identifica automaticamente quais modifiers estão presentes e extrai a tecla principal, convertendo tudo para os tipos <code>Key</code> e <code>NSEvent.ModifierFlags</code> esperados pela biblioteca HotKey.</p>
+            <div class="col-12 text-center">
+              <img src="assets/img/HotkeyManager2.png" class="img-fluid mb-3" alt="Parser de atalhos HotkeyManager.swift">
+            </div>
+            <p>Com isso, é possível aceitar qualquer combinação válida digitada pelo usuário e garantir compatibilidade e flexibilidade máxima na configuração de atalhos globais.</p>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="fw-bold">Lógica de histórico: deduplicação, pin e persistência</h4>
+            <div>
+              <p> <strong>ClipboardHistory.swift</strong> gerencia o histórico de itens copiados usando <code>ObservableObject</code> para integração reativa com a interface em SwiftUI.</p>
+              <p>Implementa lógica para:</p>
+              <ul>
+                <li>Adicionar e remover itens do histórico, eliminando duplicatas automaticamente</li>
+                <li>Fixar/desafixar (pin) itens importantes</li>
+                <li>Limitar o número de itens armazenados, conforme preferência do usuário</li>
+                <li>Persistir o histórico localmente usando um storage próprio</li>
+              </ul>
+              <p>O histórico é atualizado em tempo real na interface, com suporte a scroll automático para o item recém-adicionado ou fixado.</p>
+            </div>
+
+            <!-- 1. Inicialização e carregamento do histórico -->
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/ClipboardHistory-init.png" class="img-fluid mb-2 w-75" alt="Inicialização do histórico">
+              <p>
+                <strong>Inicialização:</strong> Ao criar o objeto, carrega o histórico salvo no disco e ordena por itens fixados e data.
+              </p>
+            </div>
+
+            <!-- 2. Adição de item ao histórico (addItem) -->
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/ClipboardHistory-addItem.png" class="img-fluid mb-2" alt="Adicionar item ao histórico">
+              <p>
+                <strong>Adicionar item:</strong> Elimina duplicatas (não fixadas), insere o novo item no topo, limita o tamanho do histórico conforme a preferência do usuário e salva tudo automaticamente.
+              </p>
+            </div>
+
+            <!-- 3. Fixar/desafixar item (togglePin) -->
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/ClipboardHistory-togglePin.png" class="img-fluid mb-2" alt="Fixar/desafixar item">
+              <p>
+                <strong>Pin/unpin:</strong> Permite fixar ou desafixar qualquer item, reordenando o histórico e persistindo a alteração.
+              </p>
+            </div>
+          </div>
+
+          <div class="mb-5">
+            <h4 class="fw-bold">Componente visual do histórico: exibindo, interagindo e adaptando</h4>
+            <p>
+              <strong>ClipboardItemView.swift</strong> define o componente SwiftUI responsável por renderizar cada item do histórico do AirClipboard.<br><br>
+              Sua arquitetura modular inclui:
+              <ul>
+                <li><strong>Estrutura visual dinâmica:</strong> O <code>body</code> organiza a hierarquia visual do card, usando overlays para apresentar elementos contextuais como botão de pin, timestamp, menu de ações e contagem de arquivos em grupo. Efeitos de <i>hover</i> são aplicados para melhorar a percepção de foco e interatividade.</li>
+                <li><strong>contentView(for:):</strong> Função central que recebe o tipo de conteúdo do item e renderiza automaticamente o layout correto — seja texto (com favicon, truncamento, multilinhas), arquivo (ícone + nome), imagem (thumbnail) ou grupo de arquivos (miniaturas e contagem extra).</li>
+                <li><strong>Menu contextual (<code>menuOverlay</code>):</strong> Cada item traz um menu de ações rápidas — copiar novamente, fixar/desafixar (pin/unpin), e excluir — melhorando a usabilidade e a produtividade.</li>
+                <li><strong>Adaptação visual:</strong> O componente aplica automaticamente o tema claro/escuro do macOS, bordas animadas em destaque, e usa estilos de botão/ícone nativos para manter o padrão visual do sistema.</li>
+                <li><strong>Integração com lógica global:</strong> As ações de copiar, fixar ou remover interagem diretamente com <code>PasteManager</code> e <code>ClipboardHistory</code>, atualizando o estado global do app e garantindo experiência fluida e consistente.</li>
+              </ul>
+              Toda a lógica do componente é reativa, permitindo atualizações instantâneas na interface sempre que o histórico muda.
+            </p>
+          
+            <div class="col-12 text-center mb-5">
+              <img src="assets/img/ClipboardItemView-body.png" class="img-fluid mb-2" alt="Estrutura visual do card">
+              <p class="small text-muted">
+                <strong>Estrutura visual dinâmica:</strong> O <code>body</code> monta o card usando overlays para ações rápidas e destaca no hover, garantindo clareza e acessibilidade.
+              </p>
+            </div>
+          
+            <div class="col-12 text-center mb-5">
+              <img src="assets/img/ClipboardItemView-contentView.png" class="img-fluid mb-2" alt="Renderização de tipos">
+              <p class="small text-muted">
+                <code>contentView(for:)</code>: Renderiza dinamicamente texto, arquivos, imagens ou grupos, adaptando layout, ícones e formatação automaticamente ao tipo de conteúdo.
+              </p>
+            </div>
+          
+            <div class="col-12 text-center mb-5">
+              <img src="assets/img/ClipboardItemView-menuOverlay.png" class="img-fluid mb-2" alt="Menu contextual">
+              <p class="small text-muted">
+                <strong>Menu contextual:</strong> Menu integrado com ações rápidas (copiar, fixar/desafixar, remover), vinculado à lógica global do app.
+              </p>
+            </div>
+          </div>
+          
+          <div class="mb-5">
+            <h4 class="fw-bold">Preferências e atalhos globais: centralizando personalização</h4>
+            <p>
+              <strong>PreferencesView.swift</strong> define a interface de configurações do AirClipboard usando SwiftUI, com navegação modular por seções.<br>
+              Cada preferência é conectada ao <strong>AppEnvironment</strong>, permitindo que mudanças de tema, idioma ou atalho global sejam refletidas instantaneamente em todo o app.
+            </p>
+          
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/PreferencesView-sidebar.png" class="img-fluid mb-2" alt="Sidebar de preferências">
+              <p class="small text-muted">
+                <strong>Sidebar modular:</strong> Permite navegar facilmente entre as principais seções de configuração do app.
+              </p>
+            </div>
+          
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/PreferencesView-content.png" class="img-fluid mb-2" alt="View de conteúdo de preferências">
+              <p class="small text-muted">
+                <strong>Views separadas:</strong> Cada área de preferência possui sua própria view, facilitando manutenção e escalabilidade do código.
+              </p>
+            </div>
+          
+            <div class="col-12 text-center mb-3">
+              <img src="assets/img/AppEnvironment-update.png" class="img-fluid mb-2" alt="Gerenciamento do estado global">
+              <p class="small text-muted">
+                <strong>Estado global:</strong> Configurações como tema, idioma e licença são controladas por <code>AppEnvironment</code> e propagadas em tempo real via <code>ObservableObject</code> e <code>@AppStorage</code>.
+              </p>
+            </div>
+          </div>
+          
+          
+        </div>
+      </section>
 
     </div>
 
