@@ -129,7 +129,21 @@
     body.dark-mode .switch-btn.active {
       color: black;
     }
+    header .navbar,
+    header .nav-link,
+    header .navbar-brand svg path {
+      color: #1D1D1B;
+      stroke: #1D1D1B;
+    }
 
+    body.dark-mode header .navbar,
+    body.dark-mode header .nav-link {
+      color: #fff !important;
+    }
+
+    body.dark-mode header .navbar-brand svg path {
+      stroke: #fff !important;
+    }
     .mode-section {
       transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease;
       opacity: 1;
@@ -236,7 +250,7 @@
             <div class="col-12">
               <div class="row justify-content-center align-items-center">
                 <div class="col-12">
-                  <h3 class="mb-4">Introdução e Problema</h3>
+                  <h3>Introdução e Problema</h3>
                   <p>
                     Para quem trabalha intensamente com textos, imagens, arquivos e pastas no macOS, a área de transferência nativa logo revela suas limitações. Faltam recursos essenciais para produtividade, como histórico acessível, busca fácil e um fluxo de colagem mais ágil e visual.
                   </p>
@@ -281,7 +295,7 @@
 
               <!-- Frase de impacto -->
               <blockquote class="blockquote text-center mt-4">
-                <p class="mb-0">"Essas limitações inspiraram o desenvolvimento do ɅirClipboard, buscando uma solução mais fluida, visual e integrada ao ecossistema do macOS."</p>
+                <p class="mb-0">"Essas limitações inspiraram o desenvolvimento do AirClipboard, buscando uma solução mais fluida, visual e integrada ao ecossistema do macOS."</p>
               </blockquote>
             </div>
           </div>
@@ -290,7 +304,7 @@
         <section class="pt-5">
           <div class="container">
             <div class="col-12">
-              <h3 class="mb-4">Pesquisa e Inspiração</h3>
+              <h3>Pesquisa e Inspiração</h3>
 
               <!-- Timeline da pesquisa -->
               <div class="row">
@@ -323,7 +337,7 @@
 
               <!-- Frase final de síntese -->
               <blockquote class="blockquote text-center mt-4">
-                <p class="mb-0">Esses aprendizados fundamentaram os diferenciais do ɅirClipboard.</p>
+                <p class="mb-0">Esses aprendizados fundamentaram os diferenciais do AirClipboard.</p>
               </blockquote>
             </div>
           </div>
@@ -332,7 +346,7 @@
         <section class="pt-5">
           <div class="container">
             <div class="col-12">
-              <h3 class="mb-4">Ideação e UX</h3>
+              <h3>Ideação e UX</h3>
               <div class="row mb-4 align-items-center">
                 <!-- IMAGEM -->
                 <div class="col-md-5 mb-3 mb-md-0 text-center">
@@ -562,7 +576,7 @@
         </section>
         <section class="pt-5">
           <div class="container">
-            <h3 class="mb-4 text-center">Do Design ao Código:<br>Desenvolvimento em Swift</h2>
+            <h3 class="text-center">Do Design ao Código:<br>Desenvolvimento em Swift</h2>
             <p class="text-center mb-5">
               Depois de definir os fluxos, wireframes e validar a UI no Figma, parti para a implementação em Swift, usando SwiftUI e recursos nativos do macOS.<br>
               Meu objetivo foi garantir que cada detalhe do design se traduzisse em um app fluido, seguro e com experiência consistente ao sistema.
@@ -597,9 +611,9 @@
 
         <section class="pt-5">
           <div class="container">
-            <h3 class="mb-4">Desafios e Soluções no Código</h3>
+            <h3>Desafios e Soluções no Código</h3>
             <div class="mb-5">
-              <h4 class="fw-bold">Estrutura inicial do AirClipboard no macOS</h4>
+              <h4 class="mb-4">Estrutura inicial do AirClipboard no macOS</h4>
               <p>O <strong>AirClipboardApp.swift</strong> define o ponto de entrada do app com <code>@main</code> usando SwiftUI moderno.<br>
                 Integra <code>@NSApplicationDelegateAdaptor</code> para acessar recursos avançados do macOS e gerenciar o ciclo de vida da aplicação via <strong>AppDelegate</strong>.</p>
               <p>Também define o <code>MenuBarExtra</code>, o responsável pelo ícone e menu na barra de menus do sistema, permitindo que o usuário acesse as funções do AirClipboard rapidamente, sem sair do fluxo de trabalho.</p>
