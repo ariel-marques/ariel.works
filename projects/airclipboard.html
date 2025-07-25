@@ -82,7 +82,7 @@
 
     .toggle-switch {
       width: 220px;
-      height: 50px;
+      height: 48px;
       background-color: #e0e0e0;
       display: flex;
       position: relative;
@@ -129,6 +129,7 @@
     body.dark-mode .switch-btn.active {
       color: black;
     }
+
     header .navbar,
     header .nav-link,
     header .navbar-brand svg path {
@@ -144,6 +145,7 @@
     body.dark-mode header .navbar-brand svg path {
       stroke: #fff !important;
     }
+
     .mode-section {
       transition: opacity 0.4s ease, transform 0.4s ease, filter 0.4s ease;
       opacity: 1;
@@ -227,7 +229,7 @@
 
       <!-- Toggle UX/UI & Code -->
       <div class="d-flex justify-content-center my-5">
-        <div class="toggle-switch rounded-pill border position-relative overflow-hidden" id="modeSwitch">
+        <div class="toggle-switch rounded-pill position-relative overflow-hidden" id="modeSwitch">
           <button class="switch-btn active" data-mode="ux">UX/UI</button>
           <button class="switch-btn" data-mode="code">Code</button>
           <div class="switch-bg"></div>
@@ -242,6 +244,9 @@
               <h1 class="text-center mb-2">AirClipboard App</h1>
               <h2 class="text-center h4 pt-0 pb-4"><em>Smarter copy. Instant paste. Fully native.</em></h2>
             </div>
+          </div>
+          <div class="col-12 text-center">
+            <a href="https://airclipboard.app/download?utm_source=Ariel.Works&utm_medium=website" target="_blank"><img src="assets/img/download-airclipboard.png" class="img-fluid mb-3" alt="Download AirClipboard app for macOS" title="Download AirClipboard app for macOS" style="width: 180px;"></a>
           </div>
         </section>
 
@@ -561,6 +566,27 @@
           </div>
         </section>
 
+        <section class="pt-5 pb-5">
+          <div class="container">
+            <h3>Conclusão: UX/UI centrada no usuário e validação real</h3>
+            <p>O AirClipboard foi desenvolvido com foco total no usuário, equilibrando simplicidade, agilidade e integração nativa ao macOS.</p>
+            <p>Durante o processo, compartilhei protótipos e versões iniciais na comunidade do Reddit para captar feedbacks reais de usuários avançados, o que ajudou a refinar tanto os fluxos quanto detalhes visuais e funcionais do app.</p>
+            <p>O app também foi avaliado em portais de software, como a <a href="https://mac.softpedia.com/get/Utilities/AirClipboard.shtml" target="_blank">Softpedia</a>, onde recebeu uma análise com feedbacks importante e que também destacou diferenciais de UX.</p>
+            <p>Desde o lançamento, o AirClipboard já despertou interesse genuíno, contando com usuários reais que passaram a utilizar e apoiar a evolução do app.</p>
+            <p>A cada etapa, ficou claro o quanto decisões de interface impactam o desenvolvimento técnico.</p>
+            <p>Ouvindo usuários, a evolção do AirClipboard é contínua: já há planos de integração iCloud, suporte à Rich Text, novos tipos de conteúdo e microinterações ainda mais refinadas.</p>
+            <p class="text-center"><strong>Confira também como esse processo se transformou em código Swift real.</strong></p>
+            </p>
+          </div>
+        </section>
+      <!-- Toggle UX/UI & Code -->
+      <div class="d-flex justify-content-center pb-3">
+        <div class="toggle-switch rounded-pill position-relative overflow-hidden" id="modeSwitch">
+          <button class="switch-btn active" data-mode="ux">UX/UI</button>
+          <button class="switch-btn" data-mode="code">Code</button>
+          <div class="switch-bg"></div>
+        </div>
+      </div>
       </div>
       <!-- Final uxSection -->
 
@@ -572,38 +598,42 @@
               <h1 class="text-center mb-2">AirClipboard App</h1>
               <h2 class="text-center h4 pt-0 pb-4"><em>Smarter copy. Instant paste. Fully native.</em></h2>
             </div>
+
+            <div class="col-12 text-center">
+              <a href="https://airclipboard.app/download?utm_source=Ariel.Works&utm_medium=website" target="_blank"><img src="assets/img/download-airclipboard-light.png" class="img-fluid mb-3" alt="Download AirClipboard app for macOS" title="Download AirClipboard app for macOS" style="width: 180px;"></a>
+            </div>
           </div>
         </section>
         <section class="pt-5">
           <div class="container">
             <h3 class="text-center">Do Design ao Código:<br>Desenvolvimento em Swift</h2>
-            <p class="text-center mb-5">
-              Depois de definir os fluxos, wireframes e validar a UI no Figma, parti para a implementação em Swift, usando SwiftUI e recursos nativos do macOS.<br>
-              Meu objetivo foi garantir que cada detalhe do design se traduzisse em um app fluido, seguro e com experiência consistente ao sistema.
-            </p>
-            <h3 class="text-center pb-3">Arquitetura principal</h3>
-            <div class="d-flex flex-wrap justify-content-center align-items-start gap-5 mb-4">
-              <div class="text-center mb-3">
-                <div class="fw-bold">AirClipboardApp.swift</div>
-                <div class="small">Ponto de entrada<br>e controle das scenes</div>
+              <p class="text-center mb-5">
+                Depois de definir os fluxos, wireframes e validar a UI no Figma, parti para a implementação em Swift, usando SwiftUI e recursos nativos do macOS.<br>
+                Meu objetivo foi garantir que cada detalhe do design se traduzisse em um app fluido, seguro e com experiência consistente ao sistema.
+              </p>
+              <h3 class="text-center pb-3">Arquitetura principal</h3>
+              <div class="d-flex flex-wrap justify-content-center align-items-start gap-5 mb-4">
+                <div class="text-center mb-3">
+                  <div class="fw-bold">AirClipboardApp.swift</div>
+                  <div class="small">Ponto de entrada<br>e controle das scenes</div>
+                </div>
+                <div class="text-center mb-3">
+                  <div class="fw-bold">PasteManager.swift</div>
+                  <div class="small">Lógica de copiar/colar<br>e histórico</div>
+                </div>
+                <div class="text-center mb-3">
+                  <div class="fw-bold">ClipboardHistory.swift</div>
+                  <div class="small">Modelo de dados<br>e persistência</div>
+                </div>
+                <div class="text-center mb-3">
+                  <div class="fw-bold">ClipboardItemView.swift</div>
+                  <div class="small">Componente visual<br>do histórico</div>
+                </div>
+                <div class="text-center mb-3">
+                  <div class="fw-bold">Preferências e atalhos</div>
+                  <div class="small">Hotkey,<br>modo claro/escuro</div>
+                </div>
               </div>
-              <div class="text-center mb-3">
-                <div class="fw-bold">PasteManager.swift</div>
-                <div class="small">Lógica de copiar/colar<br>e histórico</div>
-              </div>
-              <div class="text-center mb-3">
-                <div class="fw-bold">ClipboardHistory.swift</div>
-                <div class="small">Modelo de dados<br>e persistência</div>
-              </div>
-              <div class="text-center mb-3">
-                <div class="fw-bold">ClipboardItemView.swift</div>
-                <div class="small">Componente visual<br>do histórico</div>
-              </div>
-              <div class="text-center mb-3">
-                <div class="fw-bold">Preferências e atalhos</div>
-                <div class="small">Hotkey,<br>modo claro/escuro</div>
-              </div>
-            </div>
 
           </div>
         </section>
@@ -657,7 +687,7 @@
               <div>
                 <p>O handler (<code>keyDownHandler</code>) está vinculado diretamente à ação de mostrar/ocultar a janela principal do app, garantindo resposta imediata e uma experiência consistente com a proposta de produtividade do AirClipboard.</p>
               </div>
-              <h4 class="fs-4 fw-bold">Parser de atalhos do macOS</h4>
+              <h4 class="fs-4 fw-bold pt-4">Parser de atalhos do macOS</h4>
               <p>Este método interpreta strings de atalho no formato padrão do macOS (ex: <code>⌃⌘V</code>), identifica automaticamente quais modifiers estão presentes e extrai a tecla principal, convertendo tudo para os tipos <code>Key</code> e <code>NSEvent.ModifierFlags</code> esperados pela biblioteca HotKey.</p>
               <div class="col-12 text-center">
                 <img src="assets/img/HotkeyManager2.png" class="img-fluid mb-3" alt="Parser de atalhos HotkeyManager.swift">
@@ -710,9 +740,9 @@
                 <strong>ClipboardItemView.swift</strong> define o componente SwiftUI responsável por renderizar cada item do histórico do AirClipboard.<br><br>
                 Sua arquitetura modular inclui:
               <ul>
-                <li><strong>Estrutura visual dinâmica:</strong> O <code>body</code> organiza a hierarquia visual do card, usando overlays para apresentar elementos contextuais como botão de pin, timestamp, menu de ações e contagem de arquivos em grupo. Efeitos de <i>hover</i> são aplicados para melhorar a percepção de foco e interatividade.</li>
-                <li><strong>contentView(for:):</strong> Função central que recebe o tipo de conteúdo do item e renderiza automaticamente o layout correto — seja texto (com favicon, truncamento, multilinhas), arquivo (ícone + nome), imagem (thumbnail) ou grupo de arquivos (miniaturas e contagem extra).</li>
-                <li><strong>Menu contextual (<code>menuOverlay</code>):</strong> Cada item traz um menu de ações rápidas — copiar novamente, fixar/desafixar (pin/unpin), e excluir — melhorando a usabilidade e a produtividade.</li>
+                <li><strong>Estrutura visual dinâmica:</strong> O <code>body</code> organiza a hierarquia visual do card, usando overlays para apresentar elementos contextuais como botão de pin, timestamp, menu de ações e contagem de arquivos em grupo. Efeitos de <em>hover</em> são aplicados para melhorar a percepção de foco e interatividade.</li>
+                <li><strong><code>contentView(for:)</code></strong>: Função central que recebe o tipo de conteúdo do item e renderiza automaticamente o layout correto, seja texto (com favicon, truncamento, multilinhas), arquivo (ícone + nome), imagem (thumbnail) ou grupo de arquivos (miniaturas e contagem extra).</li>
+                <li><strong>Menu contextual (<code>menuOverlay</code>):</strong> Cada item traz um menu de ações rápidas, como copiar novamente, fixar/desafixar (pin/unpin), e excluir, melhorando a usabilidade e a produtividade.</li>
                 <li><strong>Adaptação visual:</strong> O componente aplica automaticamente o tema claro/escuro do macOS, bordas animadas em destaque, e usa estilos de botão/ícone nativos para manter o padrão visual do sistema.</li>
                 <li><strong>Integração com lógica global:</strong> As ações de copiar, fixar ou remover interagem diretamente com <code>PasteManager</code> e <code>ClipboardHistory</code>, atualizando o estado global do app e garantindo experiência fluida e consistente.</li>
               </ul>
@@ -769,7 +799,6 @@
                 </p>
               </div>
             </div>
-
 
           </div>
         </section>
