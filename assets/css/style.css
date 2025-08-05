@@ -661,13 +661,3 @@ input:checked + .slider:before {
 .feature-card:hover {
   transform: scale(1.05);
 }
-
-kbd, code.tecla {
-  color: #fff;
-  font-size: .9rem;
-  padding: 3px 7px;
-  border-radius: 6px;
-  margin: 0 1px;
-  vertical-align: text-bottom;
-  outline: 1px solid #fff;
-}

@@ -679,7 +679,7 @@
             <!-- HotkeyManager - updateShortcut -->
             <div class="mb-5">
               <h4 class="fw-bold">Personalização do atalho global</h4>
-              <p>O <strong>HotkeyManager.swift</strong> gerencia o registro dinâmico do atalho global. Permite que o usuário configure o atalho usando símbolos padrão do macOS (ex: <kbd>⌃ control</kbd> <kbd>⌘ command</kbd> <kbd>V</kbd>), que são convertidos para <code>Key</code> e <code>Modifiers</code> compatíveis com a biblioteca <strong>HotKey</strong>.</p>
+              <p>O <strong>HotkeyManager.swift</strong> gerencia o registro dinâmico do atalho global. Permite que o usuário configure o atalho usando símbolos padrão do macOS (ex: ⌃⌘V), que são convertidos para <code>Key</code> e <code>Modifiers</code> compatíveis com a biblioteca <strong>HotKey</strong>.</p>
 
               <div class="col-12 text-center">
                 <img src="assets/img/HotkeyManager.png" class="img-fluid mb-3" alt="Trecho de HotkeyManager.swift">
@@ -688,7 +688,7 @@
                 <p>O handler (<code>keyDownHandler</code>) está vinculado diretamente à ação de mostrar/ocultar a janela principal do app, garantindo resposta imediata e uma experiência consistente com a proposta de produtividade do AirClipboard.</p>
               </div>
               <h4 class="fs-4 fw-bold pt-4">Parser de atalhos do macOS</h4>
-              <p>Este método interpreta strings de atalho no formato padrão do macOS (ex: <kbd>⌃ control</kbd> <kbd>⌘ command</kbd> <kbd>V</kbd>), identifica automaticamente quais modifiers estão presentes e extrai a tecla principal, convertendo tudo para os tipos <code>Key</code> e <code>NSEvent.ModifierFlags</code> esperados pela biblioteca HotKey.</p>
+              <p>Este método interpreta strings de atalho no formato padrão do macOS (ex: <code>⌃⌘V</code>), identifica automaticamente quais modifiers estão presentes e extrai a tecla principal, convertendo tudo para os tipos <code>Key</code> e <code>NSEvent.ModifierFlags</code> esperados pela biblioteca HotKey.</p>
               <div class="col-12 text-center">
                 <img src="assets/img/HotkeyManager2.png" class="img-fluid mb-3" alt="Parser de atalhos HotkeyManager.swift">
               </div>
