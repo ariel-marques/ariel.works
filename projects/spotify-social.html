@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ariel.works/assets/img/logo.png" class="img-fluid">
-  <meta property="og:image" content="https://ariel.works/assets/img/logo.png" class="img-fluid">
+  <meta property="og:url" content="https://ariel.works/assets/img/spotify/logo.png" class="img-fluid">
+  <meta property="og:image" content="https://ariel.works/assets/img/spotify/logo.png" class="img-fluid">
   <meta property="og:image:secure_url" content="https://ariel.works/">
   <meta property="og:image:alt" content="Imagem do logo de Ariel Marques - UX/UI Designer">
   <meta property="og:site_name" content="ariel.works">
@@ -19,23 +19,39 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&amp;family=Cormorant+Garamond:ital,wght@0,300;1,300&amp;display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png" class="img-fluid">
-  <link rel="icon" type="image/png" class="img-fluid" sizes="32x32" href="../assets/img/favicon-32x32.png" class="img-fluid">
-  <link rel="icon" type="image/png" class="img-fluid" sizes="16x16" href="../assets/img/favicon-16x16.png" class="img-fluid">
-  <link rel="manifest" href="../assets/img/site.webmanifest">
-  <link rel="mask-icon" href="../assets/img/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/img/spotify/apple-touch-icon.png" class="img-fluid">
+  <link rel="icon" type="image/png" class="img-fluid" sizes="32x32" href="../assets/img/spotify/favicon-32x32.png" class="img-fluid">
+  <link rel="icon" type="image/png" class="img-fluid" sizes="16x16" href="../assets/img/spotify/favicon-16x16.png" class="img-fluid">
+  <link rel="manifest" href="../assets/img/spotify/site.webmanifest">
+  <link rel="mask-icon" href="../assets/img/spotify/safari-pinned-tab.svg" color="#5bbad5">
   <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <style>
+    .wf-img {
+      max-width: 260px;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
 
+    .wf-block {
+      margin-bottom: 4rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      filter: invert(1);
+      /* transforma o branco em preto */
+    }
+  </style>
 </head>
 
 <body>
-  
+
   <div class="d-flex justify-content-end me-2 pt-2">
     <label class="switch">
-        <input type="checkbox" id="language-toggle-checkbox" onclick="toggleLanguage()">
-        <span class="slider round" id="language-slider"></span>
+      <input type="checkbox" id="language-toggle-checkbox" onclick="toggleLanguage()">
+      <span class="slider round" id="language-slider"></span>
     </label>
-</div>
+  </div>
   <div class="container">
 
     <header class="row ms-0 d-lg-none">
@@ -47,11 +63,11 @@
               <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
           </a>
-    
+
           <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-    
+
           <div class="collapse navbar-collapse p-1" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto text-end">
               <ul class="navbar-nav ms-auto">
@@ -66,7 +82,7 @@
         </div>
       </nav>
     </header>
-    
+
     <!-- PORTUGUES-->
     <div id="content-pt" class="container-fluid content">
 
@@ -79,11 +95,11 @@
                 <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </a>
-      
+
             <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-      
+
             <div class="collapse navbar-collapse p-1" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto text-end">
                 <ul class="navbar-nav ms-auto">
@@ -101,7 +117,7 @@
       <section class="row">
         <div class="col-12 pt-5">
           <div class="d-flex justify-content-center">
-            <img src="assets/img/spotify-top.png" class="img-fluid" alt="Tela inicial da TV Web UNIP">
+            <img src="assets/img/spotify/spotify-top.png" class="img-fluid" alt="Tela inicial da TV Web UNIP">
           </div>
         </div>
         <div class="col-12 pt-4">
@@ -118,41 +134,43 @@
           <div class="container my-5">
             <h2 class="text-center mb-4">Principais Oportunidades Identificadas</h2>
             <div class="row">
-                <!-- Compartilhamento de músicas -->
-                <div class="col-md-4 feature-card pb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <i class="bi bi-share-fill display-4 text-primary"></i>
-                            <h5 class="card-title mt-3"><strong>Compartilhamento Integrado</strong></h5>
-                            <p class="card-text">Usuários frequentemente compartilham músicas via redes sociais externas. Um sistema nativo dentro do Spotify pode tornar esse processo mais envolvente e prático.</p>
-                        </div>
-                    </div>
+              <!-- Compartilhamento de músicas -->
+              <div class="col-md-4 feature-card pb-4">
+                <div class="card text-center p-3">
+                  <div class="card-body">
+                    <i class="bi bi-share-fill display-4 text-primary"></i>
+                    <h5 class="card-title mt-3"><strong>Compartilhamento Integrado</strong></h5>
+                    <p class="card-text">Usuários frequentemente compartilham músicas via redes sociais externas. Um sistema nativo dentro do Spotify pode tornar esse processo mais envolvente e prático.</p>
+                  </div>
                 </div>
-                <!-- Expansão para mobile -->
-                <div class="col-md-4 feature-card pb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <i class="bi bi-phone display-4 text-success"></i>
-                            <h5 class="card-title mt-3"><strong>Expansão para Mobile</strong></h5>
-                            <p class="card-text">A "Atividade dos Amigos" é exclusiva para desktop. Levar essa funcionalidade para o app mobile pode aprimorar a interação e a descoberta musical.</p>
-                        </div>
-                    </div>
+              </div>
+              <!-- Expansão para mobile -->
+              <div class="col-md-4 feature-card pb-4">
+                <div class="card text-center p-3">
+                  <div class="card-body">
+                    <i class="bi bi-phone display-4 text-success"></i>
+                    <h5 class="card-title mt-3"><strong>Expansão para Mobile</strong></h5>
+                    <p class="card-text">A "Atividade dos Amigos" é exclusiva para desktop. Levar essa funcionalidade para o app mobile pode aprimorar a interação e a descoberta musical.</p>
+                  </div>
                 </div>
-                <!-- Engajamento dentro do app -->
-                <div class="col-md-4 feature-card pb-4">
-                    <div class="card text-center p-3">
-                        <div class="card-body">
-                            <i class="bi bi-chat-dots-fill display-4 text-danger"></i>
-                            <h5 class="card-title mt-3"><strong>Novas Formas de Engajamento</strong></h5>
-                            <p class="card-text">O Spotify pode permitir interações mais dinâmicas, como reações e comentários sobre músicas e playlists, tornando a experiência mais social.</p>
-                        </div>
-                    </div>
+              </div>
+              <!-- Engajamento dentro do app -->
+              <div class="col-md-4 feature-card pb-4">
+                <div class="card text-center p-3">
+                  <div class="card-body">
+                    <i class="bi bi-chat-dots-fill display-4 text-danger"></i>
+                    <h5 class="card-title mt-3"><strong>Novas Formas de Engajamento</strong></h5>
+                    <p class="card-text">O Spotify pode permitir interações mais dinâmicas, como reações e comentários sobre músicas e playlists, tornando a experiência mais social.</p>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
 
-          <div class="col-12"><h4>Impacto dessas oportunidades</h4>
-          <p>Ao integrar novas camadas de interação social ao Spotify, há um potencial significativo para aprimorar a experiência do usuário, incentivar o engajamento e tornar a descoberta musical ainda mais colaborativa. Com uma abordagem que valoriza a conexão entre pessoas, o aplicativo pode se fortalecer como um espaço onde a música é compartilhada de forma orgânica e interativa.</p></div>
+          <div class="col-12">
+            <h4>Impacto dessas oportunidades</h4>
+            <p>Ao integrar novas camadas de interação social ao Spotify, há um potencial significativo para aprimorar a experiência do usuário, incentivar o engajamento e tornar a descoberta musical ainda mais colaborativa. Com uma abordagem que valoriza a conexão entre pessoas, o aplicativo pode se fortalecer como um espaço onde a música é compartilhada de forma orgânica e interativa.</p>
+          </div>
         </div>
 
         <div class="col-12">
@@ -161,38 +179,325 @@
           <div class="container py-5">
             <h2 class="text-center mb-4">Principais Recursos Propostos</h2>
             <div class="row g-4">
-                <div class="col-md-4 feature-card pb-5">
-                    <div class="card text-center p-3 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-comments me-2"></i> <strong><strong>Mensagens e Compartilhamento</strong></strong></h5>
-                            <p class="card-text">Introdução de um sistema de mensagens dentro do Spotify, permitindo que usuários enviem músicas diretamente para amigos, conversem sobre suas descobertas musicais e interajam sem precisar recorrer a outras plataformas.</p>
-                        </div>
-                    </div>
+              <div class="col-md-4 feature-card pb-5">
+                <div class="card text-center p-3 shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-comments me-2"></i> <strong><strong>Mensagens e Compartilhamento</strong></strong></h5>
+                    <p class="card-text">Introdução de um sistema de mensagens dentro do Spotify, permitindo que usuários enviem músicas diretamente para amigos, conversem sobre suas descobertas musicais e interajam sem precisar recorrer a outras plataformas.</p>
+                  </div>
                 </div>
-                <div class="col-md-4 feature-card pb-5">
-                    <div class="card text-center p-3 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-user-friends me-2"></i> <strong>Perfis Expandidos e Feed Social</strong></h5>
-                            <p class="card-text">Criação de perfis mais completos, exibindo gêneros favoritos, artistas mais ouvidos e playlists em destaque. Implementação de um feed social onde os usuários podem compartilhar suas músicas favoritas, comentar e reagir às descobertas musicais de amigos.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-4 feature-card pb-5">
+                <div class="card text-center p-3 shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-user-friends me-2"></i> <strong>Perfis Expandidos e Feed Social</strong></h5>
+                    <p class="card-text">Criação de perfis mais completos, exibindo gêneros favoritos, artistas mais ouvidos e playlists em destaque. Implementação de um feed social onde os usuários podem compartilhar suas músicas favoritas, comentar e reagir às descobertas musicais de amigos.</p>
+                  </div>
                 </div>
-                <div class="col-md-4 feature-card pb-5">
-                    <div class="card text-center p-3 shadow-sm h-100">
-                        <div class="card-body">
-                            <h5 class="card-title"><i class="fas fa-music me-2"></i> <strong>Descoberta Musical Interativa</strong></h5>
-                            <p class="card-text">Recomendação de músicas personalizadas não apenas com base nos algoritmos tradicionais, mas também levando em conta as interações entre amigos e a comunidade, criando sugestões musicais dinâmicas.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="col-md-4 feature-card pb-5">
+                <div class="card text-center p-3 shadow-sm h-100">
+                  <div class="card-body">
+                    <h5 class="card-title"><i class="fas fa-music me-2"></i> <strong>Descoberta Musical Interativa</strong></h5>
+                    <p class="card-text">Recomendação de músicas personalizadas não apenas com base nos algoritmos tradicionais, mas também levando em conta as interações entre amigos e a comunidade, criando sugestões musicais dinâmicas.</p>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-    
+          </div>
+
           <h4>Impacto esperado</h4>
           <p>Essas novas funcionalidades criam um ambiente onde a música é compartilhada e discutida de forma mais intuitiva, transformando o Spotify em um espaço de conexão musical mais dinâmico. Além de fortalecer o engajamento entre usuários, a solução abre caminho para novas experiências dentro da plataforma, alinhadas às tendências sociais e de consumo de música digital.</p>
         </div>
       </section>
-      <!--aqui-->
+
+      <section class="container py-5">
+        <header class="mb-4">
+          <h2 class="mb-2">Pesquisa e Benchmarking</h2>
+          <p class="text-muted mb-0">Análise qualitativa com base em vivência de uso, observação de tendências e estudo do ecossistema de plataformas sociais e de streaming.</p>
+        </header>
+
+        <!-- Contexto da Análise -->
+        <div class="row g-4 align-items-center mb-5">
+          <div class="col-lg-7">
+            <div class="p-4 border rounded-3 bg-light">
+              <h5 class="mb-2"><i class="bi bi-activity me-2 text-success"></i>Contexto da Análise</h5>
+              <p class="mb-0">Esta proposta é fruto de uma análise qualitativa baseada em minha vivência como usuário e profundo conhecedor do mercado de redes sociais e plataformas de streaming. A oportunidade foi identificada a partir da observação de tendências de comportamento e da forma como outras plataformas exploram a interação social em experiências musicais.</p>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <!-- Local sugerido para imagem/ilustração -->
+            <div class="ratio ratio-16x9 rounded-3 bg-dark d-flex align-items-center justify-content-center text-white">
+              <span class="small text-secondary">(Inserir imagem/diagrama sobre contexto/tendências)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Benchmark de Concorrentes -->
+        <h5 class="mb-3">Análise de Concorrentes (Benchmarking)</h5>
+        <div class="row g-4 mb-5">
+          <!-- Apple Music -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/spotify/apple-music-profile.png" class="card-img-top" alt="Apple Music Profile">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="mb-0"><strong>Apple Music</strong></h6>
+                  <span class="badge text-bg-success">Mobile</span>
+                </div>
+                <p class="mb-2 small">Recurso de “Ouvindo” presente no perfil dos usuários mostra faixas, álbuns e playlists ouvidas.</p>
+                <ul class="small mb-0 ps-3">
+                  <li>Foco em acompanhamento de escuta.</li>
+                  <li>Interações públicas discretas, sem comentários no feed.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Last.fm -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/spotify/last-profile.png" class="card-img-top" alt="Last.fm Profile">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="mb-0"><strong>Last.fm</strong></h6>
+                  <span class="badge text-bg-primary">Social Discovery</span>
+                </div>
+                <p class="mb-2 small">Scrobbling, perfis por gosto e conexões por similaridade.</p>
+                <ul class="small mb-0 ps-3">
+                  <li>Histórico detalhado de escuta.</li>
+                  <li>Comunidade em torno de afinidades.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- YouTube Music -->
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm">
+              <img src="assets/img/spotify/youtube-comment.png" class="card-img-top" alt="YouTube Music Comentários">
+              <div class="card-body">
+                <div class="d-flex align-items-center justify-content-between mb-2">
+                  <h6 class="mb-0"><strong>YouTube</strong> Music</h6>
+                  <span class="badge text-bg-danger">Comentários</span>
+                </div>
+                <p class="mb-2 small">Componentes sociais herdados do YouTube: comentários e compartilhamento direto.</p>
+                <ul class="small mb-0 ps-3">
+                  <li>Interação em torno de vídeos/músicas.</li>
+                  <li>Fricção baixa para compartilhar fora da plataforma.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Insights sobre Comportamento do Usuário -->
+        <h5 class="mb-3">Insights sobre o Comportamento do Usuário</h5>
+        <div class="accordion mb-5" id="insightsAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="insightOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Influência social na descoberta musical
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="insightOne" data-bs-parent="#insightsAccordion">
+              <div class="accordion-body">
+                Plataformas como TikTok evidenciam como recomendações sociais impulsionam descobertas de novos artistas e faixas.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="insightTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Preferência por interações integradas
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="insightTwo" data-bs-parent="#insightsAccordion">
+              <div class="accordion-body">
+                O sucesso de formatos rápidos (ex.: Stories) mostra que os usuários valorizam compartilhar conteúdo sem fricção, no próprio app.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="insightThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Busca por experiências compartilhadas
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="insightThree" data-bs-parent="#insightsAccordion">
+              <div class="accordion-body">
+                Fenômenos como watch parties em vídeo indicam apetite por consumo coletivo também no contexto musical.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Potencial de Oportunidade -->
+        <h5 class="mb-3">Potencial de Oportunidade para o Spotify</h5>
+        <div class="row g-4 align-items-center">
+          <div class="col-12">
+            <p class="mb-2">Embora o Spotify tenha uma base sólida e recomendações avançadas, há espaço para enriquecer a experiência com interações mais sociais e integradas ao aplicativo, especialmente no mobile.</p>
+            <ul class="mb-0 small ps-3">
+              <li>Conectar descoberta musical a relações entre amigos.</li>
+              <li>Reduzir a dependência de apps externos para compartilhar.</li>
+              <li>Aumentar engajamento e permanência dentro do ecossistema.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- aqui -->
+
+      <section class="container wf-section">
+        <h2 class="mb-3 mt-4">UX Strategy & Design Decisions</h2>
+        <h4 class="mb-4">Wireframes</h4>
+        <p class="mb-5">Nesta etapa, apresento as telas principais do fluxo social criado no Spotify, destacando como cada uma contribui para enriquecer a interação entre usuários, mantendo a identidade visual e a usabilidade da plataforma.</p>
+
+        <!-- Carrossel de Wireframes -->
+        <div id="wireframeCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner text-center">
+
+            <div class="carousel-item active">
+              <img src="assets/img/spotify/Player-Wireframe.png" class="wf-img" alt="Player Wireframe" role="button" data-wf-index="0" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela do Player com Novo Botão de Compartilhar</h5>
+                <p><strong>Objetivo:</strong> Reforçar aspecto social.<br>
+                  <strong>Solução:</strong> Ícone de avião substitui o botão tradicional.<br>
+                  <strong>Impacto:</strong> Incentiva o envio direto a amigos ou Feed.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/spotify/Share-Wireframe.png" class="wf-img" alt="Share Wireframe" role="button" data-wf-index="1" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela de Opções de Compartilhamento</h5>
+                <p><strong>Objetivo:</strong> Acesso rápido.<br>
+                  <strong>Solução:</strong> Bottom sheet com amigos e redes externas.<br>
+                  <strong>Impacto:</strong> Priorização do ecossistema Spotify.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/spotify/Chat-Wireframe.png" class="wf-img" alt="Chat Wireframe" role="button" data-wf-index="2" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela de Conversa com Amigo</h5>
+                <p><strong>Objetivo:</strong> Introduzir canal direto.<br>
+                  <strong>Solução:</strong> Chat convencional + header com now playing.<br>
+                  <strong>Impacto:</strong> Conversas espontâneas sobre descobertas.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/spotify/Inbox-Chat-Wireframe.png" class="wf-img" alt="Inbox Wireframe" role="button" data-wf-index="3" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela de Conversas (Inbox)</h5>
+                <p><strong>Objetivo:</strong> Centralizar interações.<br>
+                  <strong>Solução:</strong> Header com amigos em scroll e lista ativa.<br>
+                  <strong>Impacto:</strong> Espaço contínuo para descobertas.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/spotify/Friend-Profile-Wireframe.png" class="wf-img" alt="Profile Wireframe" role="button" data-wf-index="4" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela de Perfil do Usuário</h5>
+                <p><strong>Objetivo:</strong> Tornar o perfil mais social.<br>
+                  <strong>Solução:</strong> Layout com gêneros, playlists e botões Follow/Messages.<br>
+                  <strong>Impacto:</strong> Perfil como hub social.
+                </p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <img src="assets/img/spotify/Feed-Wireframe.png" class="wf-img" alt="Feed Wireframe" role="button" data-wf-index="5" data-bs-toggle="modal" data-bs-target="#wfLightbox">
+              <div class="mt-3">
+                <h5>Tela do Feed Social</h5>
+                <p><strong>Objetivo:</strong> Trazer experiência de rede social.<br>
+                  <strong>Solução:</strong> Feed com posts, curtidas e comentários.<br>
+                  <strong>Impacto:</strong> Spotify como rede social musical.
+                </p>
+              </div>
+            </div>
+
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#wireframeCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="container my-5">
+        <h2 class="mb-4">Princípios de UI: Estilo Visual e Decisões de Design</h2>
+        <p class="mb-5">
+          O design do Spotify já possui uma identidade visual bem definida, e a proposta foi manter essa coerência enquanto introduzia novas interações sociais. Para isso, utilizei as cores existentes no sistema, aplicando-as em novos componentes para reforçar a experiência do usuário de forma intuitiva.
+        </p>
+        <hr>
+        <div class="row align-items-center g-4">
+        <div class="col-12 d-flex justify-content-center">
+          <img src="assets/img/spotify/green-color.png" alt="Exemplo de uso do verde Spotify" class="img-fluid" style="width:700px;">
+        </div>
+          <!-- Card da cor -->
+          <div class="col-md-4 text-center">
+            <div class="d-flex align-items-center justify-content-center mx-auto mb-3" style="width:250px; height:250px; background:#1DB954; color:#fff; border-radius:4px;">
+              <div class="text-center">
+                <h4 class="mb-1 fw-semibold">Spotify Green</h4>
+                <p class="mb-0">#1DB954</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detalhes da aplicação -->
+          <div class="col-md-8">
+            <h5>Cor de Ação e Destaque</h5>
+            <ul class="mb-3">
+              <li>Mensagens enviadas → Bolha de chat verde.</li>
+              <li>Botão de enviar mensagem → Ícone de aviãozinho verde.</li>
+              <li>Ícone de mensagem ativa + novas mensagens.</li>
+              <li>Botão de novo post “+”.</li>
+              <li>Verificação de artista.</li>
+              <li>Animação do botão de like.</li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+        <div class="row align-items-center g-4 mt-5">
+          <div class="col-12 d-flex justify-content-center">
+            <img src="assets/img/spotify/pink-color.png" alt="Exemplo de uso do pink Spotify" class="img-fluid" style="width:300px;">
+          </div>
+          <!-- Card da cor -->
+          <div class="col-md-4 text-center">
+            <div class="d-flex align-items-center justify-content-center mx-auto mb-3" style="width:250px; height:250px; background:#F137A6; color:#fff; border-radius:4px;">
+              <div class="text-center">
+                <h4 class="mb-1 fw-semibold">Spotify Pink</h4>
+                <p class="mb-0">#F137A6</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detalhes da aplicação -->
+          <div class="col-md-8">
+            <h5>Engajamento e Destaque</h5>
+            <ul class="mb-3">
+              <li>Botão de like → Uma nova cor para diferenciar essa ação, trazendo uma identidade visual mais vibrante e conectada ao aspecto social.</li>
+              <li>Botão Feed → Localizado na página inicial, possui um traço colorido e um inner shadow antes de ser clicado, destacando sua presença sem destoar da interface.</li>
+            </ul>
+          </div>
+        </div>
+
+      </section>
+
+
+
       <section class="row">
         <div class="col-12">
           <h2 class="pt-5">Otimização do Conteúdo</h2>
@@ -203,7 +508,7 @@
         </div>
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-1.png" class="img-fluid" alt="Tela inicial da TV Web UNIP">
+            <img src="https://ariel.works/projects/assets/img/spotify/tvweb-1.png" class="img-fluid" alt="Tela inicial da TV Web UNIP">
           </div>
         </div>
         <div class="col-12 text-end">
@@ -227,135 +532,6 @@
 
       <section class="row">
         <div class="col-12">
-          <h2 class="pt-5">Refinamento Visual e de Estilo</h2>
-          <p>Os <em>cards</em> são um dos elementos centrais da interface, responsáveis por apresentar informações de forma concisa e acessível. No refinamento visual, foram feitas escolhas estratégicas para garantir que cada <em>card</em> não apenas atraia a atenção do usuário, mas também ofereça uma experiência de leitura agradável e informativa. Desde o uso de cores até a tipografia e o espaçamento, cada detalhe foi pensado para otimizar a compreensão e navegação. A seguir, explicamos as decisões-chave que guiaram o refinamento dos <em>cards</em>:</p>
-          <ol>
-            <li><strong>Título do Evento:</strong> O uso de uma cor viva, como o azul, junto a uma tipografia em bold, proporciona uma fácil identificação do tema do vídeo. Isso ajuda os usuários a reconhecer rapidamente do que se trata o conteúdo.</li>
-            <li><strong>Descrição do Vídeo:</strong> Deixando a descrição centralizada e com uma cor neutra, você consegue fazer com que a atenção dos usuários se concentre diretamente no assunto, facilitando a leitura sem perder o foco na importância da informação.</li>
-            <li><strong>Palestrantes e Data:</strong> O espaçamento adequado e o uso de uma tipografia mais suave para os nomes dos palestrantes e data trazem um contraste em relação ao restante das informações, criando um senso de conclusão visual no card.</li>
-          </ol>
-        </div>
-        <div class="col-12">
-          <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-3.png" class="img-fluid" style="width: 600px;" alt="Exemplo de card refinado">
-          </div>
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-12">
-          <p>Além disso, o <strong>botão play</strong> bem posicionado, com uma cor chamativa, convida à ação de forma natural. Isso traz uma navegação intuitiva, enquanto os usuários se sentem confortáveis em explorar o conteúdo dos vídeos.</p>
-          <p>Esses detalhes no design contribuem para a modernidade do <em>layout</em> e reforçam uma experiência focada tanto na estética quanto na funcionalidade, gerando uma interface mais agradável para o usuário final.</p>
-        </div>
-        <div class="col-12">
-          <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-4.png" class="img-fluid" style="width: 600px;" alt="Botão play e refinamento do layout">
-          </div>
-        </div>
-      </section>
-
-      <section class="row pt-2">
-        <div class="col-12">
-          <p>Uma das melhorias aplicadas no <em>layout</em> foi o espaçamento de 20px entre os cards, um detalhe essencial para garantir uma melhor organização visual e legibilidade. Esse espaçamento permite que o conteúdo "respire", criando uma separação clara entre os elementos e proporcionando uma leitura mais confortável para o usuário.</p>
-          <p>Além de melhorar a experiência de navegação, o uso consistente de espaço ajuda a destacar as informações de forma equilibrada, evitando uma sobrecarga visual. Isso resulta em um design mais moderno, limpo e intuitivo, valorizando cada componente e facilitando a interação do usuário com o conteúdo apresentado.</p>
-        </div>
-      </section>
-      <section class="row">
-        <div class="col-12">
-          <h2 class="pt-5">Nova <em>feature</em>: Vídeos Relacionados</h2>
-          <p>A adição da seção de vídeos relacionados foi um aprimoramento estratégico para melhorar a experiência do usuário, garantindo que ele tenha acesso a conteúdos que complementem ou expandam o tema em foco. Isso aumenta não apenas o engajamento, como também a permanência na página, oferecendo um fluxo contínuo de informações relevantes.</p>
-
-          <p>Com a exibição de vídeos relacionados, os usuários podem explorar mais profundamente assuntos que os interessam, sem a necessidade de procurar manualmente outros materiais. Isso torna a navegação mais intuitiva, conduzindo-os naturalmente a mais conteúdos, o que pode aumentar as visualizações e o tempo de interação com a plataforma.</p>
-
-          <p>Além disso, essa abordagem estimula o aprendizado contínuo, facilitando a descoberta de temas que talvez o usuário nem soubesse que existiam, mas que se encaixam no seu perfil de interesse. Essa funcionalidade também favorece a retenção de público ao manter o usuário engajado por mais tempo e tornar a plataforma mais dinâmica e rica em conteúdo.</p>
-
-          <p>Por fim, a seção de vídeos relacionados também reflete um cuidado com a personalização da experiência, oferecendo um caminho mais direcionado para cada perfil de usuário, o que pode gerar um impacto positivo na usabilidade e na percepção de valor da plataforma.</p>
-        </div>
-        <div class="col-12">
-          <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-2.png" class="img-fluid" alt="Nova feature de vídeos relacionados">
-          </div>
-        </div>
-
-        <div class="col-12 text-end">
-          <a href="https://www.figma.com/proto/WKkLDaXFfa396fJwMdfvlz/TVWeb?node-id=1181-854&t=dKj4TunRc7X9JsvT-1" class="btn btn-outline-secondary btn-hover" target="_blank">
-            <span>Confira o protótico</span>
-            <svg width="100" viewBox="0 0 121 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23 16.6751C21.4518 16.6751 19.967 17.2361 18.8723 18.2347C17.7776 19.2333 17.1626 20.5877 17.1626 22C17.1626 23.4123 17.7776 24.7667 18.8723 25.7653C19.967 26.7639 21.4518 27.3249 23 27.3249C24.5482 27.3249 26.033 26.7639 27.1277 25.7653C28.2224 24.7667 28.8374 23.4123 28.8374 22C28.8374 20.5877 28.2224 19.2333 27.1277 18.2347C26.033 17.2361 24.5482 16.6751 23 16.6751ZM17.0082 16.5343C18.5973 15.0847 20.7526 14.2703 23 14.2703C25.2474 14.2703 27.4027 15.0847 28.9918 16.5343C30.5809 17.9839 31.4737 19.9499 31.4737 22C31.4737 24.0501 30.5809 26.0161 28.9918 27.4657C27.4027 28.9154 25.2474 29.7297 23 29.7297C20.7526 29.7297 18.5973 28.9154 17.0082 27.4657C15.4191 26.0161 14.5263 24.0501 14.5263 22C14.5263 19.9499 15.4191 17.9839 17.0082 16.5343Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47368 29.9411C6.9255 29.9411 5.44073 30.5453 4.346 31.6207C3.25127 32.6962 2.63626 34.1548 2.63626 35.6757C2.63626 37.1966 3.25127 38.6552 4.346 39.7306C5.44073 40.806 6.9255 41.4102 8.47368 41.4102C10.0219 41.4102 11.5066 40.806 12.6014 39.7306C13.6961 38.6552 14.3111 37.1966 14.3111 35.6757V29.9411H8.47368ZM2.48188 29.7895C4.07101 28.2284 6.22632 27.3514 8.47368 27.3514H16.9474V35.6757C16.9474 37.8834 16.0546 40.0008 14.4655 41.5619C12.8764 43.123 10.721 44 8.47368 44C6.22632 44 4.07101 43.123 2.48188 41.5619C0.892761 40.0008 0 37.8834 0 35.6757C0 33.4679 0.892761 31.3506 2.48188 29.7895Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5263 0H23C25.2474 0 27.4027 0.877025 28.9918 2.43814C30.5809 3.99925 31.4737 6.11658 31.4737 8.32432C31.4737 10.5321 30.5809 12.6494 28.9918 14.2105C27.4027 15.7716 25.2474 16.6486 23 16.6486H14.5263V0ZM17.1626 2.58979V14.0589H23C24.5482 14.0589 26.033 13.4547 27.1277 12.3793C28.2224 11.3038 28.8374 9.84522 28.8374 8.32432C28.8374 6.80343 28.2224 5.34483 27.1277 4.2694C26.033 3.19396 24.5482 2.58979 23 2.58979H17.1626Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 2.43814C4.07101 0.877025 6.22632 0 8.47368 0H16.9474V16.6486H8.47368C6.22632 16.6486 4.07101 15.7716 2.48188 14.2105C0.892761 12.6494 0 10.5321 0 8.32432C0 6.11658 0.892761 3.99925 2.48188 2.43814ZM8.47368 2.58979C6.9255 2.58979 5.44073 3.19396 4.346 4.2694C3.25127 5.34483 2.63626 6.80343 2.63626 8.32432C2.63626 9.84522 3.25127 11.3038 4.346 12.3793C5.44073 13.4547 6.9255 14.0589 8.47368 14.0589H14.3111V2.58979H8.47368Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 16.5343C4.07101 15.0847 6.22632 14.2703 8.47368 14.2703H16.9474V29.7297H8.47368C6.22632 29.7297 4.07101 28.9154 2.48188 27.4657C0.892761 26.0161 0 24.0501 0 22C0 19.9499 0.892761 17.9839 2.48188 16.5343ZM8.47368 16.6751C6.9255 16.6751 5.44073 17.2361 4.346 18.2347C3.25127 19.2333 2.63626 20.5877 2.63626 22C2.63626 23.4123 3.25127 24.7667 4.346 25.7653C5.44073 26.7639 6.9255 27.3249 8.47368 27.3249H14.3111V16.6751H8.47368Z" fill="black"></path>
-              <path d="M42 10V30.2886L44.6361 30.2987V20.6374H50.9729V18.0812H44.626V12.5461H52.8892V10H42ZM57.6139 14.1262C58.071 14.1262 58.5094 13.9459 58.8327 13.6251C59.1559 13.3042 59.3375 12.8691 59.3375 12.4153C59.3375 11.9616 59.1559 11.5264 58.8327 11.2056C58.5094 10.8847 58.071 10.7045 57.6139 10.7045C57.1568 10.7045 56.7184 10.8847 56.3951 11.2056C56.0719 11.5264 55.8903 11.9616 55.8903 12.4153C55.8903 12.8691 56.0719 13.3042 56.3951 13.6251C56.7184 13.9459 57.1568 14.1262 57.6139 14.1262ZM56.2857 16.6723V30.2987H58.9218V16.6723H56.2857Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M68.6653 16.2798C65.1775 16.2798 62.7442 19.2084 62.7442 22.6904C62.7442 26.1725 65.1775 29.1011 68.6653 29.1011C70.2672 29.1011 71.5853 28.4973 72.5485 27.4909V29.3024C72.5552 29.8436 72.4537 30.3808 72.25 30.883C72.0462 31.3851 71.7443 31.8421 71.3615 32.2277C70.9787 32.6132 70.5227 32.9196 70.0199 33.1292C69.5171 33.3388 68.9774 33.4474 68.4321 33.4487C67.5906 33.4487 66.7592 33.1266 66.1001 32.6637L64.7821 34.928C65.8013 35.5819 66.9794 35.9507 68.1921 35.9954C69.4048 36.0401 70.6072 35.7591 71.6724 35.1819C72.7377 34.6048 73.6262 33.7531 74.2444 32.7165C74.8625 31.6799 75.1874 30.4969 75.1846 29.2923V16.6824H72.5485V17.9001C71.5853 16.8937 70.2672 16.2899 68.6653 16.2899V16.2798ZM65.3701 22.6904C65.3701 20.5267 67.0329 18.826 68.9593 18.826C70.8857 18.826 72.5383 20.5368 72.5383 22.6904C72.5383 24.8542 70.8756 26.5449 68.9593 26.5449C67.0329 26.5449 65.3701 24.8542 65.3701 22.6904Z" fill="black"></path>
-              <path d="M84.6543 18.826C83.9004 18.8392 83.182 19.1464 82.6545 19.6813C82.1271 20.2162 81.8329 20.9356 81.8357 21.6841V30.2987H79.1996V16.6723H81.8357V17.9202C82.2301 17.4014 82.7424 16.9823 83.3309 16.6973C83.9194 16.4122 84.5674 16.2692 85.2221 16.2798C87.0674 16.2798 88.4868 17.1856 89.2979 18.5744C89.7504 17.8781 90.3698 17.3041 91.1005 16.9037C91.8312 16.5033 92.6506 16.2889 93.4853 16.2798C96.4762 16.2798 98.3519 18.675 98.3519 21.6438V30.2987H95.7361V21.674C95.7389 20.9256 95.4447 20.2061 94.9173 19.6712C94.3898 19.1364 93.6714 18.8291 92.9175 18.8159C92.1636 18.8291 91.4452 19.1364 90.9177 19.6712C90.3903 20.2061 90.0961 20.9256 90.0989 21.674V30.2886H87.4628V21.674C87.4656 20.9273 87.1728 20.2093 86.6475 19.6747C86.1223 19.1401 85.4065 18.8317 84.6543 18.8159V18.826Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M112.374 18.2221C111.775 17.6026 111.056 17.1107 110.259 16.7768C109.462 16.4428 108.605 16.2737 107.741 16.2798C103.827 16.2798 101.049 19.5606 101.049 23.4855C101.049 27.4104 103.827 30.6912 107.741 30.6912C108.605 30.6955 109.462 30.5256 110.258 30.1918C111.054 29.8579 111.774 29.367 112.374 28.7489V30.2987H115V16.6723H112.364V18.2221H112.374ZM103.675 23.4855C103.675 20.889 105.682 18.826 108.024 18.826C110.356 18.826 112.374 20.889 112.374 23.4855C112.374 26.0819 110.367 28.135 108.024 28.135C105.693 28.135 103.675 26.0819 103.675 23.4855Z" fill="black"></path>
-            </svg>
-          </a></button>
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-12">
-          <h2 class="pt-5">Funcionalidade Multiplataforma</h2>
-          <p>Com o refinamento multiplataforma, o <em>layout</em> foi otimizado para dispositivos móveis, garantindo uma navegação intuitiva e fluida, mesmo em telas menores. Na versão <em>mobile</em>, foram implementadas as seções de Vídeos Relacionados e Vídeos Recentes, oferecendo ao usuário uma navegação mais dinâmica e direcionada.</p>
-
-          <p>Uma das funções técnicas de destaque é a capacidade de selecionar a área desejada no código para exibir vídeos de interesse, seja de vídeos relacionados ou vídeos recentes. Essa funcionalidade possibilita a personalização e filtragem do conteúdo com base no contexto da navegação, garantindo uma experiência mais relevante e personalizada para o usuário. O uso de parâmetros dinâmicos facilita a adaptação do conteúdo conforme as preferências do público, otimizando a interação.</p>
-
-          <p>Essa abordagem não só melhora a experiência do usuário, mas também assegura que o conteúdo mais relevante seja acessível de maneira prática e intuitiva, reforçando o compromisso com a responsividade e acessibilidade do projeto.</p>
-        </div>
-      </section>
-
-      <section class="row d-flex justify-content-center">
-        <div class="col-6 col-lg-4">
-          <img src="https://ariel.works/projects/assets/img/tvweb-5.png" class="img-fluid" alt="Design mobile da TV Web">
-        </div>
-        <div class="col-6 col-lg-4">
-          <img src="https://ariel.works/projects/assets/img/tvweb-6.png" class="img-fluid" alt="Design mobile da TV Web">
-        </div>
-
-        <div class="col-12 text-end pt-3">
-          <a href="https://www.figma.com/proto/WKkLDaXFfa396fJwMdfvlz/TVWeb?node-id=1151-1064&node-type=frame&t=IuI69TsPTUhhGt4O-1&scaling=scale-down&content-scaling=fixed&page-id=181%3A880&starting-point-node-id=181%3A1276" class="btn btn-outline-secondary btn-hover" target="_blank">
-            <span>Confira o protótico</span>
-            <svg width="100" viewBox="0 0 121 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M23 16.6751C21.4518 16.6751 19.967 17.2361 18.8723 18.2347C17.7776 19.2333 17.1626 20.5877 17.1626 22C17.1626 23.4123 17.7776 24.7667 18.8723 25.7653C19.967 26.7639 21.4518 27.3249 23 27.3249C24.5482 27.3249 26.033 26.7639 27.1277 25.7653C28.2224 24.7667 28.8374 23.4123 28.8374 22C28.8374 20.5877 28.2224 19.2333 27.1277 18.2347C26.033 17.2361 24.5482 16.6751 23 16.6751ZM17.0082 16.5343C18.5973 15.0847 20.7526 14.2703 23 14.2703C25.2474 14.2703 27.4027 15.0847 28.9918 16.5343C30.5809 17.9839 31.4737 19.9499 31.4737 22C31.4737 24.0501 30.5809 26.0161 28.9918 27.4657C27.4027 28.9154 25.2474 29.7297 23 29.7297C20.7526 29.7297 18.5973 28.9154 17.0082 27.4657C15.4191 26.0161 14.5263 24.0501 14.5263 22C14.5263 19.9499 15.4191 17.9839 17.0082 16.5343Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M8.47368 29.9411C6.9255 29.9411 5.44073 30.5453 4.346 31.6207C3.25127 32.6962 2.63626 34.1548 2.63626 35.6757C2.63626 37.1966 3.25127 38.6552 4.346 39.7306C5.44073 40.806 6.9255 41.4102 8.47368 41.4102C10.0219 41.4102 11.5066 40.806 12.6014 39.7306C13.6961 38.6552 14.3111 37.1966 14.3111 35.6757V29.9411H8.47368ZM2.48188 29.7895C4.07101 28.2284 6.22632 27.3514 8.47368 27.3514H16.9474V35.6757C16.9474 37.8834 16.0546 40.0008 14.4655 41.5619C12.8764 43.123 10.721 44 8.47368 44C6.22632 44 4.07101 43.123 2.48188 41.5619C0.892761 40.0008 0 37.8834 0 35.6757C0 33.4679 0.892761 31.3506 2.48188 29.7895Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5263 0H23C25.2474 0 27.4027 0.877025 28.9918 2.43814C30.5809 3.99925 31.4737 6.11658 31.4737 8.32432C31.4737 10.5321 30.5809 12.6494 28.9918 14.2105C27.4027 15.7716 25.2474 16.6486 23 16.6486H14.5263V0ZM17.1626 2.58979V14.0589H23C24.5482 14.0589 26.033 13.4547 27.1277 12.3793C28.2224 11.3038 28.8374 9.84522 28.8374 8.32432C28.8374 6.80343 28.2224 5.34483 27.1277 4.2694C26.033 3.19396 24.5482 2.58979 23 2.58979H17.1626Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 2.43814C4.07101 0.877025 6.22632 0 8.47368 0H16.9474V16.6486H8.47368C6.22632 16.6486 4.07101 15.7716 2.48188 14.2105C0.892761 12.6494 0 10.5321 0 8.32432C0 6.11658 0.892761 3.99925 2.48188 2.43814ZM8.47368 2.58979C6.9255 2.58979 5.44073 3.19396 4.346 4.2694C3.25127 5.34483 2.63626 6.80343 2.63626 8.32432C2.63626 9.84522 3.25127 11.3038 4.346 12.3793C5.44073 13.4547 6.9255 14.0589 8.47368 14.0589H14.3111V2.58979H8.47368Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M2.48188 16.5343C4.07101 15.0847 6.22632 14.2703 8.47368 14.2703H16.9474V29.7297H8.47368C6.22632 29.7297 4.07101 28.9154 2.48188 27.4657C0.892761 26.0161 0 24.0501 0 22C0 19.9499 0.892761 17.9839 2.48188 16.5343ZM8.47368 16.6751C6.9255 16.6751 5.44073 17.2361 4.346 18.2347C3.25127 19.2333 2.63626 20.5877 2.63626 22C2.63626 23.4123 3.25127 24.7667 4.346 25.7653C5.44073 26.7639 6.9255 27.3249 8.47368 27.3249H14.3111V16.6751H8.47368Z" fill="black"></path>
-              <path d="M42 10V30.2886L44.6361 30.2987V20.6374H50.9729V18.0812H44.626V12.5461H52.8892V10H42ZM57.6139 14.1262C58.071 14.1262 58.5094 13.9459 58.8327 13.6251C59.1559 13.3042 59.3375 12.8691 59.3375 12.4153C59.3375 11.9616 59.1559 11.5264 58.8327 11.2056C58.5094 10.8847 58.071 10.7045 57.6139 10.7045C57.1568 10.7045 56.7184 10.8847 56.3951 11.2056C56.0719 11.5264 55.8903 11.9616 55.8903 12.4153C55.8903 12.8691 56.0719 13.3042 56.3951 13.6251C56.7184 13.9459 57.1568 14.1262 57.6139 14.1262ZM56.2857 16.6723V30.2987H58.9218V16.6723H56.2857Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M68.6653 16.2798C65.1775 16.2798 62.7442 19.2084 62.7442 22.6904C62.7442 26.1725 65.1775 29.1011 68.6653 29.1011C70.2672 29.1011 71.5853 28.4973 72.5485 27.4909V29.3024C72.5552 29.8436 72.4537 30.3808 72.25 30.883C72.0462 31.3851 71.7443 31.8421 71.3615 32.2277C70.9787 32.6132 70.5227 32.9196 70.0199 33.1292C69.5171 33.3388 68.9774 33.4474 68.4321 33.4487C67.5906 33.4487 66.7592 33.1266 66.1001 32.6637L64.7821 34.928C65.8013 35.5819 66.9794 35.9507 68.1921 35.9954C69.4048 36.0401 70.6072 35.7591 71.6724 35.1819C72.7377 34.6048 73.6262 33.7531 74.2444 32.7165C74.8625 31.6799 75.1874 30.4969 75.1846 29.2923V16.6824H72.5485V17.9001C71.5853 16.8937 70.2672 16.2899 68.6653 16.2899V16.2798ZM65.3701 22.6904C65.3701 20.5267 67.0329 18.826 68.9593 18.826C70.8857 18.826 72.5383 20.5368 72.5383 22.6904C72.5383 24.8542 70.8756 26.5449 68.9593 26.5449C67.0329 26.5449 65.3701 24.8542 65.3701 22.6904Z" fill="black"></path>
-              <path d="M84.6543 18.826C83.9004 18.8392 83.182 19.1464 82.6545 19.6813C82.1271 20.2162 81.8329 20.9356 81.8357 21.6841V30.2987H79.1996V16.6723H81.8357V17.9202C82.2301 17.4014 82.7424 16.9823 83.3309 16.6973C83.9194 16.4122 84.5674 16.2692 85.2221 16.2798C87.0674 16.2798 88.4868 17.1856 89.2979 18.5744C89.7504 17.8781 90.3698 17.3041 91.1005 16.9037C91.8312 16.5033 92.6506 16.2889 93.4853 16.2798C96.4762 16.2798 98.3519 18.675 98.3519 21.6438V30.2987H95.7361V21.674C95.7389 20.9256 95.4447 20.2061 94.9173 19.6712C94.3898 19.1364 93.6714 18.8291 92.9175 18.8159C92.1636 18.8291 91.4452 19.1364 90.9177 19.6712C90.3903 20.2061 90.0961 20.9256 90.0989 21.674V30.2886H87.4628V21.674C87.4656 20.9273 87.1728 20.2093 86.6475 19.6747C86.1223 19.1401 85.4065 18.8317 84.6543 18.8159V18.826Z" fill="black"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M112.374 18.2221C111.775 17.6026 111.056 17.1107 110.259 16.7768C109.462 16.4428 108.605 16.2737 107.741 16.2798C103.827 16.2798 101.049 19.5606 101.049 23.4855C101.049 27.4104 103.827 30.6912 107.741 30.6912C108.605 30.6955 109.462 30.5256 110.258 30.1918C111.054 29.8579 111.774 29.367 112.374 28.7489V30.2987H115V16.6723H112.364V18.2221H112.374ZM103.675 23.4855C103.675 20.889 105.682 18.826 108.024 18.826C110.356 18.826 112.374 20.889 112.374 23.4855C112.374 26.0819 110.367 28.135 108.024 28.135C105.693 28.135 103.675 26.0819 103.675 23.4855Z" fill="black"></path>
-            </svg>
-          </a></button>
-        </div>
-      </section>
-      </section>
-
-      <section class="row">
-        <div class="col-12">
-          <h2 class="pt-5">Design Responsivo como Ponto Central</h2>
-          <p>Durante o desenvolvimento deste projeto, um dos focos principais foi garantir que a interface ofereça uma experiência otimizada independentemente do dispositivo utilizado. O design responsivo foi pensado para se ajustar a diversos tamanhos de tela, desde grandes monitores de <em>desktop</em> até <em>smartphones</em>, sem perder a qualidade visual e a facilidade de navegação.</p>
-
-          <p>Utilizando uma abordagem <em>mobile-first</em>, o <em>layout</em> foi organizado para priorizar a navegação intuitiva em dispositivos móveis, ao mesmo tempo que proporciona uma experiência igualmente fluida para quem acessa via <em>desktop</em>. Elementos como botões, listas de vídeos e a separação entre "Vídeos Relacionados" e "Vídeos Recentes" foram ajustados para garantir acessibilidade e clareza visual em qualquer plataforma.</p>
-
-          <p>Esse cuidado com o design responsivo também visa melhorar a performance do <em>site</em>, assegurando que as páginas carreguem de maneira ágil e eficiente em diferentes resoluções, o que contribui diretamente para uma experiência de navegação positiva.</p>
-        </div>
-      </section>
-
-      <section class="row">
-        <div class="col-12">
-          <h2 class="pt-5">Experiência do Usuário (UX)</h2>
-          <p>A experiência do usuário foi outro ponto central no desenvolvimento desse projeto. Cada detalhe do <em>layout</em> foi pensado para facilitar a interação e navegação do usuário. A arquitetura da informação prioriza a simplicidade e a organização, destacando os conteúdos de maneira clara e intuitiva.</p>
-
-          <p>A escolha das cores, tipografia e espaçamento segue princípios de usabilidade e acessibilidade, garantindo que o usuário tenha uma navegação fluida e sem fricções. Além disso, a organização dos vídeos em categorias como "Vídeos Relacionados" e "Vídeos Recentes" foi feita para ajudar o usuário a encontrar conteúdos relevantes com facilidade, proporcionando uma experiência personalizada e interativa.</p>
-
-          <p>A navegação entre as seções foi planejada para ser intuitiva, e o uso de elementos visuais consistentes ajuda a criar uma interface amigável que orienta o usuário de forma clara, sem sobrecarregar a tela com informações desnecessárias.</p>
-        </div>
-      </section>
-      <section class="row">
-        <div class="col-12">
           <h3 class="text-end mt-5 pb-5"><em>— Obrigado.</em></h3>
         </div>
       </section>
@@ -373,11 +549,11 @@
                 <path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round"></path>
               </svg>
             </a>
-      
+
             <button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-      
+
             <div class="collapse navbar-collapse p-1" id="navbarNavDropdown">
               <ul class="navbar-nav ms-auto text-end">
                 <ul class="navbar-nav ms-auto">
@@ -392,7 +568,7 @@
           </div>
         </nav>
       </header>
-      
+
       <section class="row">
         <div class="col-12">
           <h1>Web TV</h1>
@@ -428,7 +604,7 @@
         </div>
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-1.png" class="-fluid" alt="Tela inicial da TV Web UNIP">
+            <img src="https://ariel.works/projects/assets/img/spotify/tvweb-1.png" class="-fluid" alt="Tela inicial da TV Web UNIP">
           </div>
         </div>
         <div class="col-12 text-end">
@@ -461,7 +637,7 @@
         </div>
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-3.png" class="img-fluid" style="width: 600px;" alt="The card">
+            <img src="https://ariel.works/projects/assets/img/spotify/tvweb-3.png" class="img-fluid" style="width: 600px;" alt="The card">
           </div>
         </div>
       </section>
@@ -473,7 +649,7 @@
         </div>
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-4.png" class="img-fluid" style="width: 600px;" alt="Botão play e refinamento do layout">
+            <img src="https://ariel.works/projects/assets/img/spotify/tvweb-4.png" class="img-fluid" style="width: 600px;" alt="Botão play e refinamento do layout">
           </div>
         </div>
       </section>
@@ -494,7 +670,7 @@
         </div>
         <div class="col-12">
           <div class="d-flex justify-content-center">
-            <img src="https://ariel.works/projects/assets/img/tvweb-2.png" class="img-fluid" alt="New related videos feature">
+            <img src="https://ariel.works/projects/assets/img/spotify/tvweb-2.png" class="img-fluid" alt="New related videos feature">
           </div>
         </div>
 
@@ -527,10 +703,10 @@
 
       <section class="row d-flex justify-content-center">
         <div class="col-6 col-lg-4">
-          <img src="https://ariel.works/projects/assets/img/tvweb-5.png" class="img-fluid" alt="Web TV mobile design">
+          <img src="https://ariel.works/projects/assets/img/spotify/tvweb-5.png" class="img-fluid" alt="Web TV mobile design">
         </div>
         <div class="col-6 col-lg-4">
-          <img src="https://ariel.works/projects/assets/img/tvweb-6.png" class="img-fluid" alt="Web TV mobile design">
+          <img src="https://ariel.works/projects/assets/img/spotify/tvweb-6.png" class="img-fluid" alt="Web TV mobile design">
         </div>
 
         <div class="col-12 text-end pt-3">
@@ -577,7 +753,81 @@
     </div>
 
   </div>
-
+  <!-- Lightbox Modal com Carrossel -->
+  <div class="modal fade" id="wfLightbox" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header border-0">
+          <h6 class="modal-title">Wireframes — Visualização</h6>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body pt-0">
+          <div id="wfCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active text-center">
+                <img src="assets/img/spotify/Player-Wireframe.png" class="d-block mx-auto img-fluid" alt="Player Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>1) Player — novo botão de compartilhar</small>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/img/spotify/Share-Wireframe.png" class="d-block mx-auto img-fluid" alt="Share Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>2) Bottom sheet — opções de compartilhamento</small>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/img/spotify/Chat-Wireframe.png" class="d-block mx-auto img-fluid" alt="Chat Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>3) Chat — conversa com amigo</small>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/img/spotify/Inbox-Chat-Wireframe.png" class="d-block mx-auto img-fluid" alt="Inbox Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>4) Inbox — lista de conversas e now playing</small>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/img/spotify/Friend-Profile-Wireframe.png" class="d-block mx-auto img-fluid" alt="Profile Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>5) Perfil do usuário — visão social</small>
+                </div>
+              </div>
+              <div class="carousel-item text-center">
+                <img src="assets/img/spotify/Feed-Wireframe.png" class="d-block mx-auto img-fluid" alt="Feed Wireframe">
+                <div class="carousel-caption d-none d-md-block">
+                  <small>6) Feed social — posts e interações</small>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#wfCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden text-danger">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#wfCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    // Abre modal em um slide específico quando a miniatura é clicada
+    document.addEventListener('click', function (e) {
+      const thumb = e.target.closest('[data-wf-index]');
+      if (!thumb) return;
+      const index = parseInt(thumb.getAttribute('data-wf-index'), 10) || 0;
+      const modalEl = document.getElementById('wfLightbox');
+      const carouselEl = document.getElementById('wfCarousel');
+      const modal = new bootstrap.Modal(modalEl);
+      const carousel = new bootstrap.Carousel(carouselEl);
+      modal.show();
+      setTimeout(function () { carousel.to(index); }, 150);
+    });
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../assets/js/scripts.js" type="text/javascript"></script>
 
