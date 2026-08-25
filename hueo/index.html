@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Join the private iOS beta for HUEO, a focused photo editor for color, film-inspired looks, and grain.">
+  <meta name="theme-color" content="#f5f3ee">
+  <meta property="og:title" content="HUEO — Private iOS Beta">
+  <meta property="og:description" content="Help shape the first version of HUEO.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ariel.works/hueo/">
+  <title>HUEO — Private iOS Beta</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;1,400&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/hueo.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container-fluid hueo-container">
+      <nav class="hueo-nav" aria-label="Primary navigation">
+        <a class="wordmark" href="/hueo/" aria-label="HUEO home">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a>
+        <div class="nav-links">
+          <a href="#how-it-works">How it works</a>
+          <a href="/" aria-label="Visit Ariel Marques portfolio">ariel.works <span aria-hidden="true">↗</span></a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container-fluid hueo-container">
+        <div class="row g-0 hero-grid">
+          <div class="col-lg-7 hero-copy">
+            <p class="eyebrow">Private Beta <span aria-hidden="true">·</span> iOS</p>
+            <h1 id="hero-title">Help shape the first version of <em>HUEO.</em></h1>
+            <p class="intro">HUEO is a photo editing app built around color, film-inspired looks, tactile grain, and a simple creative workflow that keeps the image at the center.</p>
+            <p class="beta-note">A small group of early testers will receive TestFlight access before the public release.</p>
+            <a class="text-link d-lg-none" href="#beta-form">Join the beta <span aria-hidden="true">↓</span></a>
+          </div>
+
+          <div class="col-lg-5 form-column">
+            <div class="form-heading">
+              <p class="section-number" aria-hidden="true">01 / EARLY ACCESS</p>
+              <h2>Join the private beta.</h2>
+            </div>
+            <form id="beta-form" novalidate>
+              <div class="row g-3">
+                <div class="col-sm-6">
+                  <label for="first-name">First name</label>
+                  <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                </div>
+                <div class="col-12">
+                  <label for="iphone-model">iPhone model</label>
+                  <input id="iphone-model" name="iphoneModel" type="text" autocomplete="off" placeholder="e.g. iPhone 15 Pro" required>
+                </div>
+                <div class="col-sm-6">
+                  <label for="profile">User profile</label>
+                  <select id="profile" name="profile" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option>Photographer</option><option>Designer</option><option>Content creator</option><option>Casual user</option><option>Other</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <label for="frequency">Photo editing frequency</label>
+                  <select id="frequency" name="frequency" required>
+                    <option value="" selected disabled>Select one</option>
+                    <option>Daily</option><option>Weekly</option><option>Occasionally</option><option>Rarely</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <div class="consent-row">
+                    <input id="consent" name="consent" type="checkbox" required>
+                    <label for="consent">I agree to receive emails related to the HUEO beta and TestFlight access.</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="submit-button" type="submit"><span>Join the beta</span><span aria-hidden="true">↗</span></button>
+                  <p class="privacy-note">Your email will only be used for HUEO beta communication. No noise, no sharing.</p>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-success" class="success-state" role="status" tabindex="-1" hidden>
+              <p class="section-number">SIGNUP RECEIVED</p>
+              <h2>You’re on the list.</h2>
+              <p>Thanks for signing up for the HUEO beta.</p>
+              <p>TestFlight invitations will be sent in small batches. Keep an eye on your inbox.</p>
+              <button id="reset-form" class="text-button" type="button">Submit another response</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="how-it-works" class="process-section" aria-labelledby="process-title">
+      <div class="container-fluid hueo-container">
+        <div class="section-heading row g-0">
+          <div class="col-lg-4"><p class="section-number">02 / THE PROCESS</p></div>
+          <div class="col-lg-8"><h2 id="process-title">How it works.</h2></div>
+        </div>
+        <ol class="process-list row g-0">
+          <li class="col-sm-6 col-lg-3"><span>01</span><h3>Sign up</h3><p>Tell us a little about how you edit.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>02</span><h3>Get invited</h3><p>Selected testers receive a TestFlight link.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>03</span><h3>Test HUEO</h3><p>Use the app in your real editing workflow.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>04</span><h3>Send feedback</h3><p>Share what feels right—and what doesn’t.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="test-section" aria-labelledby="test-title">
+      <div class="container-fluid hueo-container">
+        <div class="row g-0 align-items-end">
+          <div class="col-lg-5"><p class="section-number">03 / INSIDE THE BETA</p><h2 id="test-title">What you’ll test.</h2></div>
+          <div class="col-lg-7"><ul class="feature-list"><li>Film-inspired presets</li><li>Grain</li><li>HSL editing</li><li>Color tools</li><li>Editing workflow</li></ul></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container-fluid hueo-container footer-inner"><a class="wordmark" href="#main-content">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a><p>An independent iOS app by <a href="/">Ariel Marques</a>.</p><p>© <span id="year"></span></p></div>
+  </footer>
+  <script src="../assets/js/hueo.js"></script>
+</body>
+</html>
