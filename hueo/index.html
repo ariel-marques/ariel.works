@@ -53,38 +53,45 @@
               <div class="row g-3">
                 <div class="col-sm-6">
                   <label for="first-name">First name</label>
-                  <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+                  <input id="first-name" name="firstName" type="text" autocomplete="given-name" aria-describedby="first-name-error" required>
+                  <p id="first-name-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
                   <label for="email">Email</label>
-                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required>
+                  <input id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-error" required>
+                  <p id="email-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
                   <label for="iphone-model">iPhone model</label>
-                  <input id="iphone-model" name="iphoneModel" type="text" autocomplete="off" placeholder="e.g. iPhone 15 Pro" required>
+                  <input id="iphone-model" name="iphoneModel" type="text" autocomplete="off" placeholder="e.g. iPhone 15 Pro" aria-describedby="iphone-model-error" required>
+                  <p id="iphone-model-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
                   <label for="profile">User profile</label>
-                  <select id="profile" name="profile" required>
+                  <select id="profile" name="profile" aria-describedby="profile-error" required>
                     <option value="" selected disabled>Select one</option>
                     <option>Photographer</option><option>Designer</option><option>Content creator</option><option>Casual user</option><option>Other</option>
                   </select>
+                  <p id="profile-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
                   <label for="frequency">Photo editing frequency</label>
-                  <select id="frequency" name="frequency" required>
+                  <select id="frequency" name="frequency" aria-describedby="frequency-error" required>
                     <option value="" selected disabled>Select one</option>
                     <option>Daily</option><option>Weekly</option><option>Occasionally</option><option>Rarely</option>
                   </select>
+                  <p id="frequency-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
                   <div class="consent-row">
-                    <input id="consent" name="consent" type="checkbox" required>
+                    <input id="consent" name="consent" type="checkbox" aria-describedby="consent-error" required>
                     <label for="consent">I agree to receive emails related to the HUEO beta and TestFlight access.</label>
                   </div>
+                  <p id="consent-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
-                  <button class="submit-button" type="submit"><span>Join the beta</span><span aria-hidden="true">↗</span></button>
+                  <button class="submit-button" type="submit"><span class="button-label">Join the beta</span><span aria-hidden="true">↗</span></button>
+                  <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
                   <p class="privacy-note">Your email will only be used for HUEO beta communication. No noise, no sharing.</p>
                 </div>
               </div>
