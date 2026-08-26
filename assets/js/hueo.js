@@ -1,8 +1,8 @@
 (() => {
   // Add the public values from Supabase: Project Settings > API.
-  // The anon key is intended for browser use. Never put a service_role key here.
+  // The publishable key is intended for browser use. Never put a secret or service_role key here.
   const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-  const SUPABASE_ANON_KEY = 'YOUR_SUPABASE_ANON_KEY';
+  const SUPABASE_PUBLISHABLE_KEY = 'YOUR_SUPABASE_PUBLISHABLE_KEY';
 
   const form = document.querySelector('#beta-form');
   const success = document.querySelector('#form-success');
@@ -72,7 +72,6 @@
       user_profile: document.querySelector('#profile').value,
       edit_frequency: document.querySelector('#frequency').value,
       consent: document.querySelector('#consent').checked,
-      status: 'waitlist',
       source: 'ariel.works/hueo'
     };
 
@@ -83,8 +82,7 @@
       const response = await fetch(endpoint, {
         method: 'POST',
         headers: {
-          apikey: SUPABASE_ANON_KEY,
-          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+          apikey: SUPABASE_PUBLISHABLE_KEY,
           'Content-Type': 'application/json',
           Prefer: 'return=minimal'
         },

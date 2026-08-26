@@ -41,7 +41,7 @@ alter table public.hueo_beta_signups enable row level security;
 
 -- Without read/change policies, RLS also prevents anonymous SELECT, UPDATE, and DELETE.
 revoke all on table public.hueo_beta_signups from anon;
-grant insert (first_name, email, iphone_model, user_profile, edit_frequency, consent, status, source)
+grant insert (first_name, email, iphone_model, user_profile, edit_frequency, consent, source)
   on table public.hueo_beta_signups to anon;
 
 drop policy if exists "Anonymous users can join the HUEO beta" on public.hueo_beta_signups;
