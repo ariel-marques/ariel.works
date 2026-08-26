@@ -1,8 +1,8 @@
 (() => {
   // Add the public values from Supabase: Project Settings > API.
   // The publishable key is intended for browser use. Never put a secret or service_role key here.
-  const SUPABASE_URL = 'YOUR_SUPABASE_PROJECT_URL';
-  const SUPABASE_PUBLISHABLE_KEY = 'YOUR_SUPABASE_PUBLISHABLE_KEY';
+  const SUPABASE_URL = 'https://ijypormhtkleprzwntgm.supabase.co';
+  const SUPABASE_PUBLISHABLE_KEY = 'sb_publishable_7DNm8NhJRh605O1j71UbRQ_0p4yaMBi';
 
   const form = document.querySelector('#beta-form');
   const success = document.querySelector('#form-success');
