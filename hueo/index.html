@@ -18,15 +18,22 @@
   <link rel="stylesheet" href="../assets/css/hueo.css">
 </head>
 <body>
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content" data-i18n="skipLink">Skip to main content</a>
 
   <header class="site-header">
     <div class="container-fluid hueo-container">
-      <nav class="hueo-nav" aria-label="Primary navigation">
-        <a class="wordmark" href="/hueo/" aria-label="HUEO home">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a>
-        <div class="nav-links">
-          <a href="#how-it-works">How it works</a>
-          <a href="/" aria-label="Visit Ariel Marques portfolio">ariel.works <span aria-hidden="true">↗</span></a>
+      <nav class="hueo-nav" aria-label="Primary navigation" data-i18n-aria-label="primaryNavigation">
+        <a class="wordmark" href="/hueo/" aria-label="HUEO home" data-i18n-aria-label="hueoHome">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a>
+        <div class="nav-end">
+          <div class="nav-links">
+            <a href="#how-it-works" data-i18n="navHow">How it works</a>
+            <a href="/" aria-label="Visit Ariel Marques portfolio" data-i18n-aria-label="portfolioLabel">ariel.works <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="language-switcher" role="group" aria-label="Choose language" data-i18n-aria-label="languagePicker">
+            <button type="button" class="language-button is-active" data-language="en" aria-pressed="true" aria-label="Switch to English">EN</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" class="language-button" data-language="pt-BR" aria-pressed="false" aria-label="Mudar para português do Brasil">PT-BR</button>
+          </div>
         </div>
       </nav>
     </div>
@@ -37,72 +44,72 @@
       <div class="container-fluid hueo-container">
         <div class="row g-0 hero-grid">
           <div class="col-lg-7 hero-copy">
-            <p class="eyebrow">Private Beta <span aria-hidden="true">·</span> iOS</p>
-            <h1 id="hero-title">Help shape the first version of <em>HUEO.</em></h1>
-            <p class="intro">HUEO is a photo editing app built around color, film-inspired looks, tactile grain, and a simple creative workflow that keeps the image at the center.</p>
-            <p class="beta-note">A small group of early testers will receive TestFlight access before the public release.</p>
-            <a class="text-link d-lg-none" href="#beta-form">Join the beta <span aria-hidden="true">↓</span></a>
+            <p class="eyebrow" data-i18n="eyebrow">Private Beta <span aria-hidden="true">·</span> iOS</p>
+            <h1 id="hero-title" data-i18n="heroTitle">Help shape the first version of <em>HUEO.</em></h1>
+            <p class="intro" data-i18n="intro">HUEO is a photo editing app built around color, film-inspired looks, tactile grain, and a simple creative workflow that keeps the image at the center.</p>
+            <p class="beta-note" data-i18n="betaNote">A small group of early testers will receive TestFlight access before the public release.</p>
+            <a class="text-link d-lg-none" href="#beta-form" data-i18n="joinLink">Join the beta <span aria-hidden="true">↓</span></a>
           </div>
 
           <div class="col-lg-5 form-column">
             <div class="form-heading">
-              <p class="section-number" aria-hidden="true">01 / EARLY ACCESS</p>
-              <h2>Join the private beta.</h2>
+              <p class="section-number" aria-hidden="true" data-i18n="earlyAccess">01 / EARLY ACCESS</p>
+              <h2 data-i18n="formTitle">Join the private beta.</h2>
             </div>
             <form id="beta-form" novalidate>
               <div class="row g-3">
                 <div class="col-sm-6">
-                  <label for="first-name">First name</label>
+                  <label for="first-name" data-i18n="firstName">First name</label>
                   <input id="first-name" name="firstName" type="text" autocomplete="given-name" aria-describedby="first-name-error" required>
                   <p id="first-name-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
-                  <label for="email">Email</label>
+                  <label for="email" data-i18n="email">Email</label>
                   <input id="email" name="email" type="email" autocomplete="email" inputmode="email" aria-describedby="email-error" required>
                   <p id="email-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
-                  <label for="iphone-model">iPhone model</label>
-                  <input id="iphone-model" name="iphoneModel" type="text" autocomplete="off" placeholder="e.g. iPhone 15 Pro" aria-describedby="iphone-model-error" required>
+                  <label for="iphone-model" data-i18n="iphoneModel">iPhone model</label>
+                  <input id="iphone-model" name="iphoneModel" type="text" autocomplete="off" placeholder="e.g. iPhone 15 Pro" data-i18n-placeholder="iphonePlaceholder" aria-describedby="iphone-model-error" required>
                   <p id="iphone-model-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
-                  <label for="profile">User profile</label>
+                  <label for="profile" data-i18n="profile">User profile</label>
                   <select id="profile" name="profile" aria-describedby="profile-error" required>
-                    <option value="" selected disabled>Select one</option>
-                    <option>Photographer</option><option>Designer</option><option>Content creator</option><option>Casual user</option><option>Other</option>
+                    <option value="" selected disabled data-i18n="selectOne">Select one</option>
+                    <option value="photographer" data-i18n="photographer">Photographer</option><option value="designer" data-i18n="designer">Designer</option><option value="content_creator" data-i18n="contentCreator">Content creator</option><option value="casual_user" data-i18n="casualUser">Casual user</option><option value="other" data-i18n="other">Other</option>
                   </select>
                   <p id="profile-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-sm-6">
-                  <label for="frequency">Photo editing frequency</label>
+                  <label for="frequency" data-i18n="frequency">Photo editing frequency</label>
                   <select id="frequency" name="frequency" aria-describedby="frequency-error" required>
-                    <option value="" selected disabled>Select one</option>
-                    <option>Daily</option><option>Weekly</option><option>Occasionally</option><option>Rarely</option>
+                    <option value="" selected disabled data-i18n="selectOne">Select one</option>
+                    <option value="daily" data-i18n="daily">Daily</option><option value="weekly" data-i18n="weekly">Weekly</option><option value="occasionally" data-i18n="occasionally">Occasionally</option><option value="rarely" data-i18n="rarely">Rarely</option>
                   </select>
                   <p id="frequency-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
                   <div class="consent-row">
                     <input id="consent" name="consent" type="checkbox" aria-describedby="consent-error" required>
-                    <label for="consent">I agree to receive emails related to the HUEO beta and TestFlight access.</label>
+                    <label for="consent" data-i18n="consent">I agree to receive emails related to the HUEO beta and TestFlight access.</label>
                   </div>
                   <p id="consent-error" class="field-error" aria-live="polite"></p>
                 </div>
                 <div class="col-12">
-                  <button class="submit-button" type="submit"><span class="button-label">Join the beta</span><span aria-hidden="true">↗</span></button>
+                  <button class="submit-button" type="submit"><span class="button-label" data-i18n="submit">Join the beta</span><span aria-hidden="true">↗</span></button>
                   <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
-                  <p class="privacy-note">Your email will only be used for HUEO beta communication. No noise, no sharing.</p>
+                  <p class="privacy-note" data-i18n="privacy">Your email will only be used for HUEO beta communication. No noise, no sharing.</p>
                 </div>
               </div>
             </form>
 
             <div id="form-success" class="success-state" role="status" tabindex="-1" hidden>
-              <p class="section-number">SIGNUP RECEIVED</p>
-              <h2>You’re on the list.</h2>
-              <p>Thanks for signing up for the HUEO beta.</p>
-              <p>TestFlight invitations will be sent in small batches. Keep an eye on your inbox.</p>
-              <button id="reset-form" class="text-button" type="button">Submit another response</button>
+              <p class="section-number" data-i18n="received">SIGNUP RECEIVED</p>
+              <h2 data-i18n="successTitle">You’re on the list.</h2>
+              <p data-i18n="successThanks">Thanks for signing up for the HUEO beta.</p>
+              <p data-i18n="successInvite">TestFlight invitations will be sent in small batches. Keep an eye on your inbox.</p>
+              <button id="reset-form" class="text-button" type="button" data-i18n="submitAnother">Submit another response</button>
             </div>
           </div>
         </div>
@@ -112,14 +119,14 @@
     <section id="how-it-works" class="process-section" aria-labelledby="process-title">
       <div class="container-fluid hueo-container">
         <div class="section-heading row g-0">
-          <div class="col-lg-4"><p class="section-number">02 / THE PROCESS</p></div>
-          <div class="col-lg-8"><h2 id="process-title">How it works.</h2></div>
+          <div class="col-lg-4"><p class="section-number" data-i18n="processNumber">02 / THE PROCESS</p></div>
+          <div class="col-lg-8"><h2 id="process-title" data-i18n="processTitle">How it works.</h2></div>
         </div>
         <ol class="process-list row g-0">
-          <li class="col-sm-6 col-lg-3"><span>01</span><h3>Sign up</h3><p>Tell us a little about how you edit.</p></li>
-          <li class="col-sm-6 col-lg-3"><span>02</span><h3>Get invited</h3><p>Selected testers receive a TestFlight link.</p></li>
-          <li class="col-sm-6 col-lg-3"><span>03</span><h3>Test HUEO</h3><p>Use the app in your real editing workflow.</p></li>
-          <li class="col-sm-6 col-lg-3"><span>04</span><h3>Send feedback</h3><p>Share what feels right—and what doesn’t.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>01</span><h3 data-i18n="step1Title">Sign up</h3><p data-i18n="step1Text">Tell us a little about how you edit.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>02</span><h3 data-i18n="step2Title">Get invited</h3><p data-i18n="step2Text">Selected testers receive a TestFlight link.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>03</span><h3 data-i18n="step3Title">Test HUEO</h3><p data-i18n="step3Text">Use the app in your real editing workflow.</p></li>
+          <li class="col-sm-6 col-lg-3"><span>04</span><h3 data-i18n="step4Title">Send feedback</h3><p data-i18n="step4Text">Share what feels right—and what doesn’t.</p></li>
         </ol>
       </div>
     </section>
@@ -127,15 +134,15 @@
     <section class="test-section" aria-labelledby="test-title">
       <div class="container-fluid hueo-container">
         <div class="row g-0 align-items-end">
-          <div class="col-lg-5"><p class="section-number">03 / INSIDE THE BETA</p><h2 id="test-title">What you’ll test.</h2></div>
-          <div class="col-lg-7"><ul class="feature-list"><li>Film-inspired presets</li><li>Grain</li><li>HSL editing</li><li>Color tools</li><li>Editing workflow</li></ul></div>
+          <div class="col-lg-5"><p class="section-number" data-i18n="insideBeta">03 / INSIDE THE BETA</p><h2 id="test-title" data-i18n="testTitle">What you’ll test.</h2></div>
+          <div class="col-lg-7"><ul class="feature-list"><li data-i18n="featurePresets">Film-inspired presets</li><li data-i18n="featureGrain">Grain</li><li data-i18n="featureHsl">HSL editing</li><li data-i18n="featureColor">Color tools</li><li data-i18n="featureWorkflow">Editing workflow</li></ul></div>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="container-fluid hueo-container footer-inner"><a class="wordmark" href="#main-content">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a><p>An independent iOS app by <a href="/">Ariel Marques</a>.</p><p>© <span id="year"></span></p></div>
+    <div class="container-fluid hueo-container footer-inner"><a class="wordmark" href="#main-content">HUEO<span class="wordmark-dot" aria-hidden="true"></span></a><p data-i18n="footer">An independent iOS app by <a href="/">Ariel Marques</a>.</p><p>© <span id="year"></span></p></div>
   </footer>
   <script src="../assets/js/hueo.js"></script>
 </body>
