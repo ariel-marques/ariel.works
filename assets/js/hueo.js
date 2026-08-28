@@ -104,7 +104,12 @@
   document.querySelector('#year').textContent = new Date().getFullYear();
   applyLanguage(getSavedLanguage() === 'pt-BR' ? 'pt-BR' : 'en', false);
 
-  languageButtons.forEach((button) => button.addEventListener('click', () => applyLanguage(button.dataset.language)));
+  languageButtons.forEach((button) => {
+    button.addEventListener('click', (event) => {
+      event.preventDefault();
+      applyLanguage(event.currentTarget.dataset.language);
+    });
+  });
 
   Object.keys(fieldMessageKeys).forEach((id) => {
     const field = document.querySelector(`#${id}`);
