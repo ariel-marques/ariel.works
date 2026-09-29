@@ -5,15 +5,18 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://ariel.works/projetos.html</loc>
+    <loc>https://ariel.works/projetos</loc>
   </url>
   <url>
-    <loc>https://ariel.works/projects/memorial-grupo-unip-objetivo.html</loc>
+    <loc>https://ariel.works/projects/airclipboard</loc>
   </url>
   <url>
-    <loc>https://ariel.works/projects/spotify-social.html</loc>
+    <loc>https://ariel.works/projects/spotify-social</loc>
   </url>
   <url>
-    <loc>https://ariel.works/projects/spotify-social.html</loc>
+    <loc>https://ariel.works/projects/tvweb</loc>
+  </url>
+  <url>
+    <loc>https://ariel.works/projects/memorial-grupo-unip-objetivo</loc>
   </url>
 </urlset>

@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Não interfere em arquivos ou diretórios existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Permite acessar arquivos .html sem informar a extensão
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
