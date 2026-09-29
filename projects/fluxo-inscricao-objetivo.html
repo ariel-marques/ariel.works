@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://ariel.works/projects/fluxo-inscricao-objetivo">
+		<meta property="og:image" content="https://ariel.works/projects/assets/img/objetivo-inscricoes/og-cover.png">
+		<meta property="og:image:alt" content="Case de Product Design - Fluxo de inscrição do Curso e Colégio Objetivo">
+		<meta property="og:site_name" content="ariel.works">
+		<meta property="og:description" content="Case de Product Design sobre a evolução do fluxo de inscrição do Desafio, Concurso de Bolsas e Simulado Aberto do Objetivo.">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Evolução do fluxo de inscrição — Ariel Marques">
+		<meta name="twitter:description" content="Case de Product Design sobre a evolução de uma jornada crítica de aquisição no Curso e Colégio Objetivo.">
+		<title>Evolução do fluxo de inscrição — Ariel Marques</title>
+		<link rel="canonical" href="https://ariel.works/projects/fluxo-inscricao-objetivo">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Cormorant+Garamond:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="apple-touch-icon" sizes="180x180" href="../assets/img/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="../assets/img/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="../assets/img/favicon-16x16.png">
+		<link rel="manifest" href="../assets/img/site.webmanifest">
+		<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+		<style>
+			/* =========================================================
+       CASE STUDY — FLUXO DE INSCRIÇÃO OBJETIVO
+       ========================================================= */
+			.case-section {
+				padding-top: 5rem;
+				padding-bottom: 5rem;
+			}
+
+			.case-section+.case-section {
+				border-top: 1px solid rgba(0, 0, 0, 0.08);
+			}
+
+			.case-eyebrow {
+				display: inline-block;
+				margin-bottom: 1rem;
+				font-size: 0.78rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				opacity: 0.55;
+			}
+
+			.case-lead {
+				max-width: 820px;
+				font-size: clamp(1.2rem, 2vw, 1.6rem);
+				line-height: 1.5;
+			}
+
+			.case-copy {
+				max-width: 800px;
+			}
+
+			.case-tags {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 0.5rem;
+				margin-top: 1.5rem;
+			}
+
+			.case-tag {
+				padding: 0.45rem 0.8rem;
+				border: 1px solid rgba(0, 0, 0, 0.16);
+				border-radius: 999px;
+				font-size: 0.78rem;
+				line-height: 1;
+			}
+
+			.case-meta {
+				margin-top: 3rem;
+				padding-top: 2rem;
+				padding-bottom: 2rem;
+				border-top: 1px solid rgba(0, 0, 0, 0.1);
+				border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.case-meta dt {
+				margin-bottom: 0.35rem;
+				font-size: 0.72rem;
+				font-weight: 600;
+				letter-spacing: 0.07em;
+				text-transform: uppercase;
+				opacity: 0.55;
+			}
+
+			.case-meta dd {
+				margin-bottom: 0;
+				font-size: 0.95rem;
+			}
+
+			.case-highlight {
+				height: 100%;
+				padding: 1.5rem;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 1rem;
+			}
+
+			.case-highlight h3 {
+				margin-bottom: 0.7rem;
+				font-size: 1.15rem;
+			}
+
+			.case-highlight p {
+				margin-bottom: 0;
+				opacity: 0.78;
+			}
+
+			.case-image {
+				width: 100%;
+				border-radius: 1rem;
+			}
+
+			.case-image-frame {
+				padding: 1rem;
+				background: #f5f5f5;
+				border-radius: 1.25rem;
+			}
+
+			.case-caption {
+				margin-top: 0.75rem;
+				margin-bottom: 0;
+				font-size: 0.8rem;
+				opacity: 0.55;
+			}
+
+			.case-placeholder {
+				display: flex;
+				min-height: 320px;
+				align-items: center;
+				justify-content: center;
+				padding: 2rem;
+				border: 1px dashed rgba(0, 0, 0, 0.25);
+				border-radius: 1rem;
+				background: rgba(0, 0, 0, 0.025);
+				text-align: center;
+				font-size: 0.9rem;
+				opacity: 0.65;
+			}
+
+			/* ---------- Fluxo ---------- */
+			.case-flow {
+				display: grid;
+				grid-template-columns: repeat(7, minmax(120px, 1fr));
+				gap: 1rem;
+				margin-top: 2rem;
+				overflow-x: auto;
+				padding-bottom: 1rem;
+			}
+
+			.case-flow-step {
+				position: relative;
+				min-width: 120px;
+				padding: 1.25rem 1rem;
+				border: 1px solid rgba(0, 0, 0, 0.12);
+				border-radius: 1rem;
+				text-align: center;
+			}
+
+			.case-flow-step:not(:last-child)::after {
+				content: "→";
+				position: absolute;
+				top: 50%;
+				right: -0.85rem;
+				z-index: 2;
+				transform: translateY(-50%);
+				padding: 0 0.2rem;
+				background: #fff;
+				font-size: 1.2rem;
+				opacity: 0.5;
+			}
+
+			.case-flow-step strong {
+				display: block;
+				margin-bottom: 0.4rem;
+			}
+
+			.case-flow-step span {
+				display: block;
+				font-size: 0.76rem;
+				line-height: 1.35;
+				opacity: 0.6;
+			}
+
+			.case-flow-step.is-friction {
+				background: rgba(0, 0, 0, 0.025);
+			}
+
+			.case-flow-step.is-success {
+				border-width: 2px;
+			}
+
+			/* ---------- Comparação ---------- */
+			.case-comparison {
+				height: 100%;
+			}
+
+			.case-comparison-label {
+				display: inline-block;
+				margin-bottom: 0.8rem;
+				font-size: 0.75rem;
+				font-weight: 600;
+				letter-spacing: 0.08em;
+				text-transform: uppercase;
+				opacity: 0.55;
+			}
+
+			.case-comparison h3 {
+				font-size: 1.35rem;
+			}
+
+			/* ---------- Technical note ---------- */
+			.case-technical {
+				padding: 1.5rem;
+				border-left: 3px solid #1d1d1b;
+				background: rgba(0, 0, 0, 0.035);
+			}
+
+			.case-technical p:last-child {
+				margin-bottom: 0;
+			}
+
+			/* ---------- Results ---------- */
+			.case-result {
+				height: 100%;
+				padding: 1.5rem 0;
+				border-top: 1px solid rgba(0, 0, 0, 0.12);
+			}
+
+			.case-result strong {
+				display: block;
+				margin-bottom: 0.5rem;
+				font-size: 1.05rem;
+			}
+
+			.case-note {
+				padding: 1rem 1.25rem;
+				border-radius: 0.75rem;
+				background: rgba(0, 0, 0, 0.04);
+				font-size: 0.82rem;
+			}
+
+			/* ---------- Future flow ---------- */
+			.future-step {
+				height: 100%;
+				padding: 1.25rem;
+				border: 1px solid rgba(0, 0, 0, 0.1);
+				border-radius: 1rem;
+			}
+
+			.future-step small {
+				display: block;
+				margin-bottom: 0.5rem;
+				opacity: 0.55;
+			}
+
+			@media (max-width: 991.98px) {
+				.case-section {
+					padding-top: 3.5rem;
+					padding-bottom: 3.5rem;
+				}
+
+				.case-flow {
+					grid-template-columns: repeat(7, 160px);
+				}
+			}
+
+			@media (max-width: 575.98px) {
+				.case-meta dd {
+					margin-bottom: 1.25rem;
+				}
+			}
+
+			/* ---------- Imagens do case ---------- */
+			.case-media {
+				overflow: hidden;
+				border-radius: 1rem;
+				background: #f5f5f5;
+				border: 1px solid rgba(0, 0, 0, 0.08);
+			}
+
+			.case-media img {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+
+			.case-media--contained {
+				padding: 1rem;
+			}
+
+			.case-media--contained img {
+				max-height: 720px;
+				object-fit: contain;
+			}
+
+			.case-media--portrait {
+				padding: 1rem;
+				text-align: center;
+			}
+
+			.case-media--portrait img {
+				width: auto;
+				max-width: 100%;
+				max-height: 720px;
+				margin: 0 auto;
+				object-fit: contain;
+			}
+
+			.case-media--email img {
+				width: auto;
+				max-width: 100%;
+				max-height: 680px;
+				margin: 0 auto;
+			}
+
+			.case-media--flow {
+				padding: 0;
+				background: transparent;
+				border: 0;
+			}
+
+			.case-media--flow img {
+				width: 100%;
+			}
+
+			.case-compare-image {
+				margin-top: 1rem;
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			<!-- =======================================================
+
+         HEADER
+
+         ======================================================= -->
+			<header class="row">
+				<nav class="navbar navbar-expand-lg">
+					<div class="container-fluid px-0">
+						<a class="navbar-brand" href="https://ariel.works" title="Home">
+							<svg width="25" viewBox="0 0 402 402" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M15 386.86V15L201 387L386.87 15V386.86L387 387L200.94 15L15 386.86Z" stroke="#1D1D1B" stroke-width="30" stroke-linecap="round" stroke-linejoin="round">
+								</path>
+							</svg>
+						</a>
+						<button class="navbar-toggler px-0" type="button" data-bs-toggle="collapse" data-bs-target="#caseNavbar" aria-controls="caseNavbar" aria-expanded="false" aria-label="Abrir navegação">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+						<div class="collapse navbar-collapse" id="caseNavbar">
+							<ul class="navbar-nav ms-auto text-end">
+								<li class="nav-item">
+									<a class="nav-link" href="https://ariel.works" style="font-size: 0.9rem;">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="https://ariel.works/projetos" style="font-size: 0.9rem;">PROJETOS</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<main>
+				<!-- =======================================================
+
+           01 — HERO
+
+           ======================================================= -->
+				<section class="case-section pt-4 border-0">
+					<div class="row">
+						<div class="col-lg-10">
+							<span class="case-eyebrow"> Product Design · EdTech · Em produção </span>
+							<h1> Evolução do fluxo<br> de inscrição </h1>
+							<h4 class="pt-2 pb-4"> Curso e Colégio Objetivo </h4>
+							<p class="case-lead"> Redesenho de uma jornada digital responsável por conectar campanhas de aquisição às inscrições do Desafio Nacional, Concurso de Bolsas e Simulado Aberto. </p>
+							<div class="case-tags">
+								<span class="case-tag">Product Design</span>
+								<span class="case-tag">UX/UI</span>
+								<span class="case-tag">Web</span>
+								<span class="case-tag">EdTech</span>
+								<span class="case-tag">Produto em produção</span>
+							</div>
+						</div>
+					</div>
+					<dl class="row case-meta">
+						<div class="col-6 col-md-3">
+							<dt>Meu papel</dt>
+							<dd>UX/UI Designer<br>+ apoio técnico</dd>
+						</div>
+						<div class="col-6 col-md-3">
+							<dt>Período</dt>
+							<dd>2023–2026</dd>
+						</div>
+						<div class="col-6 col-md-3">
+							<dt>Escopo</dt>
+							<dd>Discovery, UX, UI,<br>handoff e acompanhamento</dd>
+						</div>
+						<div class="col-6 col-md-3">
+							<dt>Status</dt>
+							<dd>Em produção</dd>
+						</div>
+					</dl>
+					<div class="case-media mt-5">
+						<img src="assets/img/objetivo-inscricoes/atual-home.png" alt="Página atual do Curso Objetivo com os cards de inscrição para o Desafio de Português e Matemática" loading="eager">
+					</div>
+				</section>
+				<!-- =======================================================
+
+           02 — CONTEXTO
+
+           ======================================================= -->
+				<section class="case-section">
+					<div class="row">
+						<div class="col-lg-9">
+							<span class="case-eyebrow">Contexto</span>
+							<h2> Um produto de aquisição dentro do ecossistema Objetivo </h2>
+							<div class="case-copy mt-4">
+								<p> Desafio Nacional, Concurso de Bolsas e Simulado Aberto são produtos recorrentes do Curso e Colégio Objetivo, utilizados ao longo do ano como parte da estratégia de aquisição de novos alunos. </p>
+								<p> O fluxo digital conecta campanhas de marketing à inscrição efetiva do candidato e, por isso, qualquer fricção nessa jornada pode impactar diretamente sua conclusão. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row g-3 mt-4">
+						<div class="col-md-4">
+							<div class="case-highlight">
+								<h3>Milhares de inscrições</h3>
+								<p> Produtos consolidados, recorrentes e utilizados em diferentes momentos do calendário educacional. </p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="case-highlight">
+								<h3>Marketing + produto</h3>
+								<p> A experiência conecta campanhas de aquisição ao sistema responsável por efetivar a inscrição. </p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="case-highlight">
+								<h3>Ponto crítico de conversão</h3>
+								<p> O fluxo precisa transformar interesse em uma inscrição concluída com o menor nível possível de fricção. </p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+           03 — PROBLEMA
+           ======================================================= -->
+				<section class="case-section">
+					<div class="row">
+						<div class="col-lg-9">
+							<span class="case-eyebrow">Problema</span>
+							<h2>Um fluxo funcional, mas com fricções acumuladas</h2>
+							<div class="case-copy mt-4">
+								<p> A experiência anterior cumpria seu papel, mas exigia que o usuário atravessasse etapas redundantes e pouco progressivas antes de concluir a inscrição. </p>
+								<p> O problema não estava apenas na interface visual. A própria estrutura do fluxo adicionava esforço desnecessário e quebrava o contexto da intenção inicial do candidato. </p>
+							</div>
+						</div>
+					</div>
+					<div class="row g-4 mt-4">
+						<div class="col-md-6">
+							<ul>
+								<li>Login obrigatório logo no início.</li>
+								<li>Reescolha da categoria após autenticação.</li>
+								<li>Regulamento com baixa escaneabilidade.</li>
+							</ul>
+						</div>
+						<div class="col-md-6">
+							<ul>
+								<li>Formulário com alta carga de informação.</li>
+								<li>Etapa adicional de conferência de dados.</li>
+								<li>Etapa adicional de confirmação próxima da conclusão.</li>
+							</ul>
+						</div>
+					</div>
+					<!-- PRINTS ANTIGOS -->
+					<div class="row g-4 mt-4">
+						<div class="col-md-4">
+							<div class="case-media">
+								<img src="assets/img/objetivo-inscricoes/antigo-login.png" alt="Versão anterior da página de inscrição, com login e cadastro apresentados separadamente" loading="lazy">
+							</div>
+							<p class="case-caption"> Login e cadastro eram apresentados como caminhos separados logo na entrada. </p>
+						</div>
+						<div class="col-md-4">
+							<div class="case-media">
+								<img src="assets/img/objetivo-inscricoes/antigo-regulamento.png" alt="Versão anterior da página de regulamento e formulário de inscrição do Desafio Objetivo" loading="lazy">
+							</div>
+							<p class="case-caption"> Regulamento denso e formulário concentravam muita informação em uma mesma etapa. </p>
+						</div>
+						<div class="col-md-4">
+							<div class="case-media">
+								<img src="assets/img/objetivo-inscricoes/antigo-conferencia.png" alt="Versão anterior da tela de conferência de dados, com alerta para confirmação final" loading="lazy">
+							</div>
+							<p class="case-caption"> Uma etapa adicional de conferência introduzia novo esforço imediatamente antes da conclusão. </p>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+
+           04 — FUNIL ANTERIOR
+
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Diagnóstico</span>
+					<h2> Lendo a jornada como um funil de conversão </h2>
+					<p class="case-copy mt-4"> Ao analisar o produto como uma jornada de conversão, cada etapa passou a representar também um potencial ponto de abandono. </p>
+					<div class="case-flow">
+						<div class="case-flow-step">
+							<strong>Entrada</strong>
+							<span>Interesse inicial</span>
+						</div>
+						<div class="case-flow-step is-friction">
+							<strong>Login</strong>
+							<span>Primeira fricção</span>
+						</div>
+						<div class="case-flow-step is-friction">
+							<strong>Categoria</strong>
+							<span>Reescolha desnecessária</span>
+						</div>
+						<div class="case-flow-step is-friction">
+							<strong>Regulamento</strong>
+							<span>Alta carga cognitiva</span>
+						</div>
+						<div class="case-flow-step is-friction">
+							<strong>Formulário</strong>
+							<span>Alto esforço</span>
+						</div>
+						<div class="case-flow-step is-friction">
+							<strong>Conferência</strong>
+							<span>Alerta + insegurança</span>
+						</div>
+						<div class="case-flow-step is-success">
+							<strong>Inscrição</strong>
+							<span>Conversão</span>
+						</div>
+					</div>
+					<p class="mt-3 mb-0">
+						<strong> Cada etapa adicional aumentava o esforço necessário para chegar à conclusão. </strong>
+					</p>
+				</section>
+				<!-- =======================================================
+
+           05 — DIRECIONADORES
+
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Estratégia</span>
+					<h2> Princípios que guiaram a evolução do fluxo </h2>
+					<div class="row g-3 mt-4">
+						<div class="col-md-6 col-lg">
+							<div class="case-highlight">
+								<h3>Reduzir fricção</h3>
+								<p> Remover etapas que não geravam valor para o candidato. </p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg">
+							<div class="case-highlight">
+								<h3>Preservar contexto</h3>
+								<p> Manter a escolha realizada antes do login ao longo da jornada. </p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg">
+							<div class="case-highlight">
+								<h3>Progressão</h3>
+								<p> Apresentar informações e ações de forma mais gradual. </p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg">
+							<div class="case-highlight">
+								<h3>Estados claros</h3>
+								<p> Fazer a interface comunicar rapidamente o próximo passo. </p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg">
+							<div class="case-highlight">
+								<h3>Conversão</h3>
+								<p> Diminuir incerteza e esforço nas etapas críticas. </p>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+           06 — LOGIN / CADASTRO
+           ======================================================= -->
+				<section class="case-section">
+					<div class="row">
+						<div class="col-lg-9">
+							<span class="case-eyebrow">Solução</span>
+							<h2>Uma única entrada para usuários novos e recorrentes</h2>
+							<p class="case-copy mt-4"> A nova experiência passou a utilizar o CPF como ponto único de entrada. A partir dessa informação, o sistema identifica o estado do usuário e adapta a interface sem exigir que ele escolha previamente entre entrar ou se cadastrar. </p>
+						</div>
+					</div>
+					<div class="row g-4 mt-4">
+						<div class="col-md-6">
+							<span class="case-comparison-label">Usuário existente</span>
+							<h3 class="h2">CPF reconhecido → senha</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/atual-login-existente.png" alt="Tela atual da Área do Candidato após identificar um CPF já cadastrado, exibindo o campo de senha" loading="lazy">
+							</div>
+							<p class="case-caption"> Para candidatos já cadastrados, a autenticação aparece somente após a identificação pelo CPF. </p>
+						</div>
+						<div class="col-md-6">
+							<span class="case-comparison-label">Novo usuário</span>
+							<h3 class="h2">CPF não encontrado → cadastro</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/atual-login-novo.png" alt="Tela atual identificando um CPF ainda não cadastrado e orientando o usuário a continuar o cadastro" loading="lazy">
+							</div>
+							<p class="case-caption"> Para novos candidatos, a mesma entrada identifica o estado e orienta a continuidade do cadastro. </p>
+						</div>
+					</div>
+					<div class="case-technical mt-5">
+						<strong>Como funciona tecnicamente</strong>
+						<p class="mt-2"> A validação é realizada de forma assíncrona no backend. O retorno atualiza o estado da interface sem recarregar a página, mantendo a interação rápida e sem impacto perceptível na experiência. </p>
+					</div>
+					<div class="row mt-5 align-items-center">
+						<div class="col-lg-5">
+							<span class="case-eyebrow">Organização da informação</span>
+							<h3>Regulamento e inscrição em uma experiência mais estruturada</h3>
+							<p class="mt-3"> O conteúdo obrigatório do regulamento continuou presente, mas passou a ser apresentado dentro de uma interface com hierarquia e organização visual mais consistentes com o restante da experiência. </p>
+							<p> Os campos relacionados à inscrição também passam a fazer parte desse mesmo contexto, reduzindo mudanças abruptas de interface ao longo do fluxo. </p>
+						</div>
+						<div class="col-lg-7 mt-4 mt-lg-0">
+							<div class="case-media case-media--portrait">
+								<img src="assets/img/objetivo-inscricoes/atual-regulamento.png" alt="Tela atual de regulamento e configuração da inscrição do Desafio Objetivo" loading="lazy">
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+           07 — ANTES X DEPOIS
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Evolução</span>
+					<h2>A evolução não foi apenas visual</h2>
+					<p class="case-copy mt-4"> Além da modernização da interface, o projeto encurtou a jornada, removeu decisões redundantes e passou a preservar o contexto da ação inicial do usuário. </p>
+					<!-- COMPARAÇÃO 1 -->
+					<div class="row g-4 mt-5">
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Antes</span>
+							<h3>Login e cadastro separados</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/antigo-login.png" alt="Fluxo antigo apresentando login e cadastro em áreas separadas" loading="lazy">
+							</div>
+							<p class="case-caption"> O candidato precisava primeiro interpretar qual dos dois caminhos deveria utilizar. </p>
+						</div>
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Depois</span>
+							<h3>CPF como ponto único de entrada</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/atual-login-novo.png" alt="Novo fluxo utilizando CPF como ponto único de entrada para login ou cadastro" loading="lazy">
+							</div>
+							<p class="case-caption"> Uma única interação passa a determinar automaticamente qual deve ser o próximo passo. </p>
+						</div>
+					</div>
+					<!-- COMPARAÇÃO 2 -->
+					<div class="row g-4 mt-5">
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Antes</span>
+							<h3>A categoria precisava ser escolhida novamente</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/antigo-categorias.png" alt="Fluxo antigo solicitando novamente a escolha da categoria do Desafio após o login" loading="lazy">
+							</div>
+							<p class="case-caption"> Mesmo após iniciar a inscrição para um desafio específico, o usuário precisava realizar uma nova escolha. </p>
+						</div>
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Depois</span>
+							<h3>Contexto preservado desde a home</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/atual-home.png" alt="Página atual do Objetivo com cards específicos para cada categoria do Desafio" loading="lazy">
+							</div>
+							<p class="case-caption"> A categoria escolhida no card inicial acompanha o candidato durante as etapas seguintes. </p>
+						</div>
+					</div>
+					<!-- COMPARAÇÃO 3 -->
+					<div class="row g-4 mt-5">
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Antes</span>
+							<h3>Conferência adicional antes da conclusão</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/antigo-conferencia.png" alt="Antiga tela de conferência de dados com alerta solicitando nova confirmação" loading="lazy">
+							</div>
+							<p class="case-caption"> Mesmo depois do preenchimento, uma nova confirmação era necessária para finalizar a inscrição. </p>
+						</div>
+						<div class="col-md-6 case-comparison">
+							<span class="case-comparison-label">Depois</span>
+							<h3>Estado de sucesso direto e explícito</h3>
+							<div class="case-media case-compare-image">
+								<img src="assets/img/objetivo-inscricoes/atual-confirmacao.png" alt="Tela atual confirmando que a inscrição foi realizada com sucesso" loading="lazy">
+							</div>
+							<p class="case-caption"> A conclusão agora leva diretamente a um estado claro de sucesso e ao comprovante da inscrição. </p>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+           08 — FLUXO SIMPLIFICADO
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Simplificação</span>
+					<h2>Menos etapas entre intenção e conversão</h2>
+					<p class="case-copy mt-4"> A evolução reduziu etapas redundantes no caminho até a inscrição. A reescolha da categoria após o login e a etapa separada de conferência de dados deixaram de fazer parte da jornada atual. </p>
+					<div class="case-media case-media--flow mt-4">
+						<img src="assets/img/objetivo-inscricoes/fluxo-simplificado.png" alt="Comparação do fluxo de inscrição mostrando a remoção das etapas de reescolha de categoria e conferência de dados" loading="lazy">
+					</div>
+				</section>
+				<!-- =======================================================
+           09 — PÓS INSCRIÇÃO
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Pós-conversão</span>
+					<h2>A jornada continua depois da inscrição</h2>
+					<p class="case-copy mt-4"> A confirmação da inscrição não foi tratada como o fim da experiência. O fluxo também evoluiu nos momentos posteriores, reforçando segurança e reduzindo incertezas antes da prova. </p>
+					<div class="row g-4 mt-4 align-items-start">
+						<div class="col-md-4">
+							<div class="case-media case-media--portrait">
+								<img src="assets/img/objetivo-inscricoes/atual-confirmacao.png" alt="Tela de sucesso apresentada ao candidato após a conclusão da inscrição" loading="lazy">
+							</div>
+							<p class="case-caption">
+								<strong>Confirmação imediata.</strong><br> O candidato recebe feedback claro de que a inscrição foi concluída.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<div class="case-media case-media--portrait case-media--email">
+								<img src="assets/img/objetivo-inscricoes/email-comprovante.png" alt="E-mail automático com o comprovante de inscrição do Desafio Objetivo" loading="lazy">
+							</div>
+							<p class="case-caption">
+								<strong>Comprovante estruturado.</strong><br> Os principais dados da inscrição também ficam disponíveis por e-mail.
+							</p>
+						</div>
+						<div class="col-md-4">
+							<div class="case-media case-media--portrait case-media--email">
+								<img src="assets/img/objetivo-inscricoes/email-lembrete.png" alt="E-mail de lembrete enviado antes da realização do Desafio Objetivo" loading="lazy">
+							</div>
+							<p class="case-caption">
+								<strong>Continuidade da jornada.</strong><br> A comunicação pré-prova recupera informações importantes próximas à data do evento.
+							</p>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+
+           10 — RESULTADOS
+
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Resultados</span>
+					<h2> Impacto percebido </h2>
+					<p class="case-copy mt-4"> O acompanhamento do produto indicou evolução positiva em pontos importantes da jornada. Métricas internas e números absolutos não são apresentados publicamente por confidencialidade. </p>
+					<div class="row g-4 mt-4">
+						<div class="col-md-6">
+							<div class="case-result">
+								<strong>Maior progressão</strong> Usuários avançando por uma jornada mais curta e previsível.
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="case-result">
+								<strong>Menos pontos de fricção</strong> Remoção de etapas redundantes e redução de esforço.
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="case-result">
+								<strong>Mais consistência</strong> Continuidade entre campanha, inscrição e pós-inscrição.
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="case-result">
+								<strong>Melhor previsibilidade</strong> Estados e próximos passos mais claros para o candidato.
+							</div>
+						</div>
+					</div>
+					<div class="case-note mt-4"> Dados quantitativos internos e informações estratégicas do Grupo UNIP/Objetivo foram omitidos neste case. </div>
+				</section>
+				<!-- =======================================================
+
+           11 — APRENDIZADOS E FUTURO
+
+           ======================================================= -->
+				<section class="case-section">
+					<span class="case-eyebrow">Evolução contínua</span>
+					<h2> Aprendizados e próximos passos </h2>
+					<div class="row g-5 mt-3">
+						<div class="col-lg-5">
+							<h3>Aprendizados</h3>
+							<ul class="mt-3">
+								<li class="mb-2"> Estruturar métricas e critérios de sucesso desde o início. </li>
+								<li class="mb-2"> Tratar cada etapa da jornada como parte de um funil. </li>
+								<li class="mb-2"> Reduzir esforço antes de adicionar novas interfaces. </li>
+								<li class="mb-2"> Aproximar decisões de UX das possibilidades técnicas. </li>
+							</ul>
+						</div>
+						<div class="col-lg-7">
+							<h3>Próxima hipótese de evolução</h3>
+							<p class="mt-3"> Uma oportunidade futura seria remover o login como barreira inicial e utilizar os próprios dados do formulário para identificar o usuário apenas quando necessário. </p>
+							<div class="row g-3 mt-2">
+								<div class="col-md-6">
+									<div class="future-step">
+										<small>01</small>
+										<strong>Entrada direta</strong>
+										<p class="mb-0 mt-2"> Clique no produto e início imediato do formulário. </p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="future-step">
+										<small>02</small>
+										<strong>Identificação contextual</strong>
+										<p class="mb-0 mt-2"> CPF e e-mail verificam se já existe cadastro. </p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="future-step">
+										<small>03</small>
+										<strong>Autenticação no momento certo</strong>
+										<p class="mb-0 mt-2"> Senha solicitada apenas quando necessária para concluir. </p>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="future-step">
+										<small>04</small>
+										<strong>Recuperação de abandono</strong>
+										<p class="mb-0 mt-2"> Lembrete para quem iniciou a inscrição e não concluiu. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- =======================================================
+
+           12 — FECHAMENTO
+
+           ======================================================= -->
+				<section class="case-section">
+					<div class="row">
+						<div class="col-lg-9">
+							<span class="case-eyebrow">Produto em produção</span>
+							<h2> Uma experiência que continua evoluindo </h2>
+							<p class="case-lead mt-4"> O fluxo atual está em uso nos produtos Desafio Nacional, Concurso de Bolsas e Simulado Aberto do Curso e Colégio Objetivo. </p>
+						</div>
+					</div>
+					<a href="https://objetivo.br/matriculas/desafio.aspx" class="btn btn-outline-secondary btn-hover mt-4" target="_blank" rel="noopener noreferrer"> Ver experiência atual </a>
+					<div class="text-end mt-5">
+						<h3><em>— Obrigado.</em></h3>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+		</script>
+	</body>
+
+</html>
