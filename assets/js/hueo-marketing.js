@@ -51,7 +51,7 @@
     finishTitle: 'Seu olhar. Sua edição.',
     finishBody: 'Mantenha os originais e volte à edição sempre que quiser. No app Fotos, use a extensão do HUEO para aplicar um Look favorito ou ajustar a granulação.',
     finishAlt: 'Retrato de rua aberto no editor do HUEO, com prévias de Looks abaixo da imagem.',
-    credit: 'Um app independente de',
+    credit: 'Um app de',
     privacy: 'Política de Privacidade'
   };
   const title = document.querySelector('title');

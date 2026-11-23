@@ -388,7 +388,7 @@
   .scroll-reveal-entering:not(:focus-within) {
     transition-property: opacity, transform;
     transition-duration: 2200ms;
-    transition-timing-function: cubic-bezier(.20, .65, .1, 4);
+    transition-timing-function: cubic-bezier(.20, .65, .2, 1);
     transition-delay: var(--reveal-delay, 0ms);
   }
 }
