@@ -1,0 +1,318 @@
+.marketing-page {
+  --midnight: #101316;
+  --muted-on-dark: #c3c5c1;
+  --rule-on-dark: rgba(245, 243, 238, .22);
+  --section-space: clamp(64px, 8vw, 124px);
+}
+
+.marketing-page [hidden] {
+  display: none;
+}
+
+.marketing-page .site-header {
+  background: var(--midnight);
+  color: var(--paper);
+  border-color: var(--rule-on-dark);
+}
+
+.marketing-page .hueo-nav {
+  min-height: 76px;
+}
+
+.marketing-page .nav-end {
+  gap: clamp(12px, 3vw, 40px);
+}
+
+.marketing-nav-link,
+.marketing-kicker,
+.marketing-button,
+.marketing-inline {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.marketing-nav-link {
+  padding-block: 12px;
+}
+
+.marketing-page .site-header a:hover,
+.marketing-page .site-header .language-button.is-active,
+.marketing-page .site-header .language-button:hover {
+  color: var(--paper);
+}
+
+.marketing-page .site-header .language-button {
+  color: var(--muted-on-dark);
+}
+
+.marketing-nav-link:hover {
+  text-decoration: underline;
+  text-underline-offset: .25em;
+}
+
+.marketing-dark {
+  background: var(--midnight);
+  color: var(--paper);
+}
+
+.marketing-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(36px, 6vw, 96px);
+  align-items: center;
+}
+
+.marketing-hero {
+  padding-block: clamp(44px, 5.5vw, 96px);
+}
+
+.marketing-hero h1 {
+  margin-bottom: clamp(22px, 3vw, 38px);
+  font-size: clamp(4.1rem, 7.5vw, 8rem);
+  line-height: .9;
+}
+
+.marketing-hero h1 em {
+  display: block;
+}
+
+.marketing-kicker {
+  color: var(--muted-on-dark);
+  margin-bottom: clamp(22px, 4.2vw, 64px);
+}
+
+.marketing-lead {
+  max-width: 36ch;
+  margin-bottom: clamp(24px, 4vw, 42px);
+  color: var(--muted);
+  font-size: clamp(1rem, 1.4vw, 1.2rem);
+  line-height: 1.6;
+}
+
+.marketing-dark .marketing-lead {
+  color: var(--muted-on-dark);
+}
+
+.marketing-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px 24px;
+}
+
+.marketing-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 48px;
+  padding: 12px 16px;
+  background: var(--ink);
+  color: var(--paper);
+  border: 1px solid var(--ink);
+}
+
+.marketing-button:hover {
+  background: transparent;
+  color: var(--ink);
+}
+
+.marketing-dark .marketing-button {
+  background: var(--paper);
+  color: var(--ink);
+  border-color: var(--paper);
+}
+
+.marketing-dark .marketing-button:hover {
+  background: transparent;
+  color: var(--paper);
+}
+
+.marketing-inline {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  text-decoration: underline;
+  text-underline-offset: .3em;
+}
+
+.marketing-inline:hover {
+  color: inherit;
+}
+
+.marketing-device {
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  min-width: 0;
+}
+
+.marketing-device::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+.marketing-device-glow::before {
+  background:
+    radial-gradient(ellipse at 44% 42%, rgba(234, 151, 98, .36), transparent 62%),
+    radial-gradient(ellipse at 64% 64%, rgba(118, 71, 137, .55), transparent 68%);
+}
+
+.marketing-device img,
+.marketing-illustration img,
+.marketing-tools-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.marketing-device img {
+  width: min(62%, 340px);
+}
+
+.marketing-editing,
+.marketing-tools,
+.marketing-finish {
+  padding-block: var(--section-space);
+}
+
+.marketing-page h2 {
+  margin: 0 0 20px;
+  font: 400 clamp(3rem, 6vw, 6.3rem)/.92 var(--serif);
+  letter-spacing: -.045em;
+}
+
+.marketing-section-heading {
+  display: grid;
+  grid-template-columns: 1fr minmax(20ch, 34ch);
+  align-items: end;
+  gap: 16px 36px;
+  margin-bottom: clamp(28px, 5vw, 65px);
+}
+
+.marketing-section-heading h2,
+.marketing-section-heading p {
+  margin: 0;
+}
+
+.marketing-section-heading p,
+.marketing-editing-item p {
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.marketing-editing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(18px, 2.5vw, 40px);
+}
+
+.marketing-illustration {
+  display: grid;
+  place-items: center;
+  padding: clamp(18px, 4.3vw, 64px) 18px;
+}
+
+.marketing-illustration img {
+  width: min(75%, 236px);
+}
+
+.marketing-looks {
+  background: #eeeae2;
+}
+
+.marketing-color {
+  background: #e6e9e4;
+}
+
+.marketing-light {
+  background: linear-gradient(150deg, #efe4d7, #ccab98);
+}
+
+.marketing-editing-item h3 {
+  margin: 23px 0 7px;
+  font: 400 clamp(1.8rem, 3vw, 3.1rem)/1 var(--serif);
+  letter-spacing: -.025em;
+}
+
+.marketing-editing-item p {
+  margin-bottom: 0;
+  max-width: 34ch;
+}
+
+.marketing-tools .marketing-split {
+  grid-template-columns: minmax(0, 1fr) minmax(0, .8fr);
+}
+
+.marketing-tools-image {
+  width: min(100%, 240px);
+}
+
+.marketing-grain {
+  background: linear-gradient(155deg, #eee7dc, #cfb9a6);
+}
+
+.marketing-grain img {
+  width: min(72%, 270px);
+}
+
+.marketing-finish {
+  background: #eeeae2;
+}
+
+.marketing-device-finish::before {
+  background:
+    radial-gradient(ellipse at 38% 45%, rgba(220, 154, 117, .38), transparent 66%),
+    radial-gradient(ellipse at 62% 60%, rgba(108, 74, 135, .25), transparent 68%);
+}
+
+.marketing-device-finish img {
+  width: min(58%, 280px);
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .marketing-hero h1 {
+    font-size: clamp(3.5rem, 8vw, 5rem);
+  }
+}
+
+@media (max-width: 767.98px) {
+  .marketing-split,
+  .marketing-tools .marketing-split,
+  .marketing-section-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .marketing-hero h1 {
+    font-size: clamp(3.2rem, 11vw, 5.2rem);
+  }
+
+  .marketing-device img {
+    width: min(70%, 280px);
+  }
+
+  .marketing-editing-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .marketing-illustration {
+    padding-block: 30px;
+  }
+
+  .marketing-tools-image {
+    width: min(100%, 220px);
+  }
+}
+
+@media (max-width: 479.98px) {
+  .marketing-nav-link[href="#editing"] {
+    display: none;
+  }
+}
