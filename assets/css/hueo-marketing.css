@@ -160,8 +160,8 @@
 
 .marketing-device-glow::before {
   background:
-    radial-gradient(ellipse at 44% 42%, rgba(234, 151, 98, .36), transparent 62%),
-    radial-gradient(ellipse at 64% 64%, rgba(118, 71, 137, .55), transparent 68%);
+    radial-gradient(ellipse at 43% 44%, rgba(234, 151, 98, .36), transparent 53%),
+    radial-gradient(ellipse at 64% 64%, rgba(118, 71, 137, .55), transparent 34%)
 }
 
 .marketing-device img,
@@ -268,8 +268,8 @@
 
 .marketing-device-finish::before {
   background:
-    radial-gradient(ellipse at 38% 45%, rgba(220, 154, 117, .38), transparent 66%),
-    radial-gradient(ellipse at 62% 60%, rgba(108, 74, 135, .25), transparent 68%);
+    radial-gradient(ellipse at 39% 57%, rgba(220, 154, 117, 0.70), transparent 43%),
+    radial-gradient(ellipse at 59% 59%, rgba(108, 74, 135, .25), transparent 48%)
 }
 
 .marketing-device-finish img {
@@ -325,8 +325,8 @@
 
   .scroll-reveal-entering:not(:focus-within) {
     transition-property: opacity, transform;
-    transition-duration: 480ms;
-    transition-timing-function: cubic-bezier(.2, .65, .3, 1);
+    transition-duration: 2200ms;
+    transition-timing-function: cubic-bezier(.20, .65, .1, 4);
     transition-delay: var(--reveal-delay, 0ms);
   }
 }
