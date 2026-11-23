@@ -165,8 +165,7 @@
 }
 
 .marketing-device img,
-.marketing-illustration img,
-.marketing-tools-image {
+.marketing-illustration img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -247,14 +246,82 @@
 }
 
 .marketing-tools .marketing-split {
-  grid-template-columns: minmax(0, 1fr) minmax(0, .8fr);
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(36px, 5vw, 72px);
 }
 
-.marketing-tools-image {
-  width: min(100%, 240px);
+.marketing-tool-groups {
+  display: grid;
+  gap: 24px clamp(20px, 3vw, 40px);
+}
+
+.marketing-tool-group {
+  min-width: 0;
+  border-top: 1px solid var(--rule-on-dark);
+  padding-top: 16px;
+}
+
+.marketing-tool-group h3 {
+  margin: 0 0 12px;
+  color: var(--paper);
+  font: 400 1.75rem/1 var(--serif);
+}
+
+.marketing-tool-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  column-gap: 5px;
+  row-gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.marketing-tool {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 9px 2px;
+  color: var(--muted-on-dark);
+  font-size: .75rem;
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.marketing-tool > span {
+  max-width: 100%;
+}
+
+.marketing-tool-icon {
+  /* The supplied SVGs include an English caption below the symbol. */
+  width: min(100%, 88px);
+  aspect-ratio: 204 / 84;
+  overflow: hidden;
+}
+
+.marketing-tool-icon img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 600px) {
+  .marketing-tool-groups {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1100px) {
+  .marketing-tools .marketing-split {
+    grid-template-columns: minmax(0, 1fr) minmax(0, .52fr);
+  }
 }
 
 .marketing-grain {
+  width: min(100%, 440px);
+  justify-self: center;
   background: linear-gradient(155deg, #eee7dc, #cfb9a6);
 }
 
@@ -284,7 +351,6 @@
 
 @media (max-width: 767.98px) {
   .marketing-split,
-  .marketing-tools .marketing-split,
   .marketing-section-heading {
     grid-template-columns: 1fr;
   }
@@ -304,10 +370,6 @@
 
   .marketing-illustration {
     padding-block: 30px;
-  }
-
-  .marketing-tools-image {
-    width: min(100%, 220px);
   }
 }
 
