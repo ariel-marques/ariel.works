@@ -75,10 +75,31 @@
     }
   }
 
+  function enableScrollReveals() {
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const targets = [...document.querySelectorAll('[data-scroll-reveal]')]
+      .filter((element) => element.getBoundingClientRect().top >= window.innerHeight);
+
+    const observer = new IntersectionObserver((entries) => {
+      for (const { target, isIntersecting } of entries) {
+        if (!isIntersecting) continue;
+        target.classList.replace('scroll-reveal-pending', 'scroll-reveal-entering');
+        observer.unobserve(target);
+      }
+    });
+
+    for (const target of targets) {
+      target.classList.add('scroll-reveal-pending');
+      observer.observe(target);
+    }
+  }
+
   let savedLanguage;
   try { savedLanguage = localStorage.getItem(languageStorageKey); } catch { /* Use English without storage. */ }
   applyLanguage(savedLanguage);
   document.querySelector('.language-switcher').hidden = false;
+  enableScrollReveals();
 
   for (const button of buttons) {
     button.addEventListener('click', () => {
