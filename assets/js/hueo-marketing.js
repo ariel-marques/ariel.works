@@ -11,7 +11,9 @@
     heroStart: 'Toda foto',
     heroEnd: 'tem um sentimento.',
     heroBody: 'Comece com um Look inspirado em filme e ajuste a luz e a cor para trazer à tona o que você sentiu ao tirar a foto.',
-    joinBeta: 'Participar do beta',
+    downloadApp: 'Baixar na App Store',
+    appStoreBadge: 'assets/img/AppStore-badge-black-pt-br.svg',
+    appStoreBadgeAlt: 'Baixar HUEO na App Store',
     heroAlt: 'HUEO no iPhone com uma foto do pôr do sol e o painel de Looks aberto.',
     editingTitle: 'Encontre suas cores.',
     editingBody: '32 Looks inspirados em filme, em oito coleções, com ferramentas precisas para ajustar cada foto.',
@@ -63,7 +65,7 @@
     description: 'HUEO é um editor de fotos para iPhone e iPad com 32 Looks inspirados em filme e ferramentas precisas de luz e cor.'
   };
   const buttons = document.querySelectorAll('[data-language]');
-  const attributes = { 'data-copy': null, 'data-copy-alt': 'alt', 'data-copy-label': 'aria-label' };
+  const attributes = { 'data-copy': null, 'data-copy-alt': 'alt', 'data-copy-label': 'aria-label', 'data-copy-src': 'src' };
   const copy = Object.entries(attributes).flatMap(([marker, attribute]) =>
     [...document.querySelectorAll(`[${marker}]`)].map((element) => ({
       element,
