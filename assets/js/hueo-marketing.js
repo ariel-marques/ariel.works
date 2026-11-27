@@ -11,6 +11,7 @@
     heroStart: 'Toda foto',
     heroEnd: 'tem um sentimento.',
     heroBody: 'Comece com um Look inspirado em filme e ajuste a luz e a cor para trazer à tona o que você sentiu ao tirar a foto.',
+    joinBeta: 'Participar do beta',
     downloadApp: 'Baixar na App Store',
     appStoreBadge: 'assets/img/AppStore-badge-black-pt-br.svg',
     appStoreBadgeAlt: 'Baixar HUEO na App Store',
